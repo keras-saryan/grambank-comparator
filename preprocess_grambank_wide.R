@@ -25,6 +25,13 @@ grambank.values <- read.csv("https://raw.githubusercontent.com/grambank/grambank
 
 #grambank.families <- read.csv("https://raw.githubusercontent.com/grambank/grambank/master/cldf/families.csv", header=TRUE, stringsAsFactors=FALSE, encoding="UTF-8")
 
+grambank_coordinates <- grambank.languages %>%
+  select(Language_ID, Language_Latitude, Language_Longitude) %>%
+  rename(ID = Language_ID, Latitude = Language_Latitude, Longitude = Language_Longitude)
+
+grambank_coordinates %>%
+  write_dataset(path = "grambank_coordinates", format = "parquet")
+
 grambank_languages <- right_join(grambank.languages, grambank.values, by = "Language_ID")
 
 grambank_parameters <- right_join(grambank.parameters, grambank.codes, by = "Parameter_ID") %>%
