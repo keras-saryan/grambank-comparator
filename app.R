@@ -62,9 +62,9 @@
         
         card_body(
           
-          markdown("This [𝒮𝒽𝒾𝓃𝓎](https://www.shinyapps.io/) app is a tool for comparing a novel language with those found in the [Grambank](https://grambank.clld.org/) database and producing similarity measure.
+          markdown("This [𝒮𝒽𝒾𝓃𝓎](https://www.shinyapps.io/) app is a tool for comparing a novel language with those found in the [Grambank](https://grambank.clld.org/) database and producing a rough similarity measure.
           
-          The input field in the sidebar expects a tab-separated file (e.g. `.tsv`, `.csv`, `.txt`) based on [Jessie Peterson](https://www.quothalinguist.com/)'s \"[Grambank Features List for Language Documentation](https://docs.google.com/spreadsheets/d/18Wdhtx7w5SHbe3GmkhFgTE7fjBiEX7SaL4O2-dFibB0/edit?gid=0#gid=0)\" Google Sheet ([see also her explanatory Fiat Lingua article](https://fiatlingua.org/2023/06/)). The easiest way to get this is to export your version of the spreadsheet as a TSV. It doesn't matter if the column names have been changed but the content of the original columns should remain in those columns (and on the same, single sheet). It is also important that the \"Y/N\" column use the same set of values as the original spreadsheet. The app will treat any other values (or any absent values) as equivalent to `NA`.
+          The input field in the sidebar expects a tab-separated file (e.g. `.tsv`, `.csv`, `.txt`) based on [Jessie Peterson](https://www.quothalinguist.com/)'s \"[Grambank Features List for Language Documentation](https://docs.google.com/spreadsheets/d/18Wdhtx7w5SHbe3GmkhFgTE7fjBiEX7SaL4O2-dFibB0/edit?gid=0#gid=0)\" Google Sheet ([see also her explanatory *Fiat Lingua* article](https://fiatlingua.org/2023/06/)). The easiest way to get this is to export your version of the spreadsheet as a TSV. It doesn't matter if the column names have been changed but the content of the original columns should remain in those same columns (and on the same, single sheet). It is also important that the \"Y/N\" column use the same set of values as the original spreadsheet. The app will treat any other values (or any absent values) as equivalent to `NA`.
           
           Clicking \"Compare\" will produce a table in the \"Comparison\" tab which has eight columns:
           
@@ -83,7 +83,7 @@
           
           The app also produces a downloadable TSV version of the table in the \"Comparison\" tab.
           
-          Consult Grambank itself to look at individual [features](https://grambank.clld.org/parameters) and [languages](https://grambank.clld.org/languages).
+          Consult Grambank itself for more on individual [features](https://grambank.clld.org/parameters) and [languages](https://grambank.clld.org/languages).
           
           The code and data for this app are available on [GitHub](https://github.com/keras-saryan/grambank-comparator).
           
