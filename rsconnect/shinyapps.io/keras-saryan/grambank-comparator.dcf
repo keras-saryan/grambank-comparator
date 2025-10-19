@@ -1,0 +1,10 @@
+name: grambank-comparator
+title:
+username: keras-saryan
+account: keras-saryan
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 15800431
+bundleId: 11055168
+url: https://keras-saryan.shinyapps.io/grambank-comparator/
+version: 1
