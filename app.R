@@ -7,7 +7,17 @@ library("DT")
 library("leaflet")
 
 grambank_coordinates <- open_dataset("grambank_coordinates") %>%
-  dplyr::collect()
+  dplyr::collect() %>%
+  mutate(
+    Continent = case_when(
+      Continent == "AF" ~ "Africa",
+      Continent == "AS" ~ "Asia",
+      Continent == "EU" ~ "Europe",
+      Continent == "NA" ~ "North America",
+      Continent == "OC" ~ "Oceania",
+      Continent == "SA" ~ "South America",
+      TRUE ~ Continent
+    ))
 
 grambank_wide <- open_dataset("grambank_wide") %>%
   dplyr::collect()
@@ -101,9 +111,23 @@ ui <- page_fillable(
             choices = c(
               "Nothing" = "none",
               "Macroarea" = "macroarea",
-              "6 Most Similar Families" = "families"
+              "Continent" = "continent",
+              "UN Subregion" = "subregion",
+              "Families" = "families"
             ),
             selected = "none"
+          )
+        ),
+        
+        conditionalPanel(
+          condition = "input.facet_toggle == 'subregion'",
+          numericInput(
+            inputId = "subregion_min",
+            label = "Minimum Compared Languages In A Subregion:",
+            min = 1,
+            max = 400,
+            step = 1,
+            value = 4
           )
         ),
         
@@ -164,7 +188,7 @@ ui <- page_fillable(
           
           The table is equipped with a general search bar but each column can also be individually searched or the numeric columns' ranges changed to facilitate filtering. A TSV version of this table can be downloaded in the sidebar.
           
-          The \"Plot\" tab shows the same data as in \"Table\" but plotted as a histogram, with the options of facetting by macroarea or the 6 most similar language families in the data set, which can be further tweaked by changing the required minimum number of languages in a family for plotting.
+          The \"Plot\" tab shows the same data as in \"Table\" but plotted as a histogram, with the options of facetting by macroarea, continent, UN subregion ([sourced here](https://github.com/lukert33/united-nations-geoscheme-subregions-json)) and language family—the final two can be further tweaked by changing the required minimum number of languages in a subregion/family for plotting.
           
           The \"Map\" tab shows a world map with circles for each language in Grambank colour coded according to their similarity to the user-supplied language data. Clicking the circle will show the language's name and the percentage similarity.
           
@@ -285,27 +309,84 @@ server <- function(input, output, session) {
         mutate(Mean_Similarity = mean(`Similarity (%)`, na.rm = TRUE), Macroarea = factor(Macroarea, levels = macro_levels)) %>%
         ggplot(aes(`Similarity (%)`)) +
         geom_histogram(aes(y = after_stat(density), fill = after_stat(x)),
-                       binwidth = 1, colour = "#cfcfcf") +
+                       binwidth = 1, colour = "#bfbfbf") +
         scale_fill_gradientn(colours = rev(similarity_colours_100)) +
-        geom_vline(aes(xintercept = Mean_Similarity), colour = "#00aa00", linetype = "dashed", linewidth = 1.5) +
+        geom_vline(aes(xintercept = Mean_Similarity), colour = "#00aa00", linetype = "dashed", linewidth = 1.25) +
         theme(
           legend.position = "none",
           panel.background = element_rect(fill = "#e3e3e3", colour = NA),
           plot.background = element_rect(fill = "#e3e3e3", colour = NA),
-          panel.grid.major = element_line(colour = "#cfcfcf"),
-          panel.grid.minor = element_line(colour = "#d9d9d9")
+          panel.grid.major = element_line(colour = "#bfbfbf"),
+          panel.grid.minor = element_line(colour = "#dfdfdf")
         ) +
         scale_x_continuous(limits = c(0, 100), breaks = seq(0, 100, 10)) +
         labs(x = "Similarity (%)", y = "Density") +
         facet_wrap(~Macroarea, scales = "free_y")
+    } else if (input$facet_toggle == "continent") {
+      continent_levels <- full_join(final_results(), grambank_coordinates, by = "ID") %>%
+        filter(!is.na(Continent)) %>%
+        group_by(Continent) %>%
+        summarise(Mean_Similarity = mean(`Similarity (%)`, na.rm = TRUE)) %>%
+        arrange(desc(Mean_Similarity)) %>%
+        pull(Continent)
+      
+      full_join(final_results(), grambank_coordinates, by = "ID") %>%
+        filter(!is.na(Continent)) %>%
+        group_by(Continent) %>%
+        mutate(Mean_Similarity = mean(`Similarity (%)`, na.rm = TRUE), Continent = factor(Continent, levels = continent_levels)) %>%
+        ggplot(aes(`Similarity (%)`)) +
+        geom_histogram(aes(y = after_stat(density), fill = after_stat(x)),
+                       binwidth = 1, colour = "#bfbfbf") +
+        scale_fill_gradientn(colours = rev(similarity_colours_100)) +
+        geom_vline(aes(xintercept = Mean_Similarity), colour = "#00aa00", linetype = "dashed", linewidth = 1.25) +
+        theme(
+          legend.position = "none",
+          panel.background = element_rect(fill = "#e3e3e3", colour = NA),
+          plot.background = element_rect(fill = "#e3e3e3", colour = NA),
+          panel.grid.major = element_line(colour = "#bfbfbf"),
+          panel.grid.minor = element_line(colour = "#dfdfdf")
+        ) +
+        scale_x_continuous(limits = c(0, 100), breaks = seq(0, 100, 10)) +
+        labs(x = "Similarity (%)", y = "Density") +
+        facet_wrap(~Continent, scales = "free_y")
+    } else if (input$facet_toggle == "subregion") {
+      subregion_levels <- full_join(final_results(), grambank_coordinates, by = "ID") %>%
+        filter(!is.na(Subregion)) %>%
+        group_by(Subregion) %>%
+        summarise(Mean_Similarity = mean(`Similarity (%)`, na.rm = TRUE),
+                  n_languages = n_distinct(ID)) %>%
+        arrange(desc(Mean_Similarity)) %>%
+        filter(n_languages >= input$subregion_min) %>%
+        slice_head(n = 6) %>%
+        pull(Subregion)
+      
+      full_join(final_results(), grambank_coordinates, by = "ID") %>%
+        filter(Subregion %in% subregion_levels) %>%
+        group_by(Subregion) %>%
+        mutate(Mean_Similarity = mean(`Similarity (%)`, na.rm = TRUE), Subregion = factor(Subregion, levels = subregion_levels)) %>%
+        ggplot(aes(`Similarity (%)`)) +
+        geom_histogram(aes(y = after_stat(density), fill = after_stat(x)),
+                       binwidth = 1, colour = "#bfbfbf") +
+        scale_fill_gradientn(colours = rev(similarity_colours_100)) +
+        geom_vline(aes(xintercept = Mean_Similarity), colour = "#00aa00", linetype = "dashed", linewidth = 1.25) +
+        theme(
+          legend.position = "none",
+          panel.background = element_rect(fill = "#e3e3e3", colour = NA),
+          plot.background = element_rect(fill = "#e3e3e3", colour = NA),
+          panel.grid.major = element_line(colour = "#bfbfbf"),
+          panel.grid.minor = element_line(colour = "#dfdfdf")
+        ) +
+        scale_x_continuous(limits = c(0, 100), breaks = seq(0, 100, 10)) +
+        labs(x = "Similarity (%)", y = "Density") +
+        facet_wrap(~Subregion, scales = "free_y")
     } else if (input$facet_toggle == "families") {
       top_families <- final_results() %>%
         filter(Family != "") %>%
         group_by(Family) %>%
-        summarise(avg_similarity = mean(`Similarity (%)`, na.rm = TRUE),
+        summarise(Mean_Similarity = mean(`Similarity (%)`, na.rm = TRUE),
                   n_languages = n_distinct(ID)) %>%
         filter(n_languages >= input$family_min) %>%
-        arrange(desc(avg_similarity)) %>%
+        arrange(desc(Mean_Similarity)) %>%
         slice_head(n = 6) %>%
         pull(Family)
       
@@ -316,16 +397,16 @@ server <- function(input, output, session) {
                Family = factor(Family, levels = top_families)) %>%
         ggplot(aes(`Similarity (%)`)) +
         geom_histogram(aes(y = after_stat(density), fill = after_stat(x)),
-                       binwidth = 1, colour = "#cfcfcf") +
+                       binwidth = 1, colour = "#bfbfbf") +
         scale_fill_gradientn(colours = rev(similarity_colours_100)) +
         geom_vline(aes(xintercept = Mean_Similarity),
-                   colour = "#00aa00", linetype = "dashed", linewidth = 1.5) +
+                   colour = "#00aa00", linetype = "dashed", linewidth = 1.25) +
         theme(
           legend.position = "none",
           panel.background = element_rect(fill = "#e3e3e3", colour = NA),
           plot.background = element_rect(fill = "#e3e3e3", colour = NA),
-          panel.grid.major = element_line(colour = "#cfcfcf"),
-          panel.grid.minor = element_line(colour = "#d9d9d9")
+          panel.grid.major = element_line(colour = "#bfbfbf"),
+          panel.grid.minor = element_line(colour = "#dfdfdf")
         ) +
         scale_x_continuous(limits = c(0, 100), breaks = seq(0, 100, 10)) +
         labs(x = "Similarity (%)", y = "Density") +
@@ -334,16 +415,16 @@ server <- function(input, output, session) {
       final_results() %>%
         ggplot(aes(`Similarity (%)`)) +
         geom_histogram(aes(y = after_stat(density), fill = after_stat(x)),
-                       binwidth = 1, colour = "#cfcfcf") +
+                       binwidth = 1, colour = "#bfbfbf") +
         scale_fill_gradientn(colours = rev(similarity_colours_100)) +
         geom_vline(aes(xintercept = mean(`Similarity (%)`, na.rm = TRUE)),
-                   colour = "#00aa00", linetype = "dashed", linewidth = 1.5) +
+                   colour = "#00aa00", linetype = "dashed", linewidth = 1.25) +
         theme(
           legend.position = "none",
           panel.background = element_rect(fill = "#e3e3e3", colour = NA),
           plot.background = element_rect(fill = "#e3e3e3", colour = NA),
-          panel.grid.major = element_line(colour = "#cfcfcf"),
-          panel.grid.minor = element_line(colour = "#d9d9d9")
+          panel.grid.major = element_line(colour = "#bfbfbf"),
+          panel.grid.minor = element_line(colour = "#dfdfdf")
         ) +
         scale_x_continuous(limits = c(0, 100), breaks = seq(0, 100, 10)) +
         labs(x = "Similarity (%)", y = "Density")
