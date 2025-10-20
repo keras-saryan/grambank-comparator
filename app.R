@@ -285,9 +285,9 @@ server <- function(input, output, session) {
         mutate(Mean_Similarity = mean(`Similarity (%)`, na.rm = TRUE), Macroarea = factor(Macroarea, levels = macro_levels)) %>%
         ggplot(aes(`Similarity (%)`)) +
         geom_histogram(aes(y = after_stat(density), fill = after_stat(x)),
-                       binwidth = 1, colour = "#e3e3e3") +
+                       binwidth = 1, colour = "#cfcfcf") +
         scale_fill_gradientn(colours = rev(similarity_colours_100)) +
-        geom_vline(aes(xintercept = Mean_Similarity), colour = "#00aa00", linetype = "dashed", linewidth = 2) +
+        geom_vline(aes(xintercept = Mean_Similarity), colour = "#00aa00", linetype = "dashed", linewidth = 1.5) +
         theme(
           legend.position = "none",
           panel.background = element_rect(fill = "#e3e3e3", colour = NA),
@@ -316,10 +316,10 @@ server <- function(input, output, session) {
                Family = factor(Family, levels = top_families)) %>%
         ggplot(aes(`Similarity (%)`)) +
         geom_histogram(aes(y = after_stat(density), fill = after_stat(x)),
-                       binwidth = 1, colour = "#e3e3e3") +
+                       binwidth = 1, colour = "#cfcfcf") +
         scale_fill_gradientn(colours = rev(similarity_colours_100)) +
         geom_vline(aes(xintercept = Mean_Similarity),
-                   colour = "#00aa00", linetype = "dashed", linewidth = 2) +
+                   colour = "#00aa00", linetype = "dashed", linewidth = 1.5) +
         theme(
           legend.position = "none",
           panel.background = element_rect(fill = "#e3e3e3", colour = NA),
@@ -334,10 +334,10 @@ server <- function(input, output, session) {
       final_results() %>%
         ggplot(aes(`Similarity (%)`)) +
         geom_histogram(aes(y = after_stat(density), fill = after_stat(x)),
-                       binwidth = 1, colour = "#e3e3e3") +
+                       binwidth = 1, colour = "#cfcfcf") +
         scale_fill_gradientn(colours = rev(similarity_colours_100)) +
         geom_vline(aes(xintercept = mean(`Similarity (%)`, na.rm = TRUE)),
-                   colour = "#00aa00", linetype = "dashed", linewidth = 2) +
+                   colour = "#00aa00", linetype = "dashed", linewidth = 1.5) +
         theme(
           legend.position = "none",
           panel.background = element_rect(fill = "#e3e3e3", colour = NA),
