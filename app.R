@@ -12,11 +12,28 @@ grambank_coordinates <- open_dataset("grambank_coordinates") %>%
 grambank_wide <- open_dataset("grambank_wide") %>%
   dplyr::collect()
 
+similarity_colours <- c("#ffffff", "#ff0000", "#0000ff", "#000000")
+similarity_colours_8 <- colorRampPalette(similarity_colours)(8)
+similarity_colours_10 <- colorRampPalette(similarity_colours)(10)
+similarity_colours_100 <- colorRampPalette(similarity_colours)(100)
+
 ui <- page_fillable(
   
   tags$style(HTML("
       p {
         text-align: justify;
+      }
+      a:link {
+        text-decoration: none;
+      }
+      a:visited {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+      a:active {
+        text-decoration: none;
       }
     ")),
   
@@ -29,7 +46,7 @@ ui <- page_fillable(
     fg = "#000000",
     primary = "#c00000",
     secondary = "#c00000",
-    success = "#00c000",
+    success = "#00aa00",
     base_font = font_google("Noto Sans"),
     code_font = font_google("Noto Sans Mono")
   ),
@@ -40,21 +57,19 @@ ui <- page_fillable(
     
     sidebar = sidebar(
       width = 350,
-      markdown("Use the field below to upload a tab-separated file detailing the Grambank features of your language. Click the \"Compare\" button to see which languages from Grambank's database are most similar languages. (This will take a few seconds to load!) The button below this provides a downloadable TSV of the comparison table.
-        
-        For more details on the app and type of file required, see the \"About\" tab."),
+      markdown("Use the field below to upload a tab-separated file detailing the Grambank features of your language. Click the \"Compare\" button to see which languages from Grambank's database are most similar languages—this will take a few seconds to load! The button below this also provides a downloadable TSV of the comparison table."),
       fileInput("file", "", accept = c(".tsv", ".csv", "text/tab-separated-values")),
       actionButton("run", "Compare", class = "btn-primary"),
       downloadButton("download_results", "Download Comparison Table", class = "btn-primary"),
       
       numericInput(inputId = "compared_min",
                    label = "\"Total Compared\" Minimum:",
-                   min = 0,
+                   min = 1,
                    max = 199,
                    step = 1,
-                   value = 1),
+                   value = 11),
       
-      markdown("See the \"About\" tab for more on this."),
+      markdown("For more details on the app and type of file required, see the \"About\" tab."),
       
     ),
     
@@ -65,6 +80,44 @@ ui <- page_fillable(
       card_body(
         
         uiOutput("comparison_table")
+        
+      )
+      
+    ),
+    
+    nav_panel(
+      
+      card_header("Plot"),
+      
+      card_body(
+        
+        uiOutput("comparison_plot"),
+        
+        conditionalPanel(
+          condition = "output.plot_visible == true",
+          selectInput(
+            inputId = "facet_toggle",
+            label = "Facet By:",
+            choices = c(
+              "Nothing" = "none",
+              "Macroarea" = "macroarea",
+              "6 Most Similar Families" = "families"
+            ),
+            selected = "none"
+          )
+        ),
+        
+        conditionalPanel(
+          condition = "input.facet_toggle == 'families'",
+          numericInput(
+            inputId = "family_min",
+            label = "Minimum Compared Languages In A Family:",
+            min = 1,
+            max = 520,
+            step = 1,
+            value = 4
+          )
+        )
         
       )
       
@@ -107,11 +160,15 @@ ui <- page_fillable(
           
           The app simply compares the (non-NA-equivalent) feature values in the user-supplied file with the corresponding values for each language in Grambank's sample to see what proportion of these match on a per-language basis. (N.B. The data used include only individual *languages* in Grambank and not those entries labelled as *dialects* or *families*.)
           
-          The table in the \"Table\" tab is equipped with a general search bar but each column can also be individually searched or the numeric columns' ranges changed to facilitate filtering. A TSV version of this table can be downloaded in the sidebar.
-          
-          The \"Map\" tab shows a world map with circles for each language in Grambank colour coded according to their similarity to the user-supplied language data. The <span style='color:#f00000; font-weight:bold;'>redder</span> a circle, the more similar a language; the <span style='color:#0000f0; font-weight:bold;'>bluer</span> a circle, the more different the language (though you'll probably mainly see <span style='color:#500050; font-weight:bold;'>purple</span>). Clicking the circle will show the language's name and the percentage similarity.
-          
           The numeric input box in the sidebar can be used to change the minimum number of comparisons between the user-supplied language and the Grambank sample languages required to be displayed in both the table and map.
+          
+          The table is equipped with a general search bar but each column can also be individually searched or the numeric columns' ranges changed to facilitate filtering. A TSV version of this table can be downloaded in the sidebar.
+          
+          The \"Plot\" tab shows the same data as in \"Table\" but plotted as a histogram, with the options of facetting by macroarea or the 6 most similar language families in the data set, which can be further tweaked by changing the required minimum number of languages in a family for plotting.
+          
+          The \"Map\" tab shows a world map with circles for each language in Grambank colour coded according to their similarity to the user-supplied language data. Clicking the circle will show the language's name and the percentage similarity.
+          
+          In the histograms and map, the <span style='color:#f00000; font-weight:bold;'>redder</span> a column/circle, the more similar a language; the <span style='color:#0000f0; font-weight:bold;'>bluer</span> a column/circle, the more different the language; however, extreme similarities/differences are represented by white/black respectively since these will usually be extreme outliers.
           
           Consult Grambank itself for more on individual [features](https://grambank.clld.org/parameters) and [languages](https://grambank.clld.org/languages).
           
@@ -213,6 +270,102 @@ server <- function(input, output, session) {
     }
   )
   
+  output$comparison_hist <- renderPlot({
+    req(final_results())
+    
+    if (input$facet_toggle == "macroarea") {
+      macro_levels <- final_results() %>%
+        group_by(Macroarea) %>%
+        summarise(Mean_Similarity = mean(`Similarity (%)`, na.rm = TRUE)) %>%
+        arrange(desc(Mean_Similarity)) %>%
+        pull(Macroarea)
+      
+      final_results() %>%
+        group_by(Macroarea) %>%
+        mutate(Mean_Similarity = mean(`Similarity (%)`, na.rm = TRUE), Macroarea = factor(Macroarea, levels = macro_levels)) %>%
+        ggplot(aes(`Similarity (%)`)) +
+        geom_histogram(aes(y = after_stat(density), fill = after_stat(x)),
+                       binwidth = 1, colour = "#e3e3e3") +
+        scale_fill_gradientn(colours = rev(similarity_colours_100)) +
+        geom_vline(aes(xintercept = Mean_Similarity), colour = "#00aa00", linetype = "dashed", linewidth = 2) +
+        theme(
+          legend.position = "none",
+          panel.background = element_rect(fill = "#e3e3e3", colour = NA),
+          plot.background = element_rect(fill = "#e3e3e3", colour = NA),
+          panel.grid.major = element_line(colour = "#cfcfcf"),
+          panel.grid.minor = element_line(colour = "#d9d9d9")
+        ) +
+        scale_x_continuous(limits = c(0, 100), breaks = seq(0, 100, 10)) +
+        labs(x = "Similarity (%)", y = "Density") +
+        facet_wrap(~Macroarea, scales = "free_y")
+    } else if (input$facet_toggle == "families") {
+      top_families <- final_results() %>%
+        filter(Family != "") %>%
+        group_by(Family) %>%
+        summarise(avg_similarity = mean(`Similarity (%)`, na.rm = TRUE),
+                  n_languages = n_distinct(ID)) %>%
+        filter(n_languages >= input$family_min) %>%
+        arrange(desc(avg_similarity)) %>%
+        slice_head(n = 6) %>%
+        pull(Family)
+      
+      final_results() %>%
+        filter(Family %in% top_families) %>%
+        group_by(Family) %>%
+        mutate(Mean_Similarity = mean(`Similarity (%)`, na.rm = TRUE),
+               Family = factor(Family, levels = top_families)) %>%
+        ggplot(aes(`Similarity (%)`)) +
+        geom_histogram(aes(y = after_stat(density), fill = after_stat(x)),
+                       binwidth = 1, colour = "#e3e3e3") +
+        scale_fill_gradientn(colours = rev(similarity_colours_100)) +
+        geom_vline(aes(xintercept = Mean_Similarity),
+                   colour = "#00aa00", linetype = "dashed", linewidth = 2) +
+        theme(
+          legend.position = "none",
+          panel.background = element_rect(fill = "#e3e3e3", colour = NA),
+          plot.background = element_rect(fill = "#e3e3e3", colour = NA),
+          panel.grid.major = element_line(colour = "#cfcfcf"),
+          panel.grid.minor = element_line(colour = "#d9d9d9")
+        ) +
+        scale_x_continuous(limits = c(0, 100), breaks = seq(0, 100, 10)) +
+        labs(x = "Similarity (%)", y = "Density") +
+        facet_wrap(~Family, scales = "free_y")
+    } else {
+      final_results() %>%
+        ggplot(aes(`Similarity (%)`)) +
+        geom_histogram(aes(y = after_stat(density), fill = after_stat(x)),
+                       binwidth = 1, colour = "#e3e3e3") +
+        scale_fill_gradientn(colours = rev(similarity_colours_100)) +
+        geom_vline(aes(xintercept = mean(`Similarity (%)`, na.rm = TRUE)),
+                   colour = "#00aa00", linetype = "dashed", linewidth = 2) +
+        theme(
+          legend.position = "none",
+          panel.background = element_rect(fill = "#e3e3e3", colour = NA),
+          plot.background = element_rect(fill = "#e3e3e3", colour = NA),
+          panel.grid.major = element_line(colour = "#cfcfcf"),
+          panel.grid.minor = element_line(colour = "#d9d9d9")
+        ) +
+        scale_x_continuous(limits = c(0, 100), breaks = seq(0, 100, 10)) +
+        labs(x = "Similarity (%)", y = "Density")
+    }
+  })
+  
+  output$comparison_plot <- renderUI({
+    if (is.null(input$file) || input$run == 0) {
+      markdown("Upload a Grambank feature file to see a plot here!")
+    } else {
+      tagList(
+        plotOutput("comparison_hist", height = "800px")
+      )
+    }
+  })
+  
+  output$plot_visible <- reactive({
+    !is.null(input$file) && input$run > 0
+  })
+  
+  outputOptions(output, "plot_visible", suspendWhenHidden = FALSE)
+  
   output$no_map <- renderUI({
     if (is.null(input$file) || input$run == 0) {
       markdown("Upload a Grambank feature file to see a map here!")
@@ -221,22 +374,18 @@ server <- function(input, output, session) {
   
   output$comparison_map <- renderLeaflet({
     
-    similarity_colours <- colors <- c("#ff0000","#dd0011", "#bb0022", "#990033", "#770044", "#440077", "#330099", "#2200bb", "#1100dd", "#0000ff")
-    
     mapping <- full_join(final_results(), grambank_coordinates, by = "ID") %>%
       filter(`Similarity (%)` >= 0 & `Similarity (%)` <= 100) %>%
       mutate(Colour = case_when(
-        `Similarity (%)` >= 90 ~ similarity_colours[1],
-        `Similarity (%)` >= 80 & `Similarity (%)` < 90 ~ similarity_colours[2],
-        `Similarity (%)` >= 70 & `Similarity (%)` < 80 ~ similarity_colours[3],
-        `Similarity (%)` >= 60 & `Similarity (%)` < 70 ~ similarity_colours[4],
-        `Similarity (%)` >= 50 & `Similarity (%)` < 60 ~ similarity_colours[5],
-        `Similarity (%)` >= 40 & `Similarity (%)` < 50 ~ similarity_colours[6],
-        `Similarity (%)` >= 30 & `Similarity (%)` < 40 ~ similarity_colours[7],
-        `Similarity (%)` >= 20 & `Similarity (%)` < 30 ~ similarity_colours[8],
-        `Similarity (%)` >= 10 & `Similarity (%)` < 20 ~ similarity_colours[9],
-        `Similarity (%)` >= 0  & `Similarity (%)` < 10 ~ similarity_colours[10],
-        TRUE ~ "#f3f3f3"
+        `Similarity (%)` >= 87.5 & `Similarity (%)` <= 100 ~ similarity_colours_8[1],
+        `Similarity (%)` >= 75 & `Similarity (%)` < 87.5 ~ similarity_colours_8[2],
+        `Similarity (%)` >= 62.5 & `Similarity (%)` < 75 ~ similarity_colours_8[3],
+        `Similarity (%)` >= 50 & `Similarity (%)` < 62.5 ~ similarity_colours_8[4],
+        `Similarity (%)` >= 37.5 & `Similarity (%)` < 50 ~ similarity_colours_8[5],
+        `Similarity (%)` >= 25 & `Similarity (%)` < 37.5 ~ similarity_colours_8[6],
+        `Similarity (%)` >= 12.5 & `Similarity (%)` < 25 ~ similarity_colours_8[7],
+        `Similarity (%)` >= 0 & `Similarity (%)` < 12.5 ~ similarity_colours_8[8],
+        TRUE ~ "#00ff00"
       ))
     
     leaflet(mapping) %>%
@@ -245,10 +394,10 @@ server <- function(input, output, session) {
       addCircleMarkers(
         lng = ~Longitude,
         lat = ~Latitude,
-        radius = 6,
+        radius = 7.5,
         color = ~Colour,
         fillColor = ~Colour,
-        fillOpacity = 0.9,
+        fillOpacity = 0.75,
         stroke = FALSE,
         popup = ~paste0("<b>", Language, "</b><br>", `Similarity (%)`, "%")
       )
