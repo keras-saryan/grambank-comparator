@@ -56,7 +56,7 @@ grambank_wide <- grambank %>%
   select(Language_ID, Language_Name, Language_Macroarea, Language_Family_Name, Language_Level, Parameter_ID, Parameter_Value_Long) %>%
   pivot_wider(names_from = Parameter_ID, values_from = Parameter_Value_Long) %>%
   rowwise() %>%
-  mutate(Parameters_Coded = sum(!is.na(c_across(-Language_ID)))) %>%
+  mutate(Parameters_Coded = sum(!is.na(c_across(GB020:GB522)))) %>%
   ungroup() %>%
   relocate(Language_ID, Language_Name, Language_Macroarea, Language_Family_Name, Language_Level, Parameters_Coded)
 
@@ -127,23 +127,23 @@ grambank_map <- grambank_sf %>%
   mutate(
     country = countries$name[nearest_idx],
     country = case_when(
-    country == "Bosnia and Herz." ~ "Bosnia and Herzegovina",
-    country == "Central African Rep." ~ "Central African Republic",
-    country == "Cook Is." ~ "Cook Islands",
-    country == "Cyprus U.N. Buffer Zone" ~ "Cyprus",
-    country == "Dem. Rep. Congo" ~ "DR Congo",
-    country == "Eq. Guinea" ~ "Equatorial Guinea",
-    country == "Faeroe Is." ~ "Faeroe Islands",
-    country == "Fr. Polynesia" ~ "French Polynesia",
-    country == "Indian Ocean Ter." ~ "Indian Ocean Territory",
-    country == "Marshall Is." ~ "Marshall Islands",
-    country == "N. Cyprus" ~ "Cyprus",
-    country == "N. Mariana Is." ~ "Northern Mariana Islands",
-    country == "S. Sudan" ~ "South Sudan",
-    country == "Solomon Is." ~ "Solomon Islands",
-    country == "Wallis and Futuna Is." ~ "Wallis and Futuna Islands",
-    TRUE ~ country
-  )) %>%
+      country == "Bosnia and Herz." ~ "Bosnia and Herzegovina",
+      country == "Central African Rep." ~ "Central African Republic",
+      country == "Cook Is." ~ "Cook Islands",
+      country == "Cyprus U.N. Buffer Zone" ~ "Cyprus",
+      country == "Dem. Rep. Congo" ~ "DR Congo",
+      country == "Eq. Guinea" ~ "Equatorial Guinea",
+      country == "Faeroe Is." ~ "Faeroe Islands",
+      country == "Fr. Polynesia" ~ "French Polynesia",
+      country == "Indian Ocean Ter." ~ "Indian Ocean Territory",
+      country == "Marshall Is." ~ "Marshall Islands",
+      country == "N. Cyprus" ~ "Cyprus",
+      country == "N. Mariana Is." ~ "Northern Mariana Islands",
+      country == "S. Sudan" ~ "South Sudan",
+      country == "Solomon Is." ~ "Solomon Islands",
+      country == "Wallis and Futuna Is." ~ "Wallis and Futuna Islands",
+      TRUE ~ country
+    )) %>%
   unique()
 
 rm(countries, nearest_idx)
@@ -168,7 +168,7 @@ grambank_map %<>%
     ),
     country = case_when(
       ID == "coco1260" ~ "Australia",
-        TRUE ~ country
+      TRUE ~ country
     ),
     subregion = case_when(
       ID == "coco1260" ~ "Australia and New Zealand",

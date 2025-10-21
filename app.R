@@ -22,6 +22,26 @@ grambank_coordinates <- open_dataset("grambank_coordinates") %>%
 grambank_wide <- open_dataset("grambank_wide") %>%
   dplyr::collect()
 
+fontCustom <- "Noto Sans"
+
+dark_grey <- "#bfbfbf"
+light_grey <- "#dfdfdf"
+lighter_grey <- "#e3e3e3"
+mid_green <- "#00aa00"
+
+theme_set(
+  theme_bw() +
+    theme(
+      text = element_text(family = fontCustom, size = 15),
+      axis.title = element_text(face = "bold"),
+      legend.position = "none",
+      panel.background = element_rect(fill = lighter_grey, colour = NA),
+      plot.background = element_rect(fill = lighter_grey, colour = NA),
+      panel.grid.major = element_line(colour = dark_grey),
+      panel.grid.minor = element_line(colour = light_grey)
+    )
+)
+
 similarity_colours <- c("#ffffff", "#ff0000", "#0000ff", "#000000")
 similarity_colours_8 <- colorRampPalette(similarity_colours)(8)
 similarity_colours_10 <- colorRampPalette(similarity_colours)(10)
@@ -52,11 +72,11 @@ ui <- page_fillable(
   title = "Grambank Comparator – Keras Saryan",
   
   theme = bs_theme(
-    bg = "#e3e3e3",
+    bg = lighter_grey,
     fg = "#000000",
     primary = "#c00000",
     secondary = "#c00000",
-    success = "#00aa00",
+    success = mid_green,
     base_font = font_google("Noto Sans"),
     code_font = font_google("Noto Sans Mono")
   ),
@@ -66,10 +86,15 @@ ui <- page_fillable(
     title = "Grambank Comparator",
     
     sidebar = sidebar(
+      
       width = 350,
-      markdown("Use the field below to upload a tab-separated file detailing the Grambank features of your language. Click the \"Compare\" button to see which languages from Grambank's database are most similar languages—this will take a few seconds to load! The button below this also provides a downloadable TSV of the comparison table."),
+      
+      markdown("Use the field below to upload a tab-separated file detailing the Grambank features of your language. Click the \"Compare\" button to see which languages from Grambank's database are most similar—this will take a few seconds to load! The button below this also provides a downloadable TSV of the comparison table."),
+      
       fileInput("file", "", accept = c(".tsv", ".csv", "text/tab-separated-values")),
+      
       actionButton("run", "Compare", class = "btn-primary"),
+      
       downloadButton("download_results", "Download Comparison Table", class = "btn-primary"),
       
       numericInput(inputId = "compared_min",
@@ -77,7 +102,7 @@ ui <- page_fillable(
                    min = 1,
                    max = 199,
                    step = 1,
-                   value = 11),
+                   value = 50),
       
       markdown("For more details on the app and type of file required, see the \"About\" tab."),
       
@@ -127,7 +152,7 @@ ui <- page_fillable(
             min = 1,
             max = 400,
             step = 1,
-            value = 4
+            value = 5
           )
         ),
         
@@ -139,7 +164,7 @@ ui <- page_fillable(
             min = 1,
             max = 520,
             step = 1,
-            value = 4
+            value = 5
           )
         )
         
@@ -177,14 +202,12 @@ ui <- page_fillable(
           2. **Language:** The name of that row's language.
           3. **Family:** The name of the family of that row's language.
           4. **Macroarea:** The name of the area in which that row's language is spoken.
-          5. **Parameters Coded:** The number of features for which a known value is provided for that row's language in Grambank (range 8–199).
+          5. **Parameters Coded:** The number of features for which a known value is provided for that row's language in Grambank (range 4–195).
           6. **Total Compared:** The number of features for which that row's language and novel language are compared.
           7. **Match Count:** The number of compared features that are the same in that row's language and the novel language.
           8. **Similarity (%):** The ratio of Total Compared to Match Count expressed as a percentage.
           
-          The app simply compares the (non-NA-equivalent) feature values in the user-supplied file with the corresponding values for each language in Grambank's sample to see what proportion of these match on a per-language basis. (N.B. The data used include only individual *languages* in Grambank and not those entries labelled as *dialects* or *families*.)
-          
-          The numeric input box in the sidebar can be used to change the minimum number of comparisons between the user-supplied language and the Grambank sample languages required to be displayed in both the table and map.
+          The app simply compares the (non-NA-equivalent) feature values in the user-supplied file with the corresponding values for each language in Grambank's sample to see what proportion of these match on a per-language basis; all features are thus weighted equally when considering \"similarity\" (perhaps one reason you might get some unexpected results). Note that the data used include only individual *languages* in Grambank and not those entries labelled as *dialects* or *families*.
           
           The table is equipped with a general search bar but each column can also be individually searched or the numeric columns' ranges changed to facilitate filtering. A TSV version of this table can be downloaded in the sidebar.
           
@@ -194,11 +217,15 @@ ui <- page_fillable(
           
           In the histograms and map, the <span style='color:#f00000; font-weight:bold;'>redder</span> a column/circle, the more similar a language; the <span style='color:#0000f0; font-weight:bold;'>bluer</span> a column/circle, the more different the language; however, extreme similarities/differences are represented by white/black respectively since these will usually be extreme outliers.
           
+          The numeric input box in the sidebar can be used to change the minimum number of comparisons between the user-supplied language and the Grambank sample languages required to be displayed in the table, plots and map.
+          
           Consult Grambank itself for more on individual [features](https://grambank.clld.org/parameters) and [languages](https://grambank.clld.org/languages).
           
           The code and data for this app are available on [GitHub](https://github.com/keras-saryan/grambank-comparator).
           
-          — [Keras Saryan](https://keras-saryan.github.io/)")
+          — [Keras Saryan](https://keras-saryan.github.io/)
+          
+          [[CC-BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)]")
         
       )
       
@@ -214,8 +241,6 @@ server <- function(input, output, session) {
     req(input$file)
     
     withProgress(message = "Reading input and comparing with Grambank...", value = NULL, {
-      
-      Sys.sleep(0.1)
       
       input_lang <- read.csv(input$file$datapath, header = TRUE, sep = "\t", quote = "", stringsAsFactors = FALSE, encoding = "UTF-8") %>%
         select(-2) %>%
@@ -235,7 +260,7 @@ server <- function(input, output, session) {
         select(Language_ID, Language_Name, Language_Macroarea, Language_Family_Name, Language_Level, Parameter_ID, Parameter_Value_Long) %>%
         pivot_wider(names_from = Parameter_ID, values_from = Parameter_Value_Long) %>%
         rowwise() %>%
-        mutate(Parameters_Coded = sum(!is.na(c_across(-Language_ID)))) %>%
+        mutate(Parameters_Coded = sum(!is.na(c_across(GB020:GB522)))) %>%
         ungroup() %>%
         relocate(Language_ID, Language_Name, Language_Macroarea, Language_Family_Name, Language_Level, Parameters_Coded)
       
@@ -246,8 +271,7 @@ server <- function(input, output, session) {
       non_na_positions <- which(!is.na(input_lang_wide))
       
       similarity <- grambank_wide_plus %>%
-        filter(Language_Level == "language") %>%
-        filter(Language_ID != "input_lang") %>%
+        filter(Language_Level == "language" & Language_ID != "input_lang") %>%
         rowwise() %>%
         mutate(Row_Values = list(c_across(-c(Language_ID, Language_Name, Language_Macroarea, Language_Family_Name, Language_Level, Parameters_Coded))),
                Match_Count = sum(unlist(Row_Values)[non_na_positions] == input_lang_wide[non_na_positions], na.rm = TRUE),
@@ -298,6 +322,7 @@ server <- function(input, output, session) {
     req(final_results())
     
     if (input$facet_toggle == "macroarea") {
+      
       macro_levels <- final_results() %>%
         group_by(Macroarea) %>%
         summarise(Mean_Similarity = mean(`Similarity (%)`, na.rm = TRUE)) %>%
@@ -308,21 +333,15 @@ server <- function(input, output, session) {
         group_by(Macroarea) %>%
         mutate(Mean_Similarity = mean(`Similarity (%)`, na.rm = TRUE), Macroarea = factor(Macroarea, levels = macro_levels)) %>%
         ggplot(aes(`Similarity (%)`)) +
-        geom_histogram(aes(y = after_stat(density), fill = after_stat(x)),
-                       binwidth = 1, colour = "#bfbfbf") +
+        geom_histogram(aes(y = after_stat(density), fill = after_stat(x)), binwidth = 1, colour = dark_grey) +
         scale_fill_gradientn(colours = rev(similarity_colours_100)) +
-        geom_vline(aes(xintercept = Mean_Similarity), colour = "#00aa00", linetype = "dashed", linewidth = 1.25) +
-        theme(
-          legend.position = "none",
-          panel.background = element_rect(fill = "#e3e3e3", colour = NA),
-          plot.background = element_rect(fill = "#e3e3e3", colour = NA),
-          panel.grid.major = element_line(colour = "#bfbfbf"),
-          panel.grid.minor = element_line(colour = "#dfdfdf")
-        ) +
+        geom_vline(aes(xintercept = Mean_Similarity), colour = mid_green, linetype = "dashed", linewidth = 1.25) +
         scale_x_continuous(limits = c(0, 100), breaks = seq(0, 100, 10)) +
         labs(x = "Similarity (%)", y = "Density") +
         facet_wrap(~Macroarea, scales = "free_y")
+      
     } else if (input$facet_toggle == "continent") {
+      
       continent_levels <- full_join(final_results(), grambank_coordinates, by = "ID") %>%
         filter(!is.na(Continent)) %>%
         group_by(Continent) %>%
@@ -335,26 +354,19 @@ server <- function(input, output, session) {
         group_by(Continent) %>%
         mutate(Mean_Similarity = mean(`Similarity (%)`, na.rm = TRUE), Continent = factor(Continent, levels = continent_levels)) %>%
         ggplot(aes(`Similarity (%)`)) +
-        geom_histogram(aes(y = after_stat(density), fill = after_stat(x)),
-                       binwidth = 1, colour = "#bfbfbf") +
+        geom_histogram(aes(y = after_stat(density), fill = after_stat(x)), binwidth = 1, colour = dark_grey) +
         scale_fill_gradientn(colours = rev(similarity_colours_100)) +
-        geom_vline(aes(xintercept = Mean_Similarity), colour = "#00aa00", linetype = "dashed", linewidth = 1.25) +
-        theme(
-          legend.position = "none",
-          panel.background = element_rect(fill = "#e3e3e3", colour = NA),
-          plot.background = element_rect(fill = "#e3e3e3", colour = NA),
-          panel.grid.major = element_line(colour = "#bfbfbf"),
-          panel.grid.minor = element_line(colour = "#dfdfdf")
-        ) +
+        geom_vline(aes(xintercept = Mean_Similarity), colour = mid_green, linetype = "dashed", linewidth = 1.25) +
         scale_x_continuous(limits = c(0, 100), breaks = seq(0, 100, 10)) +
         labs(x = "Similarity (%)", y = "Density") +
         facet_wrap(~Continent, scales = "free_y")
+      
     } else if (input$facet_toggle == "subregion") {
+      
       subregion_levels <- full_join(final_results(), grambank_coordinates, by = "ID") %>%
         filter(!is.na(Subregion)) %>%
         group_by(Subregion) %>%
-        summarise(Mean_Similarity = mean(`Similarity (%)`, na.rm = TRUE),
-                  n_languages = n_distinct(ID)) %>%
+        summarise(Mean_Similarity = mean(`Similarity (%)`, na.rm = TRUE), n_languages = n_distinct(ID)) %>%
         arrange(desc(Mean_Similarity)) %>%
         filter(n_languages >= input$subregion_min) %>%
         slice_head(n = 6) %>%
@@ -365,26 +377,19 @@ server <- function(input, output, session) {
         group_by(Subregion) %>%
         mutate(Mean_Similarity = mean(`Similarity (%)`, na.rm = TRUE), Subregion = factor(Subregion, levels = subregion_levels)) %>%
         ggplot(aes(`Similarity (%)`)) +
-        geom_histogram(aes(y = after_stat(density), fill = after_stat(x)),
-                       binwidth = 1, colour = "#bfbfbf") +
+        geom_histogram(aes(y = after_stat(density), fill = after_stat(x)), binwidth = 1, colour = dark_grey) +
         scale_fill_gradientn(colours = rev(similarity_colours_100)) +
-        geom_vline(aes(xintercept = Mean_Similarity), colour = "#00aa00", linetype = "dashed", linewidth = 1.25) +
-        theme(
-          legend.position = "none",
-          panel.background = element_rect(fill = "#e3e3e3", colour = NA),
-          plot.background = element_rect(fill = "#e3e3e3", colour = NA),
-          panel.grid.major = element_line(colour = "#bfbfbf"),
-          panel.grid.minor = element_line(colour = "#dfdfdf")
-        ) +
+        geom_vline(aes(xintercept = Mean_Similarity), colour = mid_green, linetype = "dashed", linewidth = 1.25) +
         scale_x_continuous(limits = c(0, 100), breaks = seq(0, 100, 10)) +
         labs(x = "Similarity (%)", y = "Density") +
         facet_wrap(~Subregion, scales = "free_y")
+      
     } else if (input$facet_toggle == "families") {
+      
       top_families <- final_results() %>%
         filter(Family != "") %>%
         group_by(Family) %>%
-        summarise(Mean_Similarity = mean(`Similarity (%)`, na.rm = TRUE),
-                  n_languages = n_distinct(ID)) %>%
+        summarise(Mean_Similarity = mean(`Similarity (%)`, na.rm = TRUE), n_languages = n_distinct(ID)) %>%
         filter(n_languages >= input$family_min) %>%
         arrange(desc(Mean_Similarity)) %>%
         slice_head(n = 6) %>%
@@ -393,51 +398,39 @@ server <- function(input, output, session) {
       final_results() %>%
         filter(Family %in% top_families) %>%
         group_by(Family) %>%
-        mutate(Mean_Similarity = mean(`Similarity (%)`, na.rm = TRUE),
-               Family = factor(Family, levels = top_families)) %>%
+        mutate(Mean_Similarity = mean(`Similarity (%)`, na.rm = TRUE), Family = factor(Family, levels = top_families)) %>%
         ggplot(aes(`Similarity (%)`)) +
-        geom_histogram(aes(y = after_stat(density), fill = after_stat(x)),
-                       binwidth = 1, colour = "#bfbfbf") +
+        geom_histogram(aes(y = after_stat(density), fill = after_stat(x)), binwidth = 1, colour = dark_grey) +
         scale_fill_gradientn(colours = rev(similarity_colours_100)) +
-        geom_vline(aes(xintercept = Mean_Similarity),
-                   colour = "#00aa00", linetype = "dashed", linewidth = 1.25) +
-        theme(
-          legend.position = "none",
-          panel.background = element_rect(fill = "#e3e3e3", colour = NA),
-          plot.background = element_rect(fill = "#e3e3e3", colour = NA),
-          panel.grid.major = element_line(colour = "#bfbfbf"),
-          panel.grid.minor = element_line(colour = "#dfdfdf")
-        ) +
+        geom_vline(aes(xintercept = Mean_Similarity), colour = mid_green, linetype = "dashed", linewidth = 1.25) +
         scale_x_continuous(limits = c(0, 100), breaks = seq(0, 100, 10)) +
         labs(x = "Similarity (%)", y = "Density") +
         facet_wrap(~Family, scales = "free_y")
+      
     } else {
+      
       final_results() %>%
         ggplot(aes(`Similarity (%)`)) +
-        geom_histogram(aes(y = after_stat(density), fill = after_stat(x)),
-                       binwidth = 1, colour = "#bfbfbf") +
+        geom_histogram(aes(y = after_stat(density), fill = after_stat(x)), binwidth = 1, colour = dark_grey) +
         scale_fill_gradientn(colours = rev(similarity_colours_100)) +
-        geom_vline(aes(xintercept = mean(`Similarity (%)`, na.rm = TRUE)),
-                   colour = "#00aa00", linetype = "dashed", linewidth = 1.25) +
-        theme(
-          legend.position = "none",
-          panel.background = element_rect(fill = "#e3e3e3", colour = NA),
-          plot.background = element_rect(fill = "#e3e3e3", colour = NA),
-          panel.grid.major = element_line(colour = "#bfbfbf"),
-          panel.grid.minor = element_line(colour = "#dfdfdf")
-        ) +
+        geom_vline(aes(xintercept = mean(`Similarity (%)`, na.rm = TRUE)), colour = mid_green, linetype = "dashed", linewidth = 1.25) +
         scale_x_continuous(limits = c(0, 100), breaks = seq(0, 100, 10)) +
         labs(x = "Similarity (%)", y = "Density")
+      
     }
   })
   
   output$comparison_plot <- renderUI({
     if (is.null(input$file) || input$run == 0) {
+      
       markdown("Upload a Grambank feature file to see a plot here!")
+      
     } else {
+      
       tagList(
         plotOutput("comparison_hist", height = "800px")
       )
+      
     }
   })
   
@@ -466,7 +459,7 @@ server <- function(input, output, session) {
         `Similarity (%)` >= 25 & `Similarity (%)` < 37.5 ~ similarity_colours_8[6],
         `Similarity (%)` >= 12.5 & `Similarity (%)` < 25 ~ similarity_colours_8[7],
         `Similarity (%)` >= 0 & `Similarity (%)` < 12.5 ~ similarity_colours_8[8],
-        TRUE ~ "#00ff00"
+        TRUE ~ mid_green
       ))
     
     leaflet(mapping) %>%
