@@ -1,0 +1,196 @@
+Parameter_ID	Parameter_Category	Parameter_Subcategory
+GB020	Noun	Article
+GB021	Noun	Article
+GB022	Noun	Article
+GB023	Noun	Article
+GB024	Noun	Numeral
+GB025	Noun	Demonstrative
+GB026	Noun	Property Word
+GB027	Noun	Case/Flag
+GB028	Noun	Pronoun
+GB030	Noun	Pronoun
+GB031	Noun	Pronoun
+GB035	Noun	Demonstrative
+GB036	Noun	Demonstrative
+GB037	Noun	Demonstrative
+GB038	Noun	Demonstrative
+GB039	Noun	Number
+GB041	Noun	Number
+GB042	Noun	Number
+GB043	Noun	Number
+GB044	Noun	Number
+GB046	Noun	Number
+GB047	Noun	Formation
+GB048	Noun	Formation
+GB049	Noun	Formation
+GB051	Noun	Class
+GB052	Noun	Class
+GB053	Noun	Class
+GB054	Noun	Class
+GB057	Noun	Numeral
+GB058	Noun	Possession
+GB059	Noun	Possession
+GB065	Noun	Possession
+GB068	Clause	Core Adjective
+GB069	Clause	Core Adjective
+GB070	Noun	Case/Flag
+GB071	Noun	Case/Flag
+GB072	Noun	Case/Flag
+GB073	Noun	Case/Flag
+GB074	Clause	Order
+GB075	Clause	Order
+GB079	Verb	TAM
+GB080	Verb	TAM
+GB081	Verb	TAM
+GB082	Verb	TAM
+GB083	Verb	TAM
+GB084	Verb	TAM
+GB086	Verb	TAM
+GB089	Verb	Index
+GB090	Verb	Index
+GB091	Verb	Index
+GB092	Verb	Index
+GB093	Verb	Index
+GB094	Verb	Index
+GB095	Noun	Case/Flag
+GB096	Noun	Case/Flag
+GB098	Noun	Case/Flag
+GB099	Verb	Index
+GB103	Verb	Index
+GB104	Verb	Index
+GB105	Clause	Construction
+GB107	Verb	Negation
+GB108	Verb	Formation
+GB109	Verb	Index
+GB110	Verb	TAM
+GB111	Verb	Verb Type
+GB113	Verb	Formation
+GB114	Verb	Index
+GB115	Verb	Index
+GB116	Verb	Index
+GB117	Verb	Verb Type
+GB118	Verb	Construction
+GB119	Verb	TAM
+GB120	Verb	TAM
+GB121	Verb	TAM
+GB122	Verb	Formation
+GB123	Verb	Construction
+GB124	Verb	Formation
+GB126	Verb	Verb Type
+GB127	Verb	Verb Type
+GB129	Verb	Verb Type
+GB130	Clause	Order
+GB131	Clause	Order
+GB132	Clause	Order
+GB133	Clause	Order
+GB134	Clause	Order
+GB135	Clause	Order
+GB136	Clause	Order
+GB137	Clause	Negation
+GB138	Clause	Negation
+GB139	Clause	Negation
+GB140	Clause	Negation
+GB146	Verb	Construction
+GB147	Verb	(Anti)Passive
+GB148	Verb	(Anti)Passive
+GB149	Verb	(Anti)Passive
+GB150	Clause	Construction
+GB151	Clause	Construction
+GB152	Clause	Construction
+GB155	Clause	Construction
+GB156	Clause	Construction
+GB158	Verb	Formation
+GB159	Noun	Formation
+GB160	Clause	Formation
+GB165	Noun	Number
+GB166	Noun	Number
+GB167	Noun	Pronoun
+GB170	Noun	Property Word
+GB171	Noun	Demonstrative
+GB172	Noun	Article
+GB177	Verb	Index
+GB184	Noun	Property Word
+GB185	Noun	Demonstrative
+GB186	Noun	Article
+GB187	Noun	Formation
+GB188	Noun	Formation
+GB192	Noun	Class
+GB193	Noun	Property Word
+GB196	Noun	Pronoun
+GB197	Noun	Pronoun
+GB198	Noun	Numeral
+GB203	Noun	Article
+GB204	Noun	Article
+GB250	Clause	Possession
+GB252	Clause	Possession
+GB253	Clause	Possession
+GB254	Clause	Possession
+GB256	Clause	Possession
+GB257	Clause	Interrogative
+GB260	Clause	Interrogative
+GB262	Clause	Interrogative
+GB263	Clause	Interrogative
+GB264	Clause	Interrogative
+GB265	Clause	Construction
+GB266	Clause	Construction
+GB270	Clause	Construction
+GB273	Clause	Construction
+GB275	Clause	Construction
+GB276	Clause	Construction
+GB285	Clause	Interrogative
+GB286	Clause	Interrogative
+GB291	Clause	Interrogative
+GB296	Clause	Formation
+GB297	Clause	Interrogative
+GB298	Clause	Negation
+GB299	Clause	Negation
+GB300	Verb	Verb Type
+GB301	Noun	Formation
+GB302	Clause	(Anti)Passive
+GB303	Clause	(Anti)Passive
+GB304	Clause	(Anti)Passive
+GB305	Noun	Pronoun
+GB306	Noun	Pronoun
+GB309	Verb	TAM
+GB312	Verb	TAM
+GB313	Noun	Pronoun
+GB314	Noun	Class
+GB315	Noun	Class
+GB316	Noun	Number
+GB317	Noun	Number
+GB318	Noun	Number
+GB319	Noun	Number
+GB320	Noun	Number
+GB321	Noun	Class
+GB322	Verb	Formation
+GB323	Verb	Formation
+GB324	Clause	Interrogative
+GB325	Clause	Interrogative
+GB326	Clause	Interrogative
+GB327	Clause	Relative Clause
+GB328	Clause	Relative Clause
+GB329	Clause	Relative Clause
+GB330	Clause	Relative Clause
+GB331	Clause	Relative Clause
+GB333	Noun	Numeral
+GB334	Noun	Numeral
+GB335	Noun	Numeral
+GB336	Noun	Numeral
+GB400	Verb	TAM
+GB401	Verb	Verb Type
+GB402	Verb	Verb Type
+GB403	Verb	Verb Type
+GB408	Noun	Case/Flag
+GB409	Noun	Case/Flag
+GB410	Noun	Case/Flag
+GB415	Noun	Pronoun
+GB421	Clause	Construction
+GB422	Clause	Construction
+GB430	Noun	Possession
+GB431	Noun	Possession
+GB432	Noun	Possession
+GB433	Noun	Possession
+GB519	Verb	TAM
+GB520	Verb	TAM
+GB521	Verb	TAM
+GB522	Clause	Construction
