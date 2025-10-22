@@ -5,9 +5,9 @@ account: keras-saryan
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 15800431
-bundleId: 11064580
+bundleId: 11069087
 url: https://keras-saryan.shinyapps.io/grambank-comparator/
 version: 1
 asMultiple: FALSE
 asStatic: FALSE
-ignoredFiles: sandbox/preprocess_grambank.R|sandbox/preprocess_grambank_wide.R|sandbox/sandbox.Rmd|sandbox/sandbox2.Rmd|sandbox/sandbox3.Rmd|examples
+ignoredFiles: grambank_parameter_categories.tsv|sandbox/sandbox1.Rmd|sandbox/sandbox2.Rmd|sandbox/sandbox3.Rmd|sandbox/sandbox3og.Rmd|examples

@@ -20,7 +20,10 @@ grambank_coordinates <- open_dataset("grambank_coordinates") %>%
     ))
 
 grambank_wide <- open_dataset("grambank_wide") %>%
-  dplyr::collect()
+  dplyr::collect() %>%
+  filter(Language_Level == "language") %>%
+  select(-Language_Level) %>%
+  relocate(Language_ID, Language_Name, Language_Macroarea, Language_Family_Name, Parameters_Coded)
 
 fontCustom <- "Noto Sans"
 
@@ -42,7 +45,7 @@ theme_set(
     )
 )
 
-similarity_colours <- c("#ffffff", "#ff0000", "#0000ff", "#000000")
+similarity_colours <- c("#ffffff", "#ff0000", "#0000ff", "#000088", "#000000")
 similarity_colours_8 <- colorRampPalette(similarity_colours)(8)
 similarity_colours_10 <- colorRampPalette(similarity_colours)(10)
 similarity_colours_100 <- colorRampPalette(similarity_colours)(100)
@@ -253,30 +256,29 @@ server <- function(input, output, session) {
                  Parameter_Value_Long == "Not sure" ~ NA_character_,
                  TRUE ~ Parameter_Value_Long)) %>%
         unique() %>%
-        mutate(Language_ID = "input_lang", Language_Name = "input_lang", Language_Macroarea = "input_lang", Language_Family_Name = "input_lang", Language_Level = "input_lang") %>%
-        relocate(Language_ID, Language_Name, Language_Macroarea, Language_Family_Name, Language_Level)
+        mutate(Language_ID = "input_lang", Language_Name = "input_lang", Language_Macroarea = "input_lang", Language_Family_Name = "input_lang") %>%
+        relocate(Language_ID, Language_Name, Language_Macroarea, Language_Family_Name)
       
       input_lang_wide <- input_lang %>%
-        select(Language_ID, Language_Name, Language_Macroarea, Language_Family_Name, Language_Level, Parameter_ID, Parameter_Value_Long) %>%
+        select(Language_ID, Language_Name, Language_Macroarea, Language_Family_Name, Parameter_ID, Parameter_Value_Long) %>%
         pivot_wider(names_from = Parameter_ID, values_from = Parameter_Value_Long) %>%
         rowwise() %>%
         mutate(Parameters_Coded = sum(!is.na(c_across(GB020:GB522)))) %>%
         ungroup() %>%
-        relocate(Language_ID, Language_Name, Language_Macroarea, Language_Family_Name, Language_Level, Parameters_Coded)
+        relocate(Language_ID, Language_Name, Language_Macroarea, Language_Family_Name, Parameters_Coded)
       
-      grambank_wide_plus <- bind_rows(grambank_wide, input_lang_wide)
+      sum(!is.na(input_lang_wide %>% select(GB020:GB522)))
       
-      sum(!is.na(input_lang_wide))
+      non_na_positions <- which(!is.na(input_lang_wide %>% select(GB020:GB522)))
       
-      non_na_positions <- which(!is.na(input_lang_wide))
-      
-      similarity <- grambank_wide_plus %>%
-        filter(Language_Level == "language" & Language_ID != "input_lang") %>%
+      similarity <- grambank_wide %>%
         rowwise() %>%
-        mutate(Row_Values = list(c_across(-c(Language_ID, Language_Name, Language_Macroarea, Language_Family_Name, Language_Level, Parameters_Coded))),
-               Match_Count = sum(unlist(Row_Values)[non_na_positions] == input_lang_wide[non_na_positions], na.rm = TRUE),
-               Total_Compared = sum(!is.na(unlist(Row_Values)[non_na_positions]) & !is.na(input_lang_wide[non_na_positions])),
-               Percentage_Similarity = 100 * Match_Count / Total_Compared) %>%
+        mutate(
+          Row_Values = list(c_across(GB020:GB522)),
+          Match_Count = sum(unlist(Row_Values) == input_lang_wide %>% select(GB020:GB522), na.rm = TRUE),
+          Total_Compared = sum(!is.na(unlist(Row_Values)) & !is.na(input_lang_wide %>% select(GB020:GB522))),
+          Percentage_Similarity = 100 * Match_Count / Total_Compared
+        ) %>%
         ungroup() %>%
         select(Language_ID, Language_Name, Language_Family_Name, Language_Macroarea, Parameters_Coded, Total_Compared, Match_Count, Percentage_Similarity) %>%
         mutate(Percentage_Similarity = as.numeric(format(round(Percentage_Similarity, 2), nsmall = 2))) %>%
