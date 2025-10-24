@@ -4,6 +4,8 @@ library("magrittr")
 library("tidyverse")
 library("arrow")
 library("DT")
+library("htmlwidgets")
+library("webshot2")
 library("leaflet")
 
 grambank_coordinates <- open_dataset("grambank_coordinates") %>%
@@ -106,9 +108,7 @@ ui <- page_fillable(
       
       fileInput("file", "", accept = c(".tsv", ".csv", "text/tab-separated-values")),
       
-      actionButton("run", "Compare", class = "btn-primary"),
-      
-      downloadButton("download_results", "Download Comparison Table", class = "btn-primary"),
+      actionButton("run", "Compare"),
       
       numericInput(inputId = "compared_min",
                    label = "\"Total Compared\" Minimum:",
@@ -125,7 +125,7 @@ ui <- page_fillable(
         selected = grambank_categories
       ),
       
-      actionButton("reset_categories", "Reset Categories", class = "btn-secondary"),
+      actionButton("reset_categories", "Reset Categories"),
       
       selectInput(
         inputId = "subcategories_to_compare",
@@ -135,7 +135,7 @@ ui <- page_fillable(
         selected = grambank_subcategories
       ),
       
-      actionButton("reset_subcategories", "Reset Subcategories", class = "btn-secondary"),
+      actionButton("reset_subcategories", "Reset Subcategories"),
       
       selectInput(
         inputId = "parameter_to_compare",
@@ -152,7 +152,12 @@ ui <- page_fillable(
       
       card_body(
         
-        uiOutput("comparison_table")
+        uiOutput("comparison_table"),
+        
+        conditionalPanel(
+          condition = "output.output_visible == true",
+          downloadButton("download_table_tsv", "Download As TSV")
+        )
         
       )
       
@@ -167,7 +172,7 @@ ui <- page_fillable(
         uiOutput("comparison_plot"),
         
         conditionalPanel(
-          condition = "output.plot_visible == true",
+          condition = "output.output_visible == true",
           selectInput(
             inputId = "facet_toggle",
             label = "Facet By:",
@@ -232,7 +237,7 @@ ui <- page_fillable(
         
         markdown("**Grambank Comparator** is a [𝒮𝒽𝒾𝓃𝓎](https://www.shinyapps.io/) app for comparing a novel language with those found in the [Grambank](https://grambank.clld.org/) database and producing a rough similarity measure.
           
-          The input field in the sidebar expects a tab-separated file (e.g. `.tsv`, `.csv`, `.txt`) based on [Jessie Peterson](https://www.quothalinguist.com/)'s \"[Grambank Features List for Language Documentation](https://docs.google.com/spreadsheets/d/18Wdhtx7w5SHbe3GmkhFgTE7fjBiEX7SaL4O2-dFibB0/edit?gid=0#gid=0)\" Google Sheet ([see also her explanatory *Fiat Lingua* article](https://fiatlingua.org/2023/06/)). The easiest way to get this is to export your version of the spreadsheet as a TSV. It doesn't matter if the column names have been changed but the content of the original columns should remain in those same columns (and on the same, single sheet). It is also important that the \"Y/N\" column use the same set of values as the original spreadsheet; the app will treat any other values (or any absent values) as equivalent to `NA`.
+          The upload field in the sidebar expects a tab-separated file (e.g. `.tsv`, `.csv`, `.txt`) based on [Jessie Peterson](https://www.quothalinguist.com/)'s \"[Grambank Features List for Language Documentation](https://docs.google.com/spreadsheets/d/18Wdhtx7w5SHbe3GmkhFgTE7fjBiEX7SaL4O2-dFibB0/edit?gid=0#gid=0)\" Google Sheet ([see also her explanatory *Fiat Lingua* article](https://fiatlingua.org/2023/06/)). The easiest way to get this is to export your version of the spreadsheet as a TSV. It doesn't matter if the column names have been changed but the content of the original columns should remain in those same columns (and on the same, single sheet). It is also important that the \"Y/N\" column use the same set of values as the original spreadsheet; the app will treat any other values (or any absent values) as equivalent to `NA`.
           
           The app simply compares the (non-NA-equivalent) feature values in the user-supplied file with the corresponding values for each language in Grambank's sample to see what proportion of these match on a per-language basis; all features are thus weighted equally when considering \"similarity\". The data used include only individual *languages* in Grambank and not those entries labelled as *dialects* or *families*.
           
@@ -253,7 +258,7 @@ ui <- page_fillable(
           7. **Match Count:** The number of compared features that are the same in that row's language and the novel language.
           8. **Similarity (%):** The ratio of Total Compared to Match Count expressed as a percentage.
           
-          The table is equipped with a general search bar but each column can also be individually searched or the numeric columns' ranges changed to facilitate filtering. A TSV version of this table can be downloaded using the button in the sidebar.
+          The table is equipped with a general search bar but each column can also be individually searched or the numeric columns' ranges changed to facilitate filtering. A TSV version of the table can be downloaded using the button below it.
           
           The \"Plot\" tab shows the same data as in \"Table\" but plotted as a histogram, with the options of facetting by macroarea, continent, UN subregion ([sourced here](https://github.com/lukert33/united-nations-geoscheme-subregions-json)) and language family—the final two can be further tweaked by changing the required minimum number of languages in a subregion/family for plotting. Plots can be saved by right clicking and choosing the appropriate option from the context menu.
           
@@ -351,31 +356,46 @@ server <- function(input, output, session) {
   })
   
   results <- reactive({
-    
     req(input$file)
     
     withProgress(message = "Comparing input with Grambank...", value = NULL, {
       
-      non_na_positions <- which(!is.na(input_lang() %>% select(GB020:GB522)))
+      input_lang_values <- as.character(unlist(select(input_lang(), GB020:GB522)))
       
-      non_na_values <- input_lang() %>% select(GB020:GB522)
+      grambank_matrix <- as.matrix(select(grambank_filtered(), GB020:GB522))
+      
+      input_lang_matrix <- matrix(
+        input_lang_values,
+        nrow = nrow(grambank_matrix),
+        ncol = length(input_lang_values),
+        byrow = TRUE
+      )
+      
+      matches <- grambank_matrix == input_lang_matrix
+      
+      total_compared <- rowSums(!is.na(grambank_matrix) & !is.na(input_lang_matrix))
+      match_count <- rowSums(matches, na.rm = TRUE)
+      parameters_coded <- rowSums(!is.na(grambank_matrix))
+      percentage_similarity <- 100 * match_count / total_compared
       
       similarity <- grambank_filtered() %>%
-        rowwise() %>%
         mutate(
-          Row_Values = list(c_across(GB020:GB522)),
-          Parameters_Coded = sum(!is.na(unlist(Row_Values))),
-          Match_Count = sum(unlist(Row_Values) == non_na_values, na.rm = TRUE),
-          Total_Compared = sum(!is.na(unlist(Row_Values)) & !is.na(non_na_values)),
-          Percentage_Similarity = 100 * Match_Count / Total_Compared
+          Parameters_Coded = parameters_coded,
+          Match_Count = match_count,
+          Total_Compared = total_compared,
+          `Similarity (%)` = round(percentage_similarity, 2)
         ) %>%
-        ungroup() %>%
-        select(Language_ID, Language_Name, Language_Family_Name, Language_Macroarea, Parameters_Coded, Total_Compared, Match_Count, Percentage_Similarity) %>%
-        mutate(Percentage_Similarity = round(Percentage_Similarity, 2)) %>%
-        arrange(desc(Percentage_Similarity)) %>%
-        rename(ID = Language_ID, Language = Language_Name, Family = Language_Family_Name, Macroarea = Language_Macroarea, `Similarity (%)` = Percentage_Similarity)
+        select(Language_ID, Language_Name, Language_Family_Name, Language_Macroarea,
+               Parameters_Coded, Total_Compared, Match_Count, `Similarity (%)`) %>%
+        arrange(desc(`Similarity (%)`)) %>%
+        rename(
+          ID = Language_ID,
+          Language = Language_Name,
+          Family = Language_Family_Name,
+          Macroarea = Language_Macroarea
+        )
       
-      colnames(similarity) = gsub("_", " ", colnames(similarity))
+      colnames(similarity) <- gsub("_", " ", colnames(similarity))
       
       similarity
     })
@@ -392,10 +412,20 @@ server <- function(input, output, session) {
     full_join(final_results(), grambank_coordinates, by = "ID")
   })
   
-  output$results <- renderDataTable(server = TRUE, {
-    final_results()
-  }, options = list(pageLength = 20), filter = "top", rownames = FALSE
-  )
+  output$output_visible <- reactive({
+    req(final_results())
+    !is.null(input$file) && input$run > 0
+  })
+  
+  outputOptions(output, "output_visible", suspendWhenHidden = FALSE)
+  
+  output$results <- renderDataTable({
+    datatable(final_results(),
+              options = list(pageLength = 20),
+              rownames = FALSE,
+              filter = "top") %>%
+      formatStyle("ID", target = "cell", fontFamily = "monospace")
+  })
   
   output$comparison_table <- renderUI({
     if (is.null(input$file) || input$run == 0) {
@@ -405,9 +435,9 @@ server <- function(input, output, session) {
     }
   })
   
-  output$download_results <- downloadHandler(
+  output$download_table_tsv <- downloadHandler(
     filename = function() {
-      paste0("input_lang_grambank_comparator.tsv")
+      paste0("input_lang_grambank_comparator_table.tsv")
     },
     content = function(file) {
       req(final_results())
@@ -530,12 +560,6 @@ server <- function(input, output, session) {
       
     }
   })
-  
-  output$plot_visible <- reactive({
-    !is.null(input$file) && input$run > 0
-  })
-  
-  outputOptions(output, "plot_visible", suspendWhenHidden = FALSE)
   
   output$no_map <- renderUI({
     if (is.null(input$file) || input$run == 0) {

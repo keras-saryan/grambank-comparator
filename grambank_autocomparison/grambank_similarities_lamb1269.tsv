@@ -1,0 +1,2393 @@
+Language_ID	Language_Name	Language_Family_Name	Language_Macroarea	Parameters_Coded	Total_Compared	Match_Count	Percentage_Similarity
+finn1310	Finnish Sign Language	Sign Language	Eurasia	16	16	14	87.5
+goro1270	Gorowa	Afro-Asiatic	Africa	13	8	7	87.5
+pott1240	Pottangi Ollar Gadaba	Dravidian	Eurasia	85	80	68	85
+latv1249	Latvian	Indo-European	Eurasia	184	153	129	84.31
+lith1251	Lithuanian	Indo-European	Eurasia	191	153	128	83.66
+daha1245	Dahalo	Afro-Asiatic	Africa	46	42	35	83.33
+nepa1254	Nepali	Indo-European	Eurasia	162	144	118	81.94
+awad1243	Awadhi	Indo-European	Eurasia	173	138	113	81.88
+sout1549	Southeastern Kolami	Dravidian	Eurasia	76	71	58	81.69
+dime1235	Dime	South Omotic	Africa	52	49	40	81.63
+gofa1235	Gofa	Ta-Ne-Omotic	Africa	169	140	114	81.43
+konk1267	Konkan Marathi	Indo-European	Eurasia	180	144	117	81.25
+daur1238	Dagur	Mongolic-Khitan	Eurasia	149	119	96	80.67
+duru1236	Duruwa	Dravidian	Eurasia	121	103	83	80.58
+clas1249	Classical-Middle Armenian	Indo-European	Eurasia	183	154	124	80.52
+hind1269	Hindi	Indo-European	Eurasia	187	153	123	80.39
+telu1262	Telugu	Dravidian	Eurasia	127	107	86	80.37
+shol1240	Sholaga	Dravidian	Eurasia	172	141	113	80.14
+japa1238	Japanese Sign Language	Sign Language	Eurasia	10	10	8	80
+korr1238	Korra Koraga	Dravidian	Eurasia	133	110	88	80
+muth1236	Muthuvan	Dravidian	Eurasia	143	120	96	80
+nati1243	Natioro	Atlantic-Congo	Africa	51	45	36	80
+qima1242	Qimant	Afro-Asiatic	Africa	166	140	112	80
+bela1254	Belarusian	Indo-European	Eurasia	190	154	123	79.87
+bhoj1244	Bhojpuri	Indo-European	Eurasia	171	144	115	79.86
+even1260	Even	Tungusic	Eurasia	141	117	93	79.49
+dand1238	Dandami Maria	Dravidian	Eurasia	161	140	111	79.29
+kota1263	Kota (India)	Dravidian	Eurasia	158	130	103	79.23
+bora1271	Borana-Arsi-Guji Oromo	Afro-Asiatic	Africa	78	72	57	79.17
+mido1240	Midob	Nubian	Africa	55	48	38	79.17
+orma1241	Orma	Afro-Asiatic	Africa	128	110	87	79.09
+tulu1258	Tulu	Dravidian	Eurasia	163	133	105	78.95
+bund1253	Bundeli	Indo-European	Eurasia	173	146	115	78.77
+aluk1238	Alu Kurumba	Dravidian	Eurasia	171	140	110	78.57
+hrus1242	Hruso		Eurasia	89	84	66	78.57
+west2386	Western Panjabi	Indo-European	Eurasia	150	126	99	78.57
+sout1528	Serbian-Croatian-Bosnian	Indo-European	Eurasia	187	153	120	78.43
+hier1240	Hieroglyphic Luwian	Indo-European	Eurasia	142	125	98	78.4
+pras1239	Prasun	Indo-European	Eurasia	93	87	68	78.16
+tuvi1240	Tuvinian	Turkic	Eurasia	154	132	103	78.03
+orok1265	Orok	Tungusic	Eurasia	151	127	99	77.95
+cors1241	Corsican	Indo-European	Eurasia	179	149	116	77.85
+poya1241	Poyanáwa	Pano-Tacanan	South America	50	45	35	77.78
+rong1264	Rongpo	Sino-Tibetan	Eurasia	185	148	115	77.7
+yona1241	Yonaguni	Japonic	Eurasia	164	134	104	77.61
+bili1260	Bilin	Afro-Asiatic	Africa	157	138	107	77.54
+koor1239	Koorete	Ta-Ne-Omotic	Africa	175	138	107	77.54
+arom1237	Aromanian	Indo-European	Eurasia	165	142	110	77.46
+esto1258	Estonian	Uralic	Eurasia	195	155	120	77.42
+siaw1243	Siawi	Amto-Musan	Papunesia	123	115	89	77.39
+iron1242	Iron Ossetian	Indo-European	Eurasia	172	150	116	77.33
+kash1277	Kashmiri	Indo-European	Eurasia	184	150	116	77.33
+garo1247	Garo	Sino-Tibetan	Eurasia	164	141	109	77.3
+nucl1452	Mombum	Mombum-Koneraw	Papunesia	73	66	51	77.27
+melo1242	Melo	Ta-Ne-Omotic	Africa	163	136	105	77.21
+zakh1243	Zakhring	Sino-Tibetan	Eurasia	111	105	81	77.14
+ludi1246	Ludian	Uralic	Eurasia	192	153	118	77.12
+mala1463	Malavedan	Dravidian	Eurasia	163	135	104	77.04
+sici1248	Sicilian	Indo-European	Eurasia	179	148	114	77.03
+hinu1240	Hinuq	Nakh-Daghestanian	Eurasia	99	87	67	77.01
+ulch1241	Ulch	Tungusic	Eurasia	164	143	110	76.92
+bash1264	Bashkir	Turkic	Eurasia	161	134	103	76.87
+okin1246	Oki-No-Erabu	Japonic	Eurasia	161	134	103	76.87
+darg1241	North-Central Dargwa	Nakh-Daghestanian	Eurasia	146	121	93	76.86
+russ1263	Russian	Indo-European	Eurasia	193	155	119	76.77
+czec1258	Czech	Indo-European	Eurasia	191	154	118	76.62
+mari1414	Maria (India)	Dravidian	Eurasia	119	111	85	76.58
+khin1240	Khinalug	Nakh-Daghestanian	Eurasia	153	128	98	76.56
+mudu1239	Muduga	Dravidian	Eurasia	161	128	98	76.56
+bada1257	Badaga	Dravidian	Eurasia	127	115	88	76.52
+burj1242	Burji	Afro-Asiatic	Africa	187	149	114	76.51
+doma1260	Domaaki	Indo-European	Eurasia	144	119	91	76.47
+lati1261	Latin	Indo-European	Eurasia	193	153	117	76.47
+nort2697	North Azerbaijani	Turkic	Eurasia	188	153	117	76.47
+nort2699	Northwestern Kolami	Dravidian	Eurasia	89	85	65	76.47
+camp1261	Campidanese Sardinian	Indo-European	Eurasia	181	148	113	76.35
+ukra1253	Ukrainian	Indo-European	Eurasia	171	139	106	76.26
+saur1249	Sauria Paharia	Dravidian	Eurasia	179	143	109	76.22
+peri1253	Peripheral Mongolian	Mongolic-Khitan	Eurasia	129	109	83	76.15
+panj1256	Eastern Panjabi	Indo-European	Eurasia	195	155	118	76.13
+tami1289	Tamil	Dravidian	Eurasia	195	155	118	76.13
+ndom1245	Ndom	Kolopom	Papunesia	74	67	51	76.12
+wola1242	Wolaytta	Ta-Ne-Omotic	Africa	193	154	117	75.97
+zand1248	Zande	Atlantic-Congo	Africa	118	104	79	75.96
+umes1235	Ume Saami	Uralic	Eurasia	183	145	110	75.86
+xamt1239	Xamtanga	Afro-Asiatic	Africa	189	149	113	75.84
+jenn1240	Jennu Kurumba	Dravidian	Eurasia	150	120	91	75.83
+mara1378	Marathi	Indo-European	Eurasia	190	153	116	75.82
+kada1242	Kadar	Dravidian	Eurasia	156	132	100	75.76
+hurr1240	Hurrian	Hurro-Urartian	Eurasia	125	107	81	75.7
+khak1248	Khakas	Turkic	Eurasia	170	144	109	75.69
+unaa1239	Una	Nuclear Trans New Guinea	Papunesia	85	74	56	75.68
+gizr1240	Gizrra	Eastern Trans-Fly	Papunesia	93	82	62	75.61
+embe1262	Emberá-Chamí	Chocoan	South America	159	131	99	75.57
+sout2954	Southern Amami-Oshima	Japonic	Eurasia	162	131	99	75.57
+finn1318	Finnish	Uralic	Eurasia	195	155	117	75.48
+nana1257	Nanai	Tungusic	Eurasia	195	155	117	75.48
+occi1239	Occitan	Indo-European	Eurasia	187	155	117	75.48
+bats1242	Bats	Nakh-Daghestanian	Eurasia	148	126	95	75.4
+negi1245	Negidal	Tungusic	Eurasia	160	134	101	75.37
+kalm1243	Oirad-Kalmyk-Darkhat	Mongolic-Khitan	Eurasia	165	138	104	75.36
+russ1264	Russia Buriat	Mongolic-Khitan	Eurasia	175	146	110	75.34
+lomb1257	Lombard	Indo-European	Eurasia	190	154	116	75.32
+yora1241	Yora	Pano-Tacanan	South America	129	113	85	75.22
+crim1257	Crimean Tatar	Turkic	Eurasia	179	149	112	75.17
+alab1254	Alaba-K'abeena	Afro-Asiatic	Africa	192	152	114	75
+koro1312	Korowai	Nuclear Trans New Guinea	Papunesia	96	84	63	75
+nucl1305	Kannada	Dravidian	Eurasia	191	152	114	75
+phom1236	Phom Naga	Sino-Tibetan	Eurasia	158	136	102	75
+pina1252	Pinai-Hagahai	Piawi	Papunesia	162	140	105	75
+tene1248	Tengou-Togo Dogon	Dogon	Africa	163	132	99	75
+tosk1239	Northern Tosk Albanian	Indo-European	Eurasia	180	152	114	75
+brah1256	Brahui	Dravidian	Eurasia	151	131	98	74.81
+embe1260	Emberá-Catío	Chocoan	South America	164	131	98	74.81
+tomm1242	Tommo So Dogon	Dogon	Africa	167	135	101	74.81
+voti1245	Votic	Uralic	Eurasia	169	135	101	74.81
+loth1237	Lotha Naga	Sino-Tibetan	Eurasia	160	146	109	74.66
+cent2126	Central Okinawan	Japonic	Eurasia	153	134	100	74.63
+etru1241	Etruscan		Eurasia	130	106	79	74.53
+chen1255	Chenchu	Dravidian	Eurasia	180	145	108	74.48
+sida1246	Sidamo	Afro-Asiatic	Africa	104	94	70	74.47
+suab1238	Suabo	Inanwatan	Papunesia	101	90	67	74.44
+west2392	Western Mari	Uralic	Eurasia	153	129	96	74.42
+wask1241	Waskia	Nuclear Trans New Guinea	Papunesia	86	78	58	74.36
+dima1251	Dimasa	Sino-Tibetan	Eurasia	187	152	113	74.34
+chim1302	Bolivar-North Chimborazo Highland Quichua	Quechuan	South America	176	148	110	74.32
+tata1255	Tatar	Turkic	Eurasia	176	148	110	74.32
+nara1262	Nara		Africa	132	109	81	74.31
+gogo1265	Gogodala	Suki-Gogodala	Papunesia	166	132	98	74.24
+bata1285	Batanga	Atlantic-Congo	Africa	113	97	72	74.23
+bezh1248	Bezhta	Nakh-Daghestanian	Eurasia	158	128	95	74.22
+chuv1255	Chuvash	Turkic	Eurasia	193	155	115	74.19
+ingr1248	Ingrian	Uralic	Eurasia	195	155	115	74.19
+livv1243	Livvi	Uralic	Eurasia	195	155	115	74.19
+slov1268	Slovenian	Indo-European	Eurasia	192	155	115	74.19
+turk1304	Turkmen	Turkic	Eurasia	181	151	112	74.17
+boun1245	Bo-Ung	Nuclear Trans New Guinea	Papunesia	145	116	86	74.14
+zays1235	Zayse-Zergulla	Ta-Ne-Omotic	Africa	171	139	103	74.1
+khva1239	Khwarshi-Inkhoqwari	Nakh-Daghestanian	Eurasia	169	135	100	74.07
+char1269	Chara	Ta-Ne-Omotic	Africa	149	127	94	74.02
+hert1241	Hertevin	Afro-Asiatic	Eurasia	64	50	37	74
+kony1248	Konyak Naga	Sino-Tibetan	Eurasia	175	146	108	73.97
+jams1239	Jamsay Dogon	Dogon	Africa	169	138	102	73.91
+dawr1236	Dawro	Ta-Ne-Omotic	Africa	156	134	99	73.88
+niha1238	Nihali		Eurasia	164	134	99	73.88
+giiw1236	Giiwo	Afro-Asiatic	Africa	70	65	48	73.85
+puqu1242	Puquina		South America	118	103	76	73.79
+kusu1250	Kusunda		Eurasia	173	137	101	73.72
+erzy1239	Erzya	Uralic	Eurasia	190	152	112	73.68
+kinn1249	Kinnauri	Sino-Tibetan	Eurasia	188	152	112	73.68
+dani1285	Danish	Indo-European	Eurasia	182	148	109	73.65
+idum1241	Idu	Sino-Tibetan	Eurasia	151	129	95	73.64
+dara1250	Darai	Indo-European	Eurasia	178	144	106	73.61
+luis1253	Luiseno-Juaneño	Uto-Aztecan	North America	181	144	106	73.61
+cogu1240	Cogui	Chibchan	South America	141	121	89	73.55
+gali1258	Galician	Indo-European	Eurasia	192	155	114	73.55
+stan1289	Catalan	Indo-European	Eurasia	193	155	114	73.55
+thar1283	Tharaka	Atlantic-Congo	Africa	101	83	61	73.49
+plau1238	Plautdietsch	Indo-European	North America	178	147	108	73.47
+shor1247	Shor	Turkic	Eurasia	175	147	108	73.47
+defa1248	Defaka	Ijoid	Africa	75	64	47	73.44
+sout2826	Southern Grebo	Kru	Africa	85	79	58	73.42
+rapo1238	Rapoisi	North Bougainville	Papunesia	101	94	69	73.4
+bodo1269	Bodo-Mech	Sino-Tibetan	Eurasia	167	139	102	73.38
+mala1464	Malayalam	Dravidian	Eurasia	192	154	113	73.38
+nort2690	Northern Uzbek	Turkic	Eurasia	193	154	113	73.38
+port1283	Portuguese	Indo-European	Eurasia	192	154	113	73.38
+cent1972	Central Kurdish	Indo-European	Eurasia	15	15	11	73.33
+khar1288	Kharam Naga	Sino-Tibetan	Eurasia	173	146	107	73.29
+koda1255	Kodava	Dravidian	Eurasia	182	146	107	73.29
+kalu1248	Kaluli	Bosavi	Papunesia	96	86	63	73.26
+rabh1238	Rabha	Sino-Tibetan	Eurasia	177	142	104	73.24
+buru1296	Burushaski		Eurasia	159	130	95	73.08
+opat1246	Teguima	Uto-Aztecan	North America	120	104	76	73.08
+mill1237	Millcayac	Huarpean	South America	122	115	84	73.04
+sout2715	Southern Ghale	Sino-Tibetan	Eurasia	115	100	73	73
+bagv1239	Bagvalal	Nakh-Daghestanian	Eurasia	170	137	100	72.99
+dong1285	Dongxiang	Mongolic-Khitan	Eurasia	164	137	100	72.99
+koit1244	Koitabu	Koiarian	Papunesia	168	137	100	72.99
+turk1303	Turkic Khalaj	Turkic	Eurasia	171	137	100	72.99
+benc1235	Bench	Ta-Ne-Omotic	Africa	82	74	54	72.97
+roma1326	Romansh	Indo-European	Eurasia	178	148	108	72.97
+suen1241	Suena	Nuclear Trans New Guinea	Papunesia	94	85	62	72.94
+ital1282	Italian	Indo-European	Eurasia	193	155	113	72.9
+kuii1252	Kui (India)	Dravidian	Eurasia	113	107	78	72.9
+oriy1255	Odia	Indo-European	Eurasia	193	155	113	72.9
+pite1240	Pite Saami	Uralic	Eurasia	195	155	113	72.9
+kamb1316	Kambaata	Afro-Asiatic	Africa	132	118	86	72.88
+yaey1239	Yaeyama	Japonic	Eurasia	155	129	94	72.87
+argo1244	Argobba	Afro-Asiatic	Africa	184	151	110	72.85
+hozo1236	Hozo	Blue Nile Mao	Africa	87	81	59	72.84
+boro1277	Boro (Ethiopia)	Ta-Ne-Omotic	Africa	176	147	107	72.79
+cent2322	Central Mansi	Uralic	Eurasia	185	147	107	72.79
+newa1246	Kathmandu Valley Newari	Sino-Tibetan	Eurasia	179	147	107	72.79
+dizi1235	Dizin	Dizoid	Africa	57	55	40	72.73
+koya1251	Koya	Dravidian	Eurasia	137	121	88	72.73
+livv1244	Liv	Uralic	Eurasia	194	154	112	72.73
+maia1254	Maia	Nuclear Trans New Guinea	Papunesia	80	77	56	72.73
+papa1268	Papar	Austronesian	Papunesia	47	44	32	72.73
+kumz1235	Kumzari	Indo-European	Eurasia	171	139	101	72.66
+siri1274	Siriano	Tucanoan	South America	122	106	77	72.64
+cald1236	Calderón Highland Quichua	Quechuan	South America	155	135	98	72.59
+olde1238	Old English (ca. 450-1100)	Indo-European	Eurasia	191	153	111	72.55
+nyis1236	Nyishi-Hill Miri	Sino-Tibetan	Eurasia	146	131	95	72.52
+arch1244	Archi	Nakh-Daghestanian	Eurasia	148	120	87	72.5
+rutu1240	Rutul	Nakh-Daghestanian	Eurasia	143	120	87	72.5
+kore1280	Korean	Koreanic	Eurasia	185	149	108	72.48
+rong1266	Rongmei Naga	Sino-Tibetan	Eurasia	161	138	100	72.46
+sanb1242	San Blas Kuna	Chibchan	South America	165	138	100	72.46
+komi1269	Komi-Permyak	Uralic	Eurasia	181	145	105	72.41
+kryt1240	Kryz	Nakh-Daghestanian	Eurasia	165	134	97	72.39
+nzak1247	Nzakara	Atlantic-Congo	Africa	130	105	76	72.38
+east2773	Eastern Newari	Sino-Tibetan	Eurasia	190	152	110	72.37
+mace1250	Macedonian	Indo-European	Eurasia	187	152	110	72.37
+yaku1245	Sakha	Turkic	Eurasia	190	152	110	72.37
+guam1248	Guambiano	Barbacoan	South America	127	112	81	72.32
+aben1249	Abenlen Ayta	Austronesian	Papunesia	90	83	60	72.29
+nort2972	Northern Emberá	Chocoan	South America	167	133	96	72.18
+tonk1249	Tonkawa		North America	156	133	96	72.18
+raut1239	Raute	Sino-Tibetan	Eurasia	133	115	83	72.17
+waga1260	Wagaya	Pama-Nyungan	Australia	134	115	83	72.17
+sout2649	Southern Pashto	Indo-European	Eurasia	176	147	106	72.11
+skol1241	Skolt Saami	Uralic	Eurasia	192	154	111	72.08
+nort2671	North Saami	Uralic	Eurasia	167	136	98	72.06
+soma1255	Somali	Afro-Asiatic	Africa	97	93	67	72.04
+hunz1247	Hunzib	Nakh-Daghestanian	Eurasia	170	143	103	72.03
+yami1256	Yaminahua	Pano-Tacanan	South America	182	143	103	72.03
+bula1255	Bularnu	Pama-Nyungan	Australia	114	100	72	72
+nene1249	Tundra Nenets	Uralic	Eurasia	190	150	108	72
+nucl1235	Eastern Armenian	Indo-European	Eurasia	188	150	108	72
+mait1250	Maithili	Indo-European	Eurasia	180	146	105	71.92
+cofa1242	Cofán		South America	137	121	87	71.9
+amah1246	Amahuaca	Pano-Tacanan	South America	153	128	92	71.88
+chec1245	Chechen	Nakh-Daghestanian	Eurasia	168	135	97	71.85
+siwi1239	Siwi	Afro-Asiatic	Africa	168	135	97	71.85
+ngit1239	Ngiti	Central Sudanic	Africa	180	142	102	71.83
+yank1247	Yankunytjatjara	Pama-Nyungan	Australia	135	110	79	71.82
+chim1309	Chimila	Chibchan	South America	136	117	84	71.79
+yawa1260	Yawanawa	Pano-Tacanan	South America	148	131	94	71.76
+nkor1239	Nkoroo	Ijoid	Africa	54	46	33	71.74
+gamo1243	Gamo	Ta-Ne-Omotic	Africa	183	152	109	71.71
+nama1266	Nama (Papua New Guinea)	Yam	Papunesia	56	53	38	71.7
+udii1243	Udi	Nakh-Daghestanian	Eurasia	147	120	86	71.67
+eude1234	Eudeve	Uto-Aztecan	North America	153	134	96	71.64
+ghod1238	Godoberi	Nakh-Daghestanian	Eurasia	165	134	96	71.64
+pano1255	Panobo	Pano-Tacanan	South America	163	134	96	71.64
+ayac1239	Ayacucho Quechua	Quechuan	South America	166	141	101	71.63
+zeme1240	Zeme Naga	Sino-Tibetan	Eurasia	163	141	101	71.63
+yems1235	Yemsa	Ta-Ne-Omotic	Africa	182	148	106	71.62
+nucl1643	Japanese	Japonic	Eurasia	193	155	111	71.61
+sout2674	South Saami	Uralic	Eurasia	195	155	111	71.61
+siro1249	Siroi	Nuclear Trans New Guinea	Papunesia	98	88	63	71.59
+fasu1242	Fasu		Papunesia	120	109	78	71.56
+cham1309	Chamalal	Nakh-Daghestanian	Eurasia	159	130	93	71.54
+sang1321	Sangtam Naga	Sino-Tibetan	Eurasia	140	123	88	71.54
+hadi1240	Hadiyya	Afro-Asiatic	Africa	189	151	108	71.52
+budu1248	Budukh	Nakh-Daghestanian	Eurasia	158	126	90	71.43
+fore1265	Forest Enets	Uralic	Eurasia	193	154	110	71.43
+siyi1240	Sizang Chin	Sino-Tibetan	Eurasia	134	119	85	71.43
+cusc1236	Cusco Quechua	Quechuan	South America	167	143	102	71.33
+surg1248	Surgut Khanty	Uralic	Eurasia	186	150	107	71.33
+musa1266	Aisi	Nuclear Trans New Guinea	Papunesia	158	136	97	71.32
+omie1241	Ömie	Koiarian	Papunesia	156	129	92	71.32
+peng1244	Pengo	Dravidian	Eurasia	171	136	97	71.32
+raji1240	Raji	Sino-Tibetan	Eurasia	153	122	87	71.31
+nzak1246	Nzakambay	Atlantic-Congo	Africa	135	115	82	71.3
+bugu1246	Bugun	Sino-Tibetan	Eurasia	101	87	62	71.26
+patt1248	Pattani	Sino-Tibetan	Eurasia	172	146	104	71.23
+chan1313	Chang Naga	Sino-Tibetan	Eurasia	170	142	101	71.13
+ingu1240	Ingush	Nakh-Daghestanian	Eurasia	166	135	96	71.11
+gras1249	Grass Koiari	Koiarian	Papunesia	95	83	59	71.08
+moch1259	Mochica		South America	139	114	81	71.05
+ndam1251	Ndam	Afro-Asiatic	Africa	41	38	27	71.05
+veps1250	Veps	Uralic	Eurasia	188	152	108	71.05
+minh1238	Mangghuer	Mongolic-Khitan	Eurasia	181	145	103	71.03
+oroc1248	Oroch	Tungusic	Eurasia	162	138	98	71.01
+nucl1301	Turkish	Turkic	Eurasia	195	155	110	70.97
+wayu1241	Wayu	Sino-Tibetan	Eurasia	183	148	105	70.95
+kons1243	Konso	Afro-Asiatic	Africa	87	79	56	70.89
+choc1275	Chocangacakha	Sino-Tibetan	Eurasia	124	103	73	70.87
+gheg1238	Gheg Albanian	Indo-European	Eurasia	188	151	107	70.86
+kach1284	Kachama-Ganjule-Haro	Ta-Ne-Omotic	Africa	188	151	107	70.86
+dura1244	Dura	Sino-Tibetan	Eurasia	171	144	102	70.83
+nend1239	Nend	Nuclear Trans New Guinea	Papunesia	169	144	102	70.83
+serr1255	Serrano	Uto-Aztecan	North America	183	144	102	70.83
+awac1239	Awa-Cuaiquer	Barbacoan	South America	157	137	97	70.8
+bira1253	Ongota		Africa	163	137	97	70.8
+mara1396	Mararit	Tamaic	Africa	92	89	63	70.79
+anci1242	Ancient Greek	Indo-European	Eurasia	194	154	109	70.78
+kenu1236	Kenuzi-Dongola	Nubian	Africa	193	154	109	70.78
+diga1241	Tawra	Sino-Tibetan	Eurasia	178	147	104	70.75
+dera1245	Dera (Indonesia)	Senagi	Papunesia	93	82	58	70.73
+samo1303	Samo	East Strickland	Papunesia	44	41	29	70.73
+mari1416	Maring Naga	Sino-Tibetan	Eurasia	159	133	94	70.68
+kile1243	Kilen	Tungusic	Eurasia	188	150	106	70.67
+puri1258	Purik-Sham-Nubra	Sino-Tibetan	Eurasia	189	150	106	70.67
+awar1248	Awara	Nuclear Trans New Guinea	Papunesia	136	109	77	70.64
+tama1331	Tama (Chad)	Tamaic	Africa	139	126	89	70.63
+gana1278	Ganai	Pama-Nyungan	Australia	53	51	36	70.59
+moro1289	Marori		Papunesia	105	85	60	70.59
+tong1329	Tongva	Uto-Aztecan	North America	162	136	96	70.59
+halh1238	Halh Mongolian	Mongolic-Khitan	Eurasia	185	149	105	70.47
+icel1247	Icelandic	Indo-European	Eurasia	184	149	105	70.47
+bina1277	Binandere	Nuclear Trans New Guinea	Papunesia	150	132	93	70.45
+mini1256	Minica Huitoto	Huitotoan	South America	160	132	93	70.45
+cent2131	Central Tarahumara	Uto-Aztecan	North America	178	142	100	70.42
+chak1270	Chak	Sino-Tibetan	Eurasia	188	152	107	70.39
+kaba1278	Kabardian	Abkhaz-Adyge	Eurasia	174	145	102	70.34
+male1284	Male (Ethiopia)	Ta-Ne-Omotic	Africa	182	145	102	70.34
+kara1499	Kalamang	West Bomberai	Papunesia	99	91	64	70.33
+lule1254	Lule Saami	Uralic	Eurasia	195	155	109	70.32
+toda1252	Toda	Dravidian	Eurasia	139	128	90	70.31
+dido1241	Tsez	Nakh-Daghestanian	Eurasia	170	138	97	70.29
+maga1260	Magahi	Indo-European	Eurasia	136	121	85	70.25
+komi1268	Komi-Zyrian	Uralic	Eurasia	186	151	106	70.2
+biwa1243	Biwat	Yuat	Papunesia	153	124	87	70.16
+cent2150	Central Tunebo	Chibchan	South America	159	134	94	70.15
+nucl1302	Georgian	Kartvelian	Eurasia	191	154	108	70.13
+udih1248	Udihe	Tungusic	Eurasia	194	154	108	70.13
+tagi1241	Tagin	Sino-Tibetan	Eurasia	96	87	61	70.11
+gure1255	Gureng Gureng	Pama-Nyungan	Australia	133	117	82	70.09
+lakk1252	Lak	Nakh-Daghestanian	Eurasia	158	127	89	70.08
+desa1247	Desano	Tucanoan	South America	180	147	103	70.07
+afar1241	Afar	Afro-Asiatic	Africa	188	150	105	70
+ambu1247	Ambulas	Ndu	Papunesia	91	80	56	70
+atam1239	Atampaya	Pama-Nyungan	Australia	87	80	56	70
+gugu1253	Gugu Badhun	Pama-Nyungan	Australia	151	130	91	70
+tibe1274	Tibea	Atlantic-Congo	Africa	95	80	56	70
+imba1240	Imbabura Highland Quichua	Quechuan	South America	192	153	107	69.93
+yoku1256	Northern Yokuts	Yokutsan	North America	173	143	100	69.93
+even1259	Evenki	Tungusic	Eurasia	158	133	93	69.92
+ship1254	Shipibo-Conibo	Pano-Tacanan	South America	162	133	93	69.92
+sora1254	Sora	Austroasiatic	Eurasia	145	123	86	69.92
+bara1357	Baraamu	Sino-Tibetan	Eurasia	171	146	102	69.86
+guru1261	Gurung	Sino-Tibetan	Eurasia	174	146	102	69.86
+mand1423	Manda-Matumba	Atlantic-Congo	Africa	84	73	51	69.86
+aghw1237	Aghwan	Nakh-Daghestanian	Eurasia	147	116	81	69.83
+sumi1235	Sumi Naga	Sino-Tibetan	Eurasia	185	149	104	69.8
+djeo1235	Djeoromitxí	Nuclear-Macro-Je	South America	107	96	67	69.79
+wamb1259	Wambon	Nuclear Trans New Guinea	Papunesia	94	86	60	69.77
+toll1241	Tol	Jicaquean	North America	141	119	83	69.75
+gaga1249	Gagauz	Turkic	Eurasia	188	152	106	69.74
+iris1253	Irish	Indo-European	Eurasia	189	152	106	69.74
+aime1238	Aimele	Bosavi	Papunesia	177	142	99	69.72
+saya1246	Saya	Afro-Asiatic	Africa	121	109	76	69.72
+chuk1273	Chukchi	Chukotko-Kamchatkan	Eurasia	195	155	108	69.68
+roto1249	Rotokas	North Bougainville	Papunesia	179	145	101	69.66
+siam1242	Siamou		Africa	134	112	78	69.64
+dard1243	Dar Daju Daju	Dajuic	Africa	93	79	55	69.62
+asur1254	Asuri	Austroasiatic	Eurasia	149	125	87	69.6
+suda1237	South Sudanese Creole Arabic	Afro-Asiatic	Africa	151	125	87	69.6
+west2594	Western Dani	Nuclear Trans New Guinea	Papunesia	188	148	103	69.59
+naru1238	Narungga	Pama-Nyungan	Australia	106	92	64	69.57
+hung1274	Hungarian	Uralic	Eurasia	189	151	105	69.54
+sout2996	Southern Aymara	Aymaran	South America	186	151	105	69.54
+jeru1240	Jerung	Sino-Tibetan	Eurasia	145	128	89	69.53
+sile1255	Sirva	Nuclear Trans New Guinea	Papunesia	157	128	89	69.53
+tain1253	Tainae	Angan	Papunesia	90	82	57	69.51
+faro1244	Faroese	Indo-European	Eurasia	194	154	107	69.48
+bona1250	Bonan	Mongolic-Khitan	Eurasia	171	144	100	69.44
+culi1244	Culina	Arawan	South America	179	144	100	69.44
+orok1269	Orokaiva	Nuclear Trans New Guinea	Papunesia	171	144	100	69.44
+aika1237	Aikanã		South America	90	85	59	69.41
+aona1235	Ao Naga	Sino-Tibetan	Eurasia	185	147	102	69.39
+ndun1249	Ndunga	Atlantic-Congo	Africa	127	111	77	69.37
+bent1238	Ben Tey Dogon	Dogon	Africa	170	137	95	69.34
+sril1245	Sri Lanka Malay	Austronesian	Eurasia	185	150	104	69.33
+koro1313	Koromira	South Bougainville	Papunesia	127	114	79	69.3
+anga1290	Angaataha	Angan	Papunesia	131	117	81	69.23
+tule1245	Tule-Kaweah Yokuts	Yokutsan	North America	172	143	99	69.23
+wanm1242	Wanman	Pama-Nyungan	Australia	132	117	81	69.23
+yana1271	Yana		North America	91	78	54	69.23
+mose1249	Mosetén-Chimané		South America	179	146	101	69.18
+mauw1238	Mauwake	Nuclear Trans New Guinea	Papunesia	92	81	56	69.14
+furr1244	Fur	Furan	Africa	182	149	103	69.13
+kamu1260	Kamula	Kamula-Elevala	Papunesia	185	149	103	69.13
+kari1306	Kari	Atlantic-Congo	Africa	76	68	47	69.12
+beng1282	Benga	Atlantic-Congo	Africa	132	110	76	69.09
+yamp1242	Yamphu	Sino-Tibetan	Eurasia	140	110	76	69.09
+tunn1238	Tunni	Afro-Asiatic	Africa	184	152	105	69.08
+capa1241	Capanahua	Pano-Tacanan	South America	171	139	96	69.06
+ronn1241	Ron	Afro-Asiatic	Africa	169	139	96	69.06
+rend1243	Rendille	Afro-Asiatic	Africa	44	42	29	69.05
+shek1245	Sheko	Dizoid	Africa	90	84	58	69.05
+poli1260	Polish	Indo-European	Eurasia	195	155	107	69.03
+kosa1249	Kosarek Yale	Nuclear Trans New Guinea	Papunesia	169	142	98	69.01
+huam1247	Huambisa	Chicham	South America	180	145	100	68.97
+nucl1593	Kwomtari	Kwomtari-Nai	Papunesia	175	145	100	68.97
+uman1240	Umanakaina	Dagan	Papunesia	99	87	60	68.97
+lugb1240	Lugbara	Central Sudanic	Africa	165	132	91	68.94
+nhan1238	Nhanda	Pama-Nyungan	Australia	163	132	91	68.94
+pawa1255	Pawaia		Papunesia	110	103	71	68.93
+onge1236	Önge	Jarawa-Onge	Eurasia	46	45	31	68.89
+tuba1278	Tübatulabal	Uto-Aztecan	North America	152	122	84	68.85
+lazz1240	Laz	Kartvelian	Eurasia	171	138	95	68.84
+agob1244	Agob-Ende-Kawam	Pahoturi	Papunesia	194	154	106	68.83
+iwam1256	Iwam	Sepik	Papunesia	105	93	64	68.82
+biri1256	Biri	Pama-Nyungan	Australia	146	125	86	68.8
+taia1239	Taiap		Papunesia	151	125	86	68.8
+leco1242	Leco		South America	162	141	97	68.79
+moun1252	Mountain Koiali	Koiarian	Papunesia	168	141	97	68.79
+wapp1239	Wappo	Yuki-Wappo	North America	177	141	97	68.79
+galo1242	Galo	Sino-Tibetan	Eurasia	179	144	99	68.75
+kuvi1243	Kuvi	Dravidian	Eurasia	103	96	66	68.75
+urar1246	Urarina		South America	174	144	99	68.75
+bodo1267	Bodo Gadaba	Austroasiatic	Eurasia	141	115	79	68.7
+pume1238	Pumé		South America	137	115	79	68.7
+byan1241	Byangsi	Sino-Tibetan	Eurasia	182	150	103	68.67
+tsam1247	Tsamai	Afro-Asiatic	Africa	185	150	103	68.67
+kron1241	Krongo	Kadugli-Krongo	Africa	75	67	46	68.66
+kunz1244	Kunza		South America	72	67	46	68.66
+lowl1265	Lowland Tarahumara	Uto-Aztecan	North America	164	134	92	68.66
+yakk1236	Yakkha	Sino-Tibetan	Eurasia	160	134	92	68.66
+daas1238	Daasanach	Afro-Asiatic	Africa	191	153	105	68.63
+kulu1253	Kulung (Nepal)	Sino-Tibetan	Eurasia	168	137	94	68.61
+sius1254	Siuslaw		North America	165	137	94	68.61
+ulwa1239	Ulwa	Misumalpan	North America	165	137	94	68.61
+amdo1237	Amdo Tibetan	Sino-Tibetan	Eurasia	177	140	96	68.57
+bela1256	Belanda Bor	Nilotic	Africa	76	70	48	68.57
+khan1277	Southern Tangkhul Naga	Sino-Tibetan	Eurasia	165	140	96	68.57
+alse1251	Alsea-Yaquina		North America	149	130	89	68.46
+aree1239	Are	Austronesian	Papunesia	157	130	89	68.46
+pint1250	Pintupi-Luritja	Pama-Nyungan	Australia	130	114	78	68.42
+wikm1247	Wik-Mungkan	Pama-Nyungan	Australia	134	114	78	68.42
+yayg1236	Yaygir	Pama-Nyungan	Australia	154	133	91	68.42
+gahr1239	Bunan	Sino-Tibetan	Eurasia	195	155	106	68.39
+mode1248	Modern Greek	Indo-European	Eurasia	195	155	106	68.39
+awtu1239	Awtuw	Sepik	Papunesia	138	117	80	68.38
+jalk1242	Jalkunan	Mande	Africa	172	136	93	68.38
+sanm1289	San Martín Quechua	Quechuan	South America	171	136	93	68.38
+zulg1242	Zulgo-Gemzek	Afro-Asiatic	Africa	133	117	80	68.38
+kaon1241	Kaonde	Atlantic-Congo	Africa	120	101	69	68.32
+shan1283	Shanenawa	Pano-Tacanan	South America	171	142	97	68.31
+chad1249	Chadian Arabic	Afro-Asiatic	Africa	146	123	84	68.29
+lule1238	Lule		South America	146	123	84	68.29
+warl1255	Warlmanpa	Pama-Nyungan	Australia	41	41	28	68.29
+narr1259	Narrinyeri	Pama-Nyungan	Australia	72	63	43	68.25
+midd1357	Middle Clarence Bandjalang	Pama-Nyungan	Australia	96	85	58	68.24
+wels1247	Welsh	Indo-European	Eurasia	173	148	101	68.24
+nort2954	Northern Paiute	Uto-Aztecan	North America	184	151	103	68.21
+kala1377	Kala Lagaw Ya	Pama-Nyungan	Australia	98	88	60	68.18
+ngan1291	Nganasan	Uralic	Eurasia	194	154	105	68.18
+nyig1240	Nyigina	Nyulnyulan	Australia	128	110	75	68.18
+usan1239	Usan	Nuclear Trans New Guinea	Papunesia	100	88	60	68.18
+weri1253	Weri	Goilalan	Papunesia	165	132	90	68.18
+woun1238	Woun Meu	Chocoan	South America	150	132	90	68.18
+mono1275	Mono (USA)	Uto-Aztecan	North America	161	135	92	68.15
+tabo1241	Tabo		Papunesia	165	135	92	68.15
+miga1249	Migaama	Afro-Asiatic	Africa	104	91	62	68.13
+mara1379	Maram Naga	Sino-Tibetan	Eurasia	167	138	94	68.12
+sout2985	Southern Sierra Miwok	Miwok-Costanoan	North America	166	138	94	68.12
+apat1240	Apatani	Sino-Tibetan	Eurasia	170	141	96	68.09
+arbo1245	Arbore	Afro-Asiatic	Africa	170	141	96	68.09
+cent2050	Central Kanuri	Saharan	Africa	173	141	96	68.09
+nezp1238	Nez Perce	Sahaptian	North America	176	141	96	68.09
+sauk1252	Ma Manda	Nuclear Trans New Guinea	Papunesia	181	141	96	68.09
+lian1251	Liangmai Naga	Sino-Tibetan	Eurasia	133	119	81	68.07
+anga1288	Angami Naga	Sino-Tibetan	Eurasia	180	144	98	68.06
+mend1266	Mende (Sierra Leone)	Mande	Africa	80	72	49	68.06
+anfi1235	Anfillo	Ta-Ne-Omotic	Africa	108	97	66	68.04
+orok1267	Orokolo	Eleman	Papunesia	181	147	100	68.03
+dhim1246	Dhimal	Sino-Tibetan	Eurasia	185	150	102	68
+tang1373	Tangwang	Sino-Tibetan	Eurasia	150	125	85	68
+waor1240	Waorani		South America	150	125	85	68
+esee1248	Ese Ejja	Pano-Tacanan	South America	189	153	104	67.97
+iraq1241	Iraqw	Afro-Asiatic	Africa	116	103	70	67.96
+mlah1239	Mlahsô	Afro-Asiatic	Eurasia	117	103	70	67.96
+yaqu1251	Yaqui	Uto-Aztecan	North America	162	131	89	67.94
+yidi1250	Yidiñ	Pama-Nyungan	Australia	156	131	89	67.94
+hebr1245	Modern Hebrew	Afro-Asiatic	Eurasia	167	134	91	67.91
+obok1239	Obokuitai	Lakes Plain	Papunesia	157	134	91	67.91
+bena1262	Bena (Tanzania)	Atlantic-Congo	Africa	93	81	55	67.9
+sunw1242	Sunwar	Sino-Tibetan	Eurasia	174	137	93	67.88
+ugar1238	Ugaritic	Afro-Asiatic	Eurasia	168	137	93	67.88
+adny1235	Adnyamathanha	Pama-Nyungan	Australia	131	112	76	67.86
+khez1235	Khezha Naga	Sino-Tibetan	Eurasia	172	140	95	67.86
+malt1254	Maltese	Afro-Asiatic	Eurasia	173	140	95	67.86
+awap1236	Awa (Papua New Guinea)	Nuclear Trans New Guinea	Papunesia	136	115	78	67.83
+swed1254	Swedish	Indo-European	Eurasia	182	146	99	67.81
+dual1243	Duala	Atlantic-Congo	Africa	138	118	80	67.8
+quio1240	Quiotepec Chinantec	Otomanguean	North America	182	149	101	67.79
+iatm1242	Iatmul	Ndu	Papunesia	191	152	103	67.76
+beto1236	Betoi-Jirara		South America	130	124	84	67.74
+kaby1243	Kabyle	Afro-Asiatic	Africa	65	62	42	67.74
+kuku1280	Kuku-Uwanh	Pama-Nyungan	Australia	155	124	84	67.74
+moks1248	Moksha	Uralic	Eurasia	195	155	105	67.74
+stan1290	French	Indo-European	Eurasia	195	155	105	67.74
+stan1293	English	Indo-European	Eurasia	195	155	105	67.74
+thak1245	Thakali	Sino-Tibetan	Eurasia	193	155	105	67.74
+marg1253	Margany	Pama-Nyungan	Australia	144	127	86	67.72
+sant1410	Santali	Austroasiatic	Eurasia	155	127	86	67.72
+boht1238	Gardabani Bohtan Neo-Aramaic	Afro-Asiatic	Eurasia	166	136	92	67.65
+qawa1238	Qawasqar	Kawesqar	South America	164	136	92	67.65
+chir1283	Chiru	Sino-Tibetan	Eurasia	170	139	94	67.63
+uruu1244	Uru	Uru-Chipaya	South America	170	142	96	67.61
+yaki1237	Northwest Sahaptin	Sahaptian	North America	187	151	102	67.55
+akab1249	Akabea	Great Andamanese	Eurasia	192	154	104	67.53
+lezg1247	Lezgian	Nakh-Daghestanian	Eurasia	194	154	104	67.53
+tibe1272	Tibetan	Sino-Tibetan	Eurasia	194	154	104	67.53
+abau1245	Abau	Sepik	Papunesia	88	80	54	67.5
+kaur1267	Kaurna	Pama-Nyungan	Australia	48	40	27	67.5
+kana1288	Kanasi	Dagan	Papunesia	92	83	56	67.47
+yess1239	Yessan-Mayo	Sepik	Papunesia	92	83	56	67.47
+toto1302	Toto	Sino-Tibetan	Eurasia	155	129	87	67.44
+mehe1243	Mehek	Sepik	Papunesia	165	135	91	67.41
+ofay1240	Ofayé	Nuclear-Macro-Je	South America	160	135	91	67.41
+pitt1247	Pitta Pitta	Pama-Nyungan	Australia	160	135	91	67.41
+teri1250	Teribe	Chibchan	North America	165	135	91	67.41
+guiq1238	Guiqiong	Sino-Tibetan	Eurasia	177	141	95	67.38
+mola1238	Molale		North America	174	141	95	67.38
+waru1265	Warumungu	Pama-Nyungan	Australia	173	141	95	67.38
+tilu1238	Tilung	Sino-Tibetan	Eurasia	101	95	64	67.37
+yaka1269	Yaka-Pelende-Lonzo	Atlantic-Congo	Africa	109	95	64	67.37
+amas1236	Ama (Sudan)	Nyimang	Africa	166	144	97	67.36
+mich1245	Michoacán Nahuatl	Uto-Aztecan	North America	177	144	97	67.36
+anci1244	Ancient Hebrew	Afro-Asiatic	Eurasia	182	147	99	67.35
+kaik1246	Kaike	Sino-Tibetan	Eurasia	184	147	99	67.35
+dutc1256	Dutch	Indo-European	Eurasia	187	150	101	67.33
+eipo1242	Eipomek	Nuclear Trans New Guinea	Papunesia	184	150	101	67.33
+aleu1260	Aleut	Eskimo-Aleut	North America	192	153	103	67.32
+zigu1244	Zigula-Mushungulu	Atlantic-Congo	Africa	54	52	35	67.31
+burm1264	Burmeso		Papunesia	65	58	39	67.24
+ango1257	Angosturas Tunebo	Chibchan	South America	136	119	80	67.23
+waja1259	Waja	Atlantic-Congo	Africa	133	119	80	67.23
+kaki1249	Kaki Ae		Papunesia	138	122	82	67.21
+amri1238	Amri Karbi	Sino-Tibetan	Eurasia	150	125	84	67.2
+xink1235	Xinka-Jumaytepeque	Xincan	North America	150	125	84	67.2
+lese1243	Lese	Central Sudanic	Africa	150	128	86	67.19
+nort2864	Wemale	Austronesian	Papunesia	76	64	43	67.19
+bobo1255	Bobongko	Austronesian	Papunesia	73	67	45	67.16
+taro1264	Seediq	Austronesian	Papunesia	75	67	45	67.16
+east2545	Eastern Pomo	Pomoan	North America	163	137	92	67.15
+yare1248	Yareba	Yareban	Papunesia	159	137	92	67.15
+kafa1242	Kafa	Ta-Ne-Omotic	Africa	167	140	94	67.14
+sher1257	Sherdukpen	Sino-Tibetan	Eurasia	77	70	47	67.14
+kuku1273	Kuku-Yalanji	Pama-Nyungan	Australia	184	152	102	67.11
+muru1274	Murui Huitoto	Huitotoan	South America	182	149	100	67.11
+rawa1267	Rawa	Nuclear Trans New Guinea	Papunesia	89	79	53	67.09
+sout2949	Southern Kiwai	Kiwaian	Papunesia	89	79	53	67.09
+kima1246	Kimaama	Kolopom	Papunesia	92	85	57	67.06
+west2618	Western Canadian Inuktitut	Eskimo-Aleut	North America	116	91	61	67.03
+yukp1241	Yukpa	Cariban	South America	106	94	63	67.02
+mund1326	Mündü	Atlantic-Congo	Africa	120	97	65	67.01
+nort2724	Northern Bai	Sino-Tibetan	Eurasia	116	97	65	67.01
+fefe1239	Fe'fe'	Atlantic-Congo	Africa	142	121	81	66.94
+ghom1257	Ghomara	Afro-Asiatic	Africa	158	124	83	66.94
+bord1248	Border Kuna	Chibchan	South America	162	130	87	66.92
+isir1237	Isirawa	Greater Kwerba	Papunesia	159	133	89	66.92
+akka1240	Akkadian	Afro-Asiatic	Eurasia	167	139	93	66.91
+meen1242	Me'en	Surmic	Africa	167	139	93	66.91
+misk1235	Mískito	Misumalpan	North America	162	136	91	66.91
+agua1253	Aguaruna	Chicham	South America	170	145	97	66.9
+doro1266	Doromu-Koki	Manubaran	Papunesia	167	145	97	66.9
+alag1248	Alagwa	Afro-Asiatic	Africa	183	148	99	66.89
+eyak1241	Eyak	Athabaskan-Eyak-Tlingit	North America	174	148	99	66.89
+idii1243	Idi-Taeme	Pahoturi	Papunesia	185	148	99	66.89
+maza1304	Mazagway	Afro-Asiatic	Africa	182	151	101	66.89
+kumb1268	Kumbainggar	Pama-Nyungan	Australia	192	154	103	66.88
+mana1298	Manambu	Ndu	Papunesia	194	154	103	66.88
+miju1243	Kman	Sino-Tibetan	Eurasia	192	154	103	66.88
+alba1269	Inland-Buhi-Daraga Bikol	Austronesian	Papunesia	128	111	74	66.67
+cube1242	Cubeo	Tucanoan	South America	191	153	102	66.67
+diri1252	Diriku-Shambyu	Atlantic-Congo	Africa	137	114	76	66.67
+esee1247	Ese	Koiarian	Papunesia	75	60	40	66.67
+geme1244	Geme	Atlantic-Congo	Africa	6	6	4	66.67
+gily1242	Amur Nivkh	Nivkh	Eurasia	183	147	98	66.67
+hame1242	Hamer-Banna	South Omotic	Africa	173	147	98	66.67
+iqui1243	Iquito	Zaparoan	South America	116	99	66	66.67
+iwai1244	Iwaidja	Iwaidjan Proper	Australia	66	60	40	66.67
+jaqa1244	Jaqaru	Aymaran	South America	150	129	86	66.67
+juho1239	South-Eastern Ju	Kxa	Africa	57	48	32	66.67
+keig1242	Keiga	Kadugli-Krongo	Africa	148	123	82	66.67
+kora1294	Korafe-Yegha	Nuclear Trans New Guinea	Papunesia	96	84	56	66.67
+limb1266	Limbu	Sino-Tibetan	Eurasia	140	114	76	66.67
+mban1263	Mbandja	Atlantic-Congo	Africa	162	129	86	66.67
+mehi1240	Mehináku	Arawakan	South America	4	3	2	66.67
+meny1245	Menya	Angan	Papunesia	96	84	56	66.67
+nand1266	Nandi	Nilotic	Africa	156	129	86	66.67
+ngaa1240	Ngaanyatjarra	Pama-Nyungan	Australia	154	132	88	66.67
+ngge1241	Nggem	Nuclear Trans New Guinea	Papunesia	99	87	58	66.67
+nyal1250	Nyali	Atlantic-Congo	Africa	118	96	64	66.67
+pemo1248	Pemon	Cariban	South America	161	138	92	66.67
+stan1318	Standard Arabic	Afro-Asiatic	Eurasia	167	135	90	66.67
+tang1334	Tangut	Sino-Tibetan	Eurasia	151	129	86	66.67
+teda1241	Tedaga	Saharan	Africa	160	138	92	66.67
+tele1256	Telefol	Nuclear Trans New Guinea	Papunesia	99	87	58	66.67
+tere1278	Terei	South Bougainville	Papunesia	60	51	34	66.67
+than1259	Thangmi	Sino-Tibetan	Eurasia	177	144	96	66.67
+thul1246	Thulung	Sino-Tibetan	Eurasia	175	141	94	66.67
+tsha1245	Tshangla	Sino-Tibetan	Eurasia	171	138	92	66.67
+umot1240	Umotína	Bororoan	South America	73	66	44	66.67
+utes1238	Ute-Southern Paiute	Uto-Aztecan	North America	184	147	98	66.67
+west2354	Western Frisian	Indo-European	Eurasia	187	150	100	66.67
+wola1253	Wolane	Afro-Asiatic	Africa	165	135	90	66.67
+wutu1241	Wutunhua	Sino-Tibetan	Eurasia	195	155	103	66.45
+yaul1241	Ulwa (Papua New Guinea)	Keram	Papunesia	188	152	101	66.45
+gang1266	Gangte	Sino-Tibetan	Eurasia	184	149	99	66.44
+maxa1247	Maxakalí	Nuclear-Macro-Je	South America	181	146	97	66.44
+ubyk1235	Ubykh	Abkhaz-Adyge	Eurasia	172	146	97	66.44
+yong1280	Yonggom	Nuclear Trans New Guinea	Papunesia	176	146	97	66.44
+band1344	Banda-Bambari	Atlantic-Congo	Africa	176	140	93	66.43
+puma1239	Puma	Sino-Tibetan	Eurasia	172	143	95	66.43
+bori1243	Bori-Karko	Sino-Tibetan	Eurasia	152	137	91	66.42
+cent2140	Central Sierra Miwok	Miwok-Costanoan	North America	167	137	91	66.42
+muru1266	Muruwari	Pama-Nyungan	Australia	157	134	89	66.42
+bugl1243	Buglere	Chibchan	North America	157	131	87	66.41
+lahu1252	Lahu Shi	Sino-Tibetan	Eurasia	152	131	87	66.41
+mayk1239	Maykulan	Pama-Nyungan	Australia	152	128	85	66.41
+amap1240	Ama (Papua New Guinea)	Left May	Papunesia	163	125	83	66.4
+amar1274	Amarakaeri	Harakmbut	South America	154	125	83	66.4
+apma1241	Ap Ma	Keram	Papunesia	126	113	75	66.37
+kele1255	Kele-Foma	Atlantic-Congo	Africa	128	107	71	66.36
+rian1263	Riantana	Kolopom	Papunesia	112	104	69	66.35
+bamb1269	Bambara	Mande	Africa	104	92	61	66.3
+nzad1234	Nzadi	Atlantic-Congo	Africa	101	92	61	66.3
+asoa1238	Asoa	Central Sudanic	Africa	94	83	55	66.27
+kamo1255	Kamoro	Nuclear Trans New Guinea	Papunesia	94	83	55	66.27
+bret1244	Breton	Indo-European	Eurasia	189	154	102	66.23
+namb1293	Nambo	Yam	Papunesia	182	151	100	66.23
+shab1252	Shabo		Africa	189	154	102	66.23
+shos1248	Shoshoni	Uto-Aztecan	North America	192	154	102	66.23
+fuln1247	Fulniô		South America	177	142	94	66.2
+namu1246	Namuyi	Sino-Tibetan	Eurasia	173	142	94	66.2
+yind1248	Yindjilandji	Pama-Nyungan	Australia	75	71	47	66.2
+kiow1266	Kiowa	Kiowa-Tanoan	North America	177	139	92	66.19
+nucl1633	Nimboran	Nimboranic	Papunesia	171	139	92	66.19
+ekar1243	Ekari	Nuclear Trans New Guinea	Papunesia	151	136	90	66.18
+koys1242	Koy Sanjaq Jewish Neo-Aramaic	Afro-Asiatic	Eurasia	169	136	90	66.18
+nort2952	Northeast Maidu	Maiduan	North America	161	136	90	66.18
+wint1259	Wintu	Wintuan	North America	159	136	90	66.18
+lend1245	Lendu	Central Sudanic	Africa	159	133	88	66.17
+bulu1251	Bulu (Cameroon)	Atlantic-Congo	Africa	164	130	86	66.15
+nucl1706	Neo-Mandaic	Afro-Asiatic	Eurasia	159	130	86	66.15
+sana1295	Sanaani Arabic	Afro-Asiatic	Eurasia	163	130	86	66.15
+west2441	Western Arrarnta	Pama-Nyungan	Australia	159	130	86	66.15
+inga1252	Colombian Inga	Quechuan	South America	69	62	41	66.13
+zapa1253	Záparo	Zaparoan	South America	144	124	82	66.13
+fass1245	Momu-Fas	Baibai-Fas	Papunesia	144	121	80	66.12
+awab1243	Awabakal	Pama-Nyungan	Australia	67	59	39	66.1
+fala1243	Falam Chin	Sino-Tibetan	Eurasia	143	118	78	66.1
+umbu1235	Umbugarla		Australia	126	115	76	66.09
+zenz1235	Zenzontepec Chatino	Otomanguean	North America	134	115	76	66.09
+mbaa1245	Mba	Atlantic-Congo	Africa	137	112	74	66.07
+maru1252	Marúbo	Pano-Tacanan	South America	126	103	68	66.02
+mund1325	Mundang	Atlantic-Congo	Africa	190	150	99	66
+west2417	Western Muya	Sino-Tibetan	Eurasia	112	100	66	66
+keap1239	Keapara	Austronesian	Papunesia	174	147	97	65.99
+chal1275	Chaldean Neo-Aramaic	Afro-Asiatic	Eurasia	181	144	95	65.97
+lish1245	Lishanid Noshan	Afro-Asiatic	Eurasia	177	144	95	65.97
+nucl1630	Barai	Koiarian	Papunesia	168	138	91	65.94
+yale1246	Yale		Papunesia	173	138	91	65.94
+cong1236	Congo Swahili	Atlantic-Congo	Africa	111	91	60	65.93
+akaj1239	Akajeru	Great Andamanese	Eurasia	99	88	58	65.91
+bang1354	Bobangi	Atlantic-Congo	Africa	151	126	83	65.87
+kara1482	Kara (Central African Republic)	Central Sudanic	Africa	149	126	83	65.87
+yulu1243	Yulu-Binga	Central Sudanic	Africa	149	126	83	65.87
+bang1369	Bangru	Sino-Tibetan	Eurasia	151	123	81	65.85
+thur1254	Thurawal	Pama-Nyungan	Australia	86	82	54	65.85
+zulu1248	Zulu	Atlantic-Congo	Africa	42	41	27	65.85
+khum1248	Khumi Chin	Sino-Tibetan	Eurasia	133	117	77	65.81
+sara1327	Sarangani Manobo	Austronesian	Papunesia	130	117	77	65.81
+tina1248	Tinà Sambal	Austronesian	Papunesia	141	117	77	65.81
+salt1242	Salt-Yui	Nuclear Trans New Guinea	Papunesia	85	76	50	65.79
+achu1248	Achuar-Shiwiar	Chicham	South America	183	149	98	65.77
+chot1239	Chothe	Sino-Tibetan	Eurasia	176	149	98	65.77
+amam1246	Amam	Goilalan	Papunesia	175	146	96	65.75
+west2369	Western Farsi	Indo-European	Eurasia	183	146	96	65.75
+biaf1240	Biafada	Atlantic-Congo	Africa	123	108	71	65.74
+auye1238	Auye	Nuclear Trans New Guinea	Papunesia	179	143	94	65.73
+buru1320	Burunge	Afro-Asiatic	Africa	180	143	94	65.73
+sira1267	Sirayaic	Austronesian	Papunesia	177	143	94	65.73
+dumi1241	Dumi	Sino-Tibetan	Eurasia	166	140	92	65.71
+pana1305	Panamint	Uto-Aztecan	North America	41	35	23	65.71
+caml1239	Camling	Sino-Tibetan	Eurasia	170	137	90	65.69
+keda1252	Kedang	Austronesian	Papunesia	162	137	90	65.69
+koir1240	Koireng	Sino-Tibetan	Eurasia	155	137	90	65.69
+bert1248	Berta		Africa	119	99	65	65.66
+lega1250	Lega-Mwenga	Atlantic-Congo	Africa	120	99	65	65.66
+epen1239	Epena	Chocoan	South America	157	131	86	65.65
+esse1238	Esselen		North America	110	96	63	65.62
+xinc1243	Xinca-Yupiltepeque	Xincan	North America	154	125	82	65.6
+youl1235	Youle Jinuo	Sino-Tibetan	Eurasia	192	154	101	65.58
+kesa1244	Kesawai	Nuclear Trans New Guinea	Papunesia	188	151	99	65.56
+athp1241	Athpariya	Sino-Tibetan	Eurasia	182	148	97	65.54
+daai1236	Daai Chin	Sino-Tibetan	Eurasia	183	148	97	65.54
+ngal1296	Ngala-Santandrea	Atlantic-Congo	Africa	67	58	38	65.52
+aghu1255	Aghu	Nuclear Trans New Guinea	Papunesia	175	142	93	65.49
+bimi1240	Bimin	Nuclear Trans New Guinea	Papunesia	172	142	93	65.49
+fait1240	Kulsab	Nuclear Trans New Guinea	Papunesia	126	113	74	65.49
+huli1244	Huli	Nuclear Trans New Guinea	Papunesia	131	113	74	65.49
+awar1249	Awar	Lower Sepik-Ramu	Papunesia	165	139	91	65.47
+bafa1247	Bafaw-Balong	Atlantic-Congo	Africa	130	110	72	65.45
+bare1279	Barain	Afro-Asiatic	Africa	125	110	72	65.45
+bahi1252	Bahing	Sino-Tibetan	Eurasia	161	136	89	65.44
+chit1248	Chitimacha		North America	167	136	89	65.44
+egyp1253	Egyptian Arabic	Afro-Asiatic	Africa	166	136	89	65.44
+koyr1242	Koyraboro Senni Songhai	Songhay	Africa	168	136	89	65.44
+west2415	Western Tamang	Sino-Tibetan	Eurasia	170	136	89	65.44
+djam1256	Djambarrpuyngu	Pama-Nyungan	Australia	91	81	53	65.43
+twan1247	Twana	Salishan	North America	87	78	51	65.38
+isco1239	Isconahua	Pano-Tacanan	South America	192	153	100	65.36
+sout2728	Southern Qiang	Sino-Tibetan	Eurasia	192	153	100	65.36
+wara1303	Warao		South America	185	153	100	65.36
+chib1270	Chibcha	Chibchan	South America	148	127	83	65.35
+gata1239	Gata'	Austroasiatic	Eurasia	156	127	83	65.35
+dyan1250	Dyangadi	Pama-Nyungan	Australia	190	150	98	65.33
+nucl1632	Sentani	Sentanic	Papunesia	143	121	79	65.29
+yala1262	Yalarnnga	Pama-Nyungan	Australia	157	121	79	65.29
+gaaa1245	Gaa	Atlantic-Congo	Africa	79	72	47	65.28
+cacu1241	Kakua	Kakua-Nukak	South America	168	141	92	65.25
+guhu1244	Guhu-Samane	Nuclear Trans New Guinea	Papunesia	167	141	92	65.25
+honi1244	Honi	Sino-Tibetan	Eurasia	165	141	92	65.25
+keme1240	Kemezung	Atlantic-Congo	Africa	135	118	77	65.25
+melp1238	Melpa	Nuclear Trans New Guinea	Papunesia	166	138	90	65.22
+chep1245	Chepang	Sino-Tibetan	Eurasia	163	135	88	65.19
+humb1243	Humburi Senni Songhay	Songhay	Africa	167	135	88	65.19
+mosi1247	Akie	Nilotic	Africa	167	135	88	65.19
+nubi1253	Nubi	Afro-Asiatic	Africa	168	135	88	65.19
+tedi1235	Tedim Chin	Sino-Tibetan	Eurasia	170	135	88	65.19
+west2615	Western Apache	Athabaskan-Eyak-Tlingit	North America	164	135	88	65.19
+soni1259	Soninke	Mande	Africa	127	112	73	65.18
+meru1245	Meru	Atlantic-Congo	Africa	162	132	86	65.15
+kona1242	Konai	East Strickland	Papunesia	188	152	99	65.13
+alam1246	Alamblak	Sepik	Papunesia	98	86	56	65.12
+kork1243	Korku	Austroasiatic	Eurasia	133	106	69	65.09
+cavi1250	Cavineña	Pano-Tacanan	South America	151	126	82	65.08
+boun1243	Bouna Kulango	Atlantic-Congo	Africa	179	146	95	65.07
+gira1247	Girawa	Nuclear Trans New Guinea	Papunesia	169	146	95	65.07
+tune1261	Tunen	Atlantic-Congo	Africa	98	83	54	65.06
+miri1266	Miriwung	Jarrakan	Australia	142	123	80	65.04
+west2763	Western Neo-Aramaic	Afro-Asiatic	Eurasia	149	123	80	65.04
+khal1275	Khaling	Sino-Tibetan	Eurasia	168	143	93	65.03
+colo1256	Tsafiki	Barbacoan	South America	144	120	78	65
+kimm1246	Kim	Atlantic-Congo	Africa	129	117	76	64.96
+basa1287	Basay	Austronesian	Papunesia	106	97	63	64.95
+cahu1264	Cahuilla	Uto-Aztecan	North America	190	154	100	64.94
+hual1241	Huallaga Huánuco Quechua	Quechuan	South America	191	154	100	64.94
+atak1252	Atakapa		North America	149	134	87	64.93
+iyoo1238	Iyo	Nuclear Trans New Guinea	Papunesia	153	134	87	64.93
+sgaw1245	S'gaw Karen	Sino-Tibetan	Eurasia	161	134	87	64.93
+ticu1245	Ticuna	Ticuna-Yuri	South America	154	134	87	64.93
+gbay1288	Kresh-Woro	Kresh-Aja	Africa	134	114	74	64.91
+ware1255	Warekena do San Miguel	Arawakan	South America	131	114	74	64.91
+miya1266	Miya	Afro-Asiatic	Africa	187	151	98	64.9
+moba1244	Moba	Atlantic-Congo	Africa	185	151	98	64.9
+bekw1242	Bekwil	Atlantic-Congo	Africa	100	94	61	64.89
+mala1522	Malayo	Chibchan	South America	157	131	85	64.89
+coos1249	Hanis	Coosan	North America	176	148	96	64.86
+sini1242	Sininkere	Mande	Africa	125	111	72	64.86
+gulf1241	Gulf Arabic	Afro-Asiatic	Eurasia	154	128	83	64.84
+woiw1237	Woiwurrung-Thagungwurrung	Pama-Nyungan	Australia	99	91	59	64.84
+zuni1245	Zuni		North America	156	128	83	64.84
+dera1248	Dera (Nigeria)	Afro-Asiatic	Africa	178	145	94	64.83
+lang1320	Langi	Atlantic-Congo	Africa	174	145	94	64.83
+oksa1245	Oksapmin	Nuclear Trans New Guinea	Papunesia	184	145	94	64.83
+gbay1278	Gbayi	Atlantic-Congo	Africa	58	54	35	64.81
+kava1241	Kavalan	Austronesian	Papunesia	148	125	81	64.8
+tumu1242	Tumulung Sisaala	Atlantic-Congo	Africa	95	88	57	64.77
+cent2090	Central Tagbanwa	Austronesian	Papunesia	166	139	90	64.75
+huba1236	Huba	Afro-Asiatic	Africa	151	122	79	64.75
+nonu1241	Nonuya	Huitotoan	South America	54	51	33	64.71
+nucl1595	Kwerba	Greater Kwerba	Papunesia	132	116	75	64.66
+tauy1241	Tauya	Nuclear Trans New Guinea	Papunesia	94	82	53	64.63
+zagh1240	Beria	Saharan	Africa	183	147	95	64.63
+kani1286	Kanite	Nuclear Trans New Guinea	Papunesia	149	130	84	64.62
+xinc1242	Xinca-Chiquimulilla	Xincan	North America	162	130	84	64.62
+abua1245	Abu' Arapesh	Nuclear Torricelli	Papunesia	170	144	93	64.58
+bujh1238	Bujhyal	Sino-Tibetan	Eurasia	179	144	93	64.58
+buku1249	Bukusu	Atlantic-Congo	Africa	52	48	31	64.58
+nica1252	Nicaragua Creole English	Indo-European	North America	157	127	82	64.57
+bine1240	Bine	Eastern Trans-Fly	Papunesia	88	79	51	64.56
+cata1286	Catawba	Siouan	North America	125	110	71	64.55
+chac1251	Chácobo	Pano-Tacanan	South America	176	141	91	64.54
+noct1238	Nocte Naga	Sino-Tibetan	Eurasia	195	155	100	64.52
+west2418	Western Magar	Sino-Tibetan	Eurasia	195	155	100	64.52
+ajas1235	Aja (South Sudan)	Kresh-Aja	Africa	130	107	69	64.49
+rata1244	Ratahan	Austronesian	Papunesia	166	138	89	64.49
+nucl1310	Burmese	Sino-Tibetan	Eurasia	190	152	98	64.47
+yasa1242	Yasa	Atlantic-Congo	Africa	101	76	49	64.47
+baka1272	Baka (Cameroon)	Atlantic-Congo	Africa	148	121	78	64.46
+hass1238	Hassaniyya	Afro-Asiatic	Africa	142	121	78	64.46
+coma1245	Comanche	Uto-Aztecan	North America	182	149	96	64.43
+marg1265	Marghi Central	Afro-Asiatic	Africa	184	149	96	64.43
+monz1249	Monzombo	Atlantic-Congo	Africa	119	104	67	64.42
+wara1292	Samue	Atlantic-Congo	Africa	65	59	38	64.41
+brib1243	Bribri	Chibchan	North America	163	132	85	64.39
+hang1263	Hanga Hundi	Ndu	Papunesia	161	132	85	64.39
+mala1479	Colloquial Malay	Austronesian	Eurasia	153	132	85	64.39
+pura1257	Purari		Papunesia	158	132	85	64.39
+haru1245	Haruai	Piawi	Papunesia	178	146	94	64.38
+moyo1238	Moyon	Sino-Tibetan	Eurasia	167	146	94	64.38
+nucl1454	Yawa	Yawa-Saweru	Papunesia	105	87	56	64.37
+koro1298	Koromfé	Atlantic-Congo	Africa	191	154	99	64.29
+mara1404	Maranao	Austronesian	Papunesia	128	112	72	64.29
+mati1250	Matigsalug Manobo	Austronesian	Papunesia	177	140	90	64.29
+peer1241	Peere	Atlantic-Congo	Africa	147	126	81	64.29
+shua1257	Shuar	Chicham	South America	147	126	81	64.29
+susu1250	Susu	Mande	Africa	96	84	54	64.29
+yami1254	Yami	Austronesian	Papunesia	194	154	99	64.29
+yuqu1240	Yuqui	Tupian	South America	153	126	81	64.29
+nort2980	North Junín Quechua	Quechuan	South America	175	151	97	64.24
+toar1246	Toaripi	Eleman	Papunesia	186	151	97	64.24
+chhi1245	Chintang	Sino-Tibetan	Eurasia	150	123	79	64.23
+kulo1237	Kulon-Pazeh	Austronesian	Papunesia	140	123	79	64.23
+ngab1239	Ngäbere	Chibchan	North America	165	137	88	64.23
+saki1248	Mekens	Tupian	South America	139	123	79	64.23
+aeky1238	Aekyom	Kamula-Elevala	Papunesia	120	109	70	64.22
+gura1251	Gurani	Indo-European	Eurasia	128	109	70	64.22
+wann1242	Wan	Mande	Africa	124	109	70	64.22
+lala1268	Lala	Austronesian	Papunesia	187	148	95	64.19
+sout2807	Southern Sotho	Atlantic-Congo	Africa	184	148	95	64.19
+baha1259	Baharna Arabic	Afro-Asiatic	Eurasia	147	120	77	64.17
+bant1281	Bantawa	Sino-Tibetan	Eurasia	181	145	93	64.14
+mamm1241	Mam	Mayan	North America	179	145	93	64.14
+noon1243	Noone	Atlantic-Congo	Africa	172	145	93	64.14
+nort2723	Northern Pumi	Sino-Tibetan	Eurasia	177	145	93	64.14
+teke1275	Latege	Atlantic-Congo	Africa	180	145	93	64.14
+yawu1244	Yawuru	Nyulnyulan	Australia	185	145	93	64.14
+jina1244	Jina	Afro-Asiatic	Africa	161	131	84	64.12
+boto1242	Botolan Sambal	Austronesian	Papunesia	175	142	91	64.08
+guny1241	Gunya	Pama-Nyungan	Australia	177	142	91	64.08
+noma1260	Nomaande	Atlantic-Congo	Africa	118	103	66	64.08
+yaum1237	Yau (Morobe Province)	Nuclear Trans New Guinea	Papunesia	181	142	91	64.08
+mang1394	Mangbetu	Central Sudanic	Africa	154	128	82	64.06
+basq1248	Basque		Eurasia	188	153	98	64.05
+libi1244	Libinza	Atlantic-Congo	Africa	134	114	73	64.04
+sele1250	Selepet	Nuclear Trans New Guinea	Papunesia	101	89	57	64.04
+wudi1238	Wuding-Luquan Yi	Sino-Tibetan	Eurasia	164	139	89	64.03
+boru1252	Boruca	Chibchan	North America	117	100	64	64
+komb1274	Kombai	Nuclear Trans New Guinea	Papunesia	182	150	96	64
+kyer1238	Kyerung	Sino-Tibetan	Eurasia	184	150	96	64
+mono1270	Mono (Democratic Republic of Congo)	Atlantic-Congo	Africa	149	125	80	64
+beta1252	Betawi	Austronesian	Papunesia	170	136	87	63.97
+komi1270	Kom (India)	Sino-Tibetan	Eurasia	168	136	87	63.97
+cypr1248	Cypriot Arabic	Afro-Asiatic	Eurasia	142	111	71	63.96
+huar1255	Huarijio	Uto-Aztecan	North America	181	147	94	63.95
+pure1242	Purepecha	Tarascan	North America	182	147	94	63.95
+juan1238	Juang	Austroasiatic	Eurasia	150	122	78	63.93
+nalc1240	Nalca	Nuclear Trans New Guinea	Papunesia	108	97	62	63.92
+boka1249	Bokar-Ramo	Sino-Tibetan	Eurasia	151	133	85	63.91
+yulp1239	Yulparija	Pama-Nyungan	Australia	156	133	85	63.91
+bara1361	Barambu	Atlantic-Congo	Africa	128	108	69	63.89
+kera1255	Kera	Afro-Asiatic	Africa	178	144	92	63.89
+naba1256	Nabak	Nuclear Trans New Guinea	Papunesia	82	72	46	63.89
+sand1273	Sandawe		Africa	76	72	46	63.89
+sooo1254	Sô	Austroasiatic	Eurasia	176	144	92	63.89
+tang1336	East-Central Tangkhul Naga	Sino-Tibetan	Eurasia	170	144	92	63.89
+ersu1241	Ersu	Sino-Tibetan	Eurasia	195	155	99	63.87
+siwa1245	Siwai	South Bougainville	Papunesia	93	83	53	63.86
+beel1236	Beele	Afro-Asiatic	Africa	52	47	30	63.83
+mikm1235	Mi'kmaq	Algic	North America	179	141	90	63.83
+musg1254	Musgu	Afro-Asiatic	Africa	118	105	67	63.81
+mamv1243	Mamvu	Central Sudanic	Africa	136	116	74	63.79
+agut1237	Agutaynen	Austronesian	Papunesia	161	138	88	63.77
+koyr1240	Koyra Chiini Songhay	Songhay	Africa	169	138	88	63.77
+quil1240	Quileute	Chimakuan	North America	165	138	88	63.77
+fuyu1242	Fuyug	Goilalan	Papunesia	180	149	95	63.76
+nawu1242	Nawuri	Atlantic-Congo	Africa	182	149	95	63.76
+nort2961	Northwestern Ojibwa	Algic	North America	189	149	95	63.76
+nukn1238	Nukna	Nuclear Trans New Guinea	Papunesia	183	149	95	63.76
+orya1242	Orya	Tor-Orya	Papunesia	91	80	51	63.75
+turk1308	Turkana	Nilotic	Africa	99	91	58	63.74
+wara1300	Waray (Philippines)	Austronesian	Papunesia	122	102	65	63.73
+rikb1245	Rikbaktsa	Nuclear-Macro-Je	South America	149	124	79	63.71
+zhab1238	Zhaba	Sino-Tibetan	Eurasia	146	124	79	63.71
+chip1241	Chippewa	Algic	North America	171	135	86	63.7
+maja1242	Majang	Surmic	Africa	163	135	86	63.7
+wiru1244	Wiru		Papunesia	180	146	93	63.7
+alab1237	Alabama	Muskogean	North America	177	143	91	63.64
+bayo1255	Kugere-Kuxinge	Atlantic-Congo	Africa	58	55	35	63.64
+buol1237	Buol	Austronesian	Papunesia	117	99	63	63.64
+chac1249	Cha'palaa	Barbacoan	South America	91	77	49	63.64
+dhar1248	Dharumbal	Pama-Nyungan	Australia	74	66	42	63.64
+kara1476	Karadjeri	Pama-Nyungan	Australia	67	55	35	63.64
+kurt1248	Kurtokha	Sino-Tibetan	Eurasia	98	88	56	63.64
+mian1256	Mian	Nuclear Trans New Guinea	Papunesia	100	88	56	63.64
+nyun1247	Nyunga	Pama-Nyungan	Australia	26	22	14	63.64
+pech1241	Pech	Chibchan	North America	144	121	77	63.64
+sici1249	Sìcìté Sénoufo	Atlantic-Congo	Africa	143	121	77	63.64
+wadj1254	Wadjiginy		Australia	141	121	77	63.64
+xinc1246	Xinca-Guazacapan	Xincan	North America	164	132	84	63.64
+chug1252	Duhumbi	Sino-Tibetan	Eurasia	184	151	96	63.58
+kala1388	Kalagan	Austronesian	Papunesia	150	129	82	63.57
+mayo1264	Mayo	Uto-Aztecan	North America	168	140	89	63.57
+xokl1240	Xokleng	Nuclear-Macro-Je	South America	150	129	82	63.57
+beli1260	Belize Kriol English	Indo-European	North America	130	118	75	63.56
+kark1258	Karkar-Yuri	Pauwasi	Papunesia	132	118	75	63.56
+pano1254	Panoan Katukína	Pano-Tacanan	South America	132	118	75	63.56
+pare1266	Gorum-Parenga	Austroasiatic	Eurasia	146	118	75	63.56
+pamb1243	Pambia	Atlantic-Congo	Africa	131	107	68	63.55
+ocot1244	Ocotlán Zapotec	Otomanguean	North America	97	85	54	63.53
+kala1399	Kalaallisut	Eskimo-Aleut	North America	182	148	94	63.51
+maia1253	Maiani	Nuclear Trans New Guinea	Papunesia	79	74	47	63.51
+paaa1242	Pa'a	Afro-Asiatic	Africa	183	148	94	63.51
+liby1240	Libyan Arabic	Afro-Asiatic	Africa	167	137	87	63.5
+nort3139	North Levantine Arabic	Afro-Asiatic	Eurasia	163	137	87	63.5
+suru1261	Suruí Do Pará	Tupian	South America	68	63	40	63.49
+tata1257	Tatana	Austronesian	Papunesia	155	126	80	63.49
+kana1286	Kanakanavu	Austronesian	Papunesia	147	123	78	63.41
+ukaa1243	Ukaan	Atlantic-Congo	Africa	46	41	26	63.41
+yama1264	Yámana		South America	136	123	78	63.41
+lipo1242	Lipo	Sino-Tibetan	Eurasia	192	153	97	63.4
+abad1241	Abadi	Austronesian	Papunesia	118	112	71	63.39
+huas1242	Huastec	Mayan	North America	176	142	90	63.38
+lowl1260	Lowland Oaxaca Chontal	Tequistlatecan	North America	173	142	90	63.38
+seve1240	Severn Ojibwa	Algic	North America	176	142	90	63.38
+yura1255	Yuracaré		South America	177	142	90	63.38
+komc1235	Kom (Cameroon)	Atlantic-Congo	Africa	158	131	83	63.36
+para1302	Para Naga	Sino-Tibetan	Eurasia	157	131	83	63.36
+amha1245	Amharic	Afro-Asiatic	Africa	101	90	57	63.33
+baha1260	Bahamas Creole English	Indo-European	North America	103	90	57	63.33
+haio1238	Hai//om-Akhoe	Khoe-Kwadi	Africa	35	30	19	63.33
+hooo1248	Ho	Austroasiatic	Eurasia	149	120	76	63.33
+nalo1235	Nalögo	Austronesian	Papunesia	33	30	19	63.33
+wand1278	Wandala	Afro-Asiatic	Africa	188	150	95	63.33
+west2599	West Kewa	Nuclear Trans New Guinea	Papunesia	102	90	57	63.33
+keng1240	Kenga	Central Sudanic	Africa	124	109	69	63.3
+lonw1238	Lonwolwol	Austronesian	Papunesia	126	109	69	63.3
+goli1247	Golin	Nuclear Trans New Guinea	Papunesia	88	79	50	63.29
+sanj1284	Western Tlacolula Valley Zapotec	Otomanguean	North America	152	128	81	63.28
+chol1284	Cholón	Hibito-Cholon	South America	181	147	93	63.27
+gude1246	Gude	Afro-Asiatic	Africa	176	147	93	63.27
+dupa1235	Dupaninan Agta	Austronesian	Papunesia	164	136	86	63.24
+mapu1245	Mapudungun	Araucanian	South America	190	155	98	63.23
+nenn1238	Nen	Yam	Papunesia	195	155	98	63.23
+ruka1240	Rukai	Austronesian	Papunesia	191	155	98	63.23
+meri1244	Meriam	Eastern Trans-Fly	Papunesia	99	87	55	63.22
+taus1253	Taushiro		South America	150	125	79	63.2
+gant1244	Gants	Nuclear Trans New Guinea	Papunesia	164	133	84	63.16
+kuna1268	Kunama		Africa	165	133	84	63.16
+kung1259	Kungarakany		Australia	82	76	48	63.16
+lotu1250	Lotud	Austronesian	Papunesia	132	114	72	63.16
+meke1243	Mekeo	Austronesian	Papunesia	192	152	96	63.16
+fipa1238	Fipa	Atlantic-Congo	Africa	120	103	65	63.11
+ngal1292	Ngalkbun	Gunwinyguan	Australia	188	149	94	63.09
+trio1238	Trió	Cariban	South America	188	149	94	63.09
+cent2142	Central Aymara	Aymaran	South America	160	130	82	63.08
+bang1363	Bangime		Africa	127	111	70	63.06
+miwa1242	Miwa	Worrorran	Australia	130	111	70	63.06
+ugon1239	Ugong	Sino-Tibetan	Eurasia	133	111	70	63.06
+mixt1426	Mixtepec Zapotec	Otomanguean	North America	170	138	87	63.04
+reye1240	Reyesano	Pano-Tacanan	South America	139	119	75	63.03
+bolg1251	Bolgo	Atlantic-Congo	Africa	78	73	46	63.01
+darm1243	Darma	Sino-Tibetan	Eurasia	179	146	92	63.01
+kips1239	Kipsigis	Nilotic	Africa	156	127	80	62.99
+bauz1241	Bauzi	Geelvink Bay	Papunesia	93	81	51	62.96
+bian1252	Biangai	Goilalan	Papunesia	155	135	85	62.96
+kama1370	Kamano	Nuclear Trans New Guinea	Papunesia	116	108	68	62.96
+kiku1240	Kikuyu	Atlantic-Congo	Africa	160	135	85	62.96
+mara1382	Mara Chin	Sino-Tibetan	Eurasia	160	135	85	62.96
+pima1248	Pima Bajo	Uto-Aztecan	North America	163	135	85	62.96
+sout2912	Coastal-Virac Bikol	Austronesian	Papunesia	128	108	68	62.96
+wila1240	Wilawila	Worrorran	Australia	127	108	68	62.96
+lamk1238	Lamkang	Sino-Tibetan	Eurasia	175	143	90	62.94
+nopa1235	Nopala Chatino	Otomanguean	North America	179	143	90	62.94
+take1257	Takelma		North America	173	143	90	62.94
+gwen1239	Gweno	Atlantic-Congo	Africa	135	116	73	62.93
+ngba1284	Ngbaka Ma'bo	Atlantic-Congo	Africa	147	116	73	62.93
+nort2722	Northern Qiang	Sino-Tibetan	Eurasia	187	151	95	62.91
+alac1244	Alacatlatzala Mixtec	Otomanguean	North America	154	132	83	62.88
+mamb1294	Mambai	Atlantic-Congo	Africa	168	140	88	62.86
+daza1242	Dazaga	Saharan	Africa	180	148	93	62.84
+hula1244	Hulaulá	Afro-Asiatic	Eurasia	182	148	93	62.84
+kado1242	Kado	Sino-Tibetan	Eurasia	184	148	93	62.84
+saga1262	Sagalla	Atlantic-Congo	Africa	152	121	76	62.81
+pait1244	Paite Chin	Sino-Tibetan	Eurasia	152	129	81	62.79
+tenn1246	Tennet	Surmic	Africa	158	129	81	62.79
+wang1291	Ngiyambaa	Pama-Nyungan	Australia	169	137	86	62.77
+lepc1244	Lepcha	Sino-Tibetan	Eurasia	176	145	91	62.76
+nort2959	Northern Tepehuan	Uto-Aztecan	North America	184	145	91	62.76
+birr1240	Birri	Central Sudanic	Africa	120	102	64	62.75
+fili1244	Filipino	Austronesian	Papunesia	186	153	96	62.75
+nort2745	Northern Yukaghir	Yukaghir	Eurasia	191	153	96	62.75
+tagw1240	Tagwana Senoufo	Atlantic-Congo	Africa	115	102	64	62.75
+wath1238	Wathawurrung	Pama-Nyungan	Australia	55	51	32	62.75
+cabe1245	Cabécar	Chibchan	North America	139	118	74	62.71
+mama1275	Mamanwa	Austronesian	Papunesia	149	126	79	62.7
+nort2877	Northern Kankanay	Austronesian	Papunesia	149	126	79	62.7
+dadi1250	Dadibi	Teberan	Papunesia	164	134	84	62.69
+djin1251	Jingulu	Mirndi	Australia	166	134	84	62.69
+hupd1244	Hup	Naduhup	South America	160	134	84	62.69
+rumu1243	Rumu	Turama-Kikori	Papunesia	73	67	42	62.69
+tema1239	Temascaltepec Nahuatl	Uto-Aztecan	North America	75	67	42	62.69
+tong1318	Tonga (Zambia)	Atlantic-Congo	Africa	160	134	84	62.69
+sani1269	Sani	Sino-Tibetan	Eurasia	168	142	89	62.68
+term1237	Termanu	Austronesian	Papunesia	172	142	89	62.68
+arta1239	Arta	Austronesian	Papunesia	184	150	94	62.67
+dagb1246	Dagbani	Atlantic-Congo	Africa	177	150	94	62.67
+kaqc1270	Kaqchikel	Mayan	North America	183	150	94	62.67
+tega1236	Tegali	Rashad	Africa	82	75	47	62.67
+kama1367	Kamasau	Nuclear Torricelli	Papunesia	94	83	52	62.65
+tivv1240	Tiv	Atlantic-Congo	Africa	110	99	62	62.63
+foii1241	Foi	East Kutubu	Papunesia	118	107	67	62.62
+heil1246	Heiltsuk-Oowekyala	Wakashan	North America	126	107	67	62.62
+tien1242	Tiene	Atlantic-Congo	Africa	126	107	67	62.62
+atay1247	Atayal	Austronesian	Papunesia	129	115	72	62.61
+mbar1260	Mbara (Chad)	Afro-Asiatic	Africa	157	131	82	62.6
+mund1320	Mundari	Austroasiatic	Eurasia	156	131	82	62.6
+tiru1241	Tiruray	Austronesian	Papunesia	145	123	77	62.6
+belh1239	Belhariya	Sino-Tibetan	Eurasia	166	139	87	62.59
+cher1273	Cherokee	Iroquoian	North America	184	147	92	62.59
+fina1242	Finallig	Austronesian	Papunesia	164	139	87	62.59
+guah1255	Guahibo	Guahiboan	South America	179	147	92	62.59
+iban1267	Ibanag	Austronesian	Papunesia	177	147	92	62.59
+ivat1242	Itbayat	Austronesian	Papunesia	176	147	92	62.59
+kwam1249	Gwama	Koman	Africa	171	139	87	62.59
+mund1328	Mundabli-Mufu	Atlantic-Congo	Africa	184	147	92	62.59
+pang1290	Pangasinan	Austronesian	Papunesia	169	139	87	62.59
+savo1255	Savosavo		Papunesia	185	147	92	62.59
+tang1377	Tangam	Sino-Tibetan	Eurasia	179	147	92	62.59
+yind1247	Yindjibarndi	Pama-Nyungan	Australia	174	139	87	62.59
+abkh1244	Abkhaz	Abkhaz-Adyge	Eurasia	188	152	95	62.5
+arik1265	Arikapú	Nuclear-Macro-Je	South America	79	72	45	62.5
+bagi1246	Bagirmi	Central Sudanic	Africa	167	136	85	62.5
+balo1261	Loi-Likila	Atlantic-Congo	Africa	117	104	65	62.5
+bera1262	Berau Malay	Austronesian	Papunesia	11	8	5	62.5
+buga1247	Bugan	Austroasiatic	Eurasia	190	152	95	62.5
+gaaa1244	Ga	Atlantic-Congo	Africa	133	120	75	62.5
+ghad1239	Ghadames	Afro-Asiatic	Africa	160	128	80	62.5
+guri1248	Guriaso		Papunesia	24	24	15	62.5
+ilia1236	Ilianen Manobo	Austronesian	Papunesia	18	16	10	62.5
+koka1244	Kokata	Pama-Nyungan	Australia	143	120	75	62.5
+kuni1267	Kunimaipa	Goilalan	Papunesia	171	136	85	62.5
+laal1242	Laal		Africa	154	128	80	62.5
+lemb1266	Lembena	Nuclear Trans New Guinea	Papunesia	175	144	90	62.5
+liki1240	Balobo	Atlantic-Congo	Africa	99	88	55	62.5
+loba1239	Lobala	Atlantic-Congo	Africa	98	88	55	62.5
+mezo1235	Mezontla Popoloca	Otomanguean	North America	169	144	90	62.5
+more1259	Morelos Nahuatl	Uto-Aztecan	North America	135	112	70	62.5
+nami1256	Namia	Sepik	Papunesia	85	80	50	62.5
+ndam1239	Ndamba	Atlantic-Congo	Africa	180	144	90	62.5
+omii1238	Omi	Central Sudanic	Africa	18	16	10	62.5
+phoe1239	Phoenician	Afro-Asiatic	Eurasia	153	128	80	62.5
+puni1241	Punic	Afro-Asiatic	Africa	153	128	80	62.5
+sana1297	San Andres Creole English	Indo-European	North America	168	136	85	62.5
+tima1241	Tima	Katla-Tima	Africa	61	56	35	62.5
+yany1243	Yanyuwa	Pama-Nyungan	Australia	90	80	50	62.5
+lavu1241	Lavukaleve		Papunesia	181	149	93	62.42
+liji1238	Lijili	Atlantic-Congo	Africa	180	149	93	62.42
+lumu1239	Lumun	Narrow Talodi	Africa	187	149	93	62.42
+cakf1236	Cakfem-Mushere-Jibyal	Afro-Asiatic	Africa	173	141	88	62.41
+kolb1240	Kolbila	Atlantic-Congo	Africa	178	141	88	62.41
+nila1242	Nilamba	Atlantic-Congo	Africa	162	133	83	62.41
+yuki1243	Northern Yukian	Yuki-Wappo	North America	175	141	88	62.41
+bubi1250	Bubi	Atlantic-Congo	Africa	144	117	73	62.39
+osam1235	Osamayi	Atlantic-Congo	Africa	105	93	58	62.37
+cent2127	Central Alaskan Yupik	Eskimo-Aleut	North America	194	154	96	62.34
+gyel1242	Gyele	Atlantic-Congo	Africa	190	154	96	62.34
+nort2732	Northern Tujia	Sino-Tibetan	Eurasia	190	154	96	62.34
+nucl1622	Marind	Anim	Papunesia	194	154	96	62.34
+mats1244	Matsés	Pano-Tacanan	South America	174	146	91	62.33
+ling1263	Kinshasa Lingala	Atlantic-Congo	Africa	75	69	43	62.32
+esim1238	Esimbi	Atlantic-Congo	Africa	154	130	81	62.31
+bong1285	Bongo	Central Sudanic	Africa	146	122	76	62.3
+tomb1244	Tombonuo	Austronesian	Papunesia	136	122	76	62.3
+bube1242	Bube	Atlantic-Congo	Africa	135	114	71	62.28
+remo1247	Hatang Kayi	Austronesian	Papunesia	135	114	71	62.28
+saki1247	Sakizaya	Austronesian	Papunesia	135	114	71	62.28
+luok1236	Luo (Kenya and Tanzania)	Nilotic	Africa	185	151	94	62.25
+dzon1239	Dzongkha	Sino-Tibetan	Eurasia	175	143	89	62.24
+jede1239	Jedek	Austroasiatic	Eurasia	112	98	61	62.24
+lahu1253	Lahu	Sino-Tibetan	Eurasia	175	143	89	62.24
+bamu1253	Bamun	Atlantic-Congo	Africa	159	135	84	62.22
+ikkk1242	Ik	Kuliak	Africa	167	135	84	62.22
+kens1248	Kensiu	Austroasiatic	Eurasia	164	135	84	62.22
+remb1250	Rembong-Wangka	Austronesian	Papunesia	159	135	84	62.22
+urni1239	Urningangg	Giimbiyu	Australia	157	135	84	62.22
+zinz1238	Zinza	Atlantic-Congo	Africa	106	90	56	62.22
+bond1245	Bondo	Austroasiatic	Eurasia	152	127	79	62.2
+lama1288	Lamang	Afro-Asiatic	Africa	143	127	79	62.2
+onaa1245	Selk'nam	Chonan	South America	153	127	79	62.2
+rita1239	Ritarungo	Pama-Nyungan	Australia	93	82	51	62.2
+lund1266	Lunda	Atlantic-Congo	Africa	150	119	74	62.18
+nort2938	Northern Haida	Haida	North America	179	148	92	62.16
+toor1238	Tooro	Atlantic-Congo	Africa	184	148	92	62.16
+west2557	Western Subanon	Austronesian	Papunesia	175	148	92	62.16
+kank1243	Kankanaey	Austronesian	Papunesia	180	140	87	62.14
+kele1259	Keley-i Kallahan	Austronesian	Papunesia	170	140	87	62.14
+sars1236	Sarsi	Athabaskan-Eyak-Tlingit	North America	176	140	87	62.14
+jita1239	Jita	Atlantic-Congo	Africa	75	66	41	62.12
+achu1247	Achumawi	Palaihnihan	North America	106	95	59	62.11
+east2782	Eastern Kikongo	Atlantic-Congo	Africa	156	124	77	62.1
+kask1239	Kaska	Athabaskan-Eyak-Tlingit	North America	137	124	77	62.1
+maka1304	Makaa	Atlantic-Congo	Africa	159	124	77	62.1
+wash1253	Washo		North America	152	124	77	62.1
+enuu1235	Enu	Sino-Tibetan	Eurasia	193	153	95	62.09
+sout2956	Southern Haida	Haida	North America	191	153	95	62.09
+baga1272	Baga Sitemu	Atlantic-Congo	Africa	140	116	72	62.07
+kris1246	I'saka	Sko	Papunesia	99	87	54	62.07
+mara1386	Maranunggu	Western Daly	Australia	173	145	90	62.07
+mart1255	Martuthunira	Pama-Nyungan	Australia	184	145	90	62.07
+molo1266	Moloko	Afro-Asiatic	Africa	109	87	54	62.07
+tehu1242	Tehuelche	Chonan	South America	182	145	90	62.07
+thay1249	Thayore	Pama-Nyungan	Australia	99	87	54	62.07
+tief1242	Tiefo-Daramandugu	Atlantic-Congo	Africa	177	145	90	62.07
+zaiw1241	Zaiwa	Sino-Tibetan	Eurasia	174	145	90	62.07
+ibal1244	Ibaloi	Austronesian	Papunesia	169	137	85	62.04
+luya1241	Luyi	Atlantic-Congo	Africa	172	137	85	62.04
+yapu1240	Yeri	Nuclear Torricelli	Papunesia	163	137	85	62.04
+jama1262	Jamaican Creole English	Indo-European	North America	157	129	80	62.02
+cree1270	Creek	Muskogean	North America	185	150	93	62
+sham1280	Shambala	Atlantic-Congo	Africa	118	100	62	62
+holo1240	Holoholo	Atlantic-Congo	Africa	144	121	75	61.98
+cane1242	Canela-Krahô	Nuclear-Macro-Je	South America	173	142	88	61.97
+elmo1238	El Molo	Afro-Asiatic	Africa	171	142	88	61.97
+sant1436	Santa María Zacatepec Mixtec	Otomanguean	North America	160	142	88	61.97
+atii1237	Ati	Austronesian	Papunesia	115	92	57	61.96
+west2555	Western Bukidnon Manobo	Austronesian	Papunesia	107	92	57	61.96
+arhu1242	Arhuaco	Chibchan	South America	156	134	83	61.94
+budz1238	Budza	Atlantic-Congo	Africa	166	134	83	61.94
+fran1266	Francisco León Zoque	Mixe-Zoque	North America	161	134	83	61.94
+hoaa1235	Amkoe	Kxa	Africa	193	155	96	61.94
+huaa1248	East Taa	Tuu	Africa	164	134	83	61.94
+tula1252	Tula	Atlantic-Congo	Africa	167	134	83	61.94
+cent2292	Central Bontoc	Austronesian	Papunesia	178	147	91	61.9
+east2555	Eastern Bolivian Guaraní	Tupian	South America	182	147	91	61.9
+kobo1249	Kobon	Nuclear Trans New Guinea	Papunesia	96	84	52	61.9
+wira1265	Wirangu	Pama-Nyungan	Australia	66	63	39	61.9
+dyul1238	Dyula	Mande	Africa	157	139	86	61.87
+lagw1237	Lagwan	Afro-Asiatic	Africa	164	139	86	61.87
+mand1436	Mandinka	Mande	Africa	137	118	73	61.86
+xhos1239	Xhosa	Atlantic-Congo	Africa	141	118	73	61.86
+yako1252	Yakoma	Atlantic-Congo	Africa	143	118	73	61.86
+mbya1239	Mbyá Guaraní	Tupian	South America	161	131	81	61.83
+mang1404	Mangga Buang	Austronesian	Papunesia	125	110	68	61.82
+adon1237	Adonara	Austronesian	Papunesia	165	144	89	61.81
+sanm1301	San Marcos Tlalcoyalco Popoloca	Otomanguean	North America	141	123	76	61.79
+bafi1243	Bafia	Atlantic-Congo	Africa	173	136	84	61.76
+cent2087	Coastal-Naga Bikol	Austronesian	Papunesia	156	136	84	61.76
+isin1239	Isinai	Austronesian	Papunesia	152	136	84	61.76
+labu1248	Labu	Austronesian	Papunesia	154	136	84	61.76
+tsog1243	Tsogo	Atlantic-Congo	Africa	167	136	84	61.76
+wari1268	Wari'	Chapacuran	South America	184	149	92	61.74
+nden1248	Ndengereko	Atlantic-Congo	Africa	88	81	50	61.73
+yong1270	Narua	Sino-Tibetan	Eurasia	160	128	79	61.72
+chuj1250	Chuj	Mayan	North America	171	141	87	61.7
+pela1242	Pela	Sino-Tibetan	Eurasia	194	154	95	61.69
+ache1245	Acheron	Narrow Talodi	Africa	120	107	66	61.68
+beja1238	Beja	Afro-Asiatic	Africa	121	107	66	61.68
+mann1248	Mann	Mande	Africa	124	107	66	61.68
+ewee1241	Ewe	Atlantic-Congo	Africa	162	133	82	61.65
+maco1239	Maco	Saliban	South America	163	133	82	61.65
+ward1246	Wardaman	Yangmanic	Australia	164	133	82	61.65
+drun1238	Drung	Sino-Tibetan	Eurasia	182	146	90	61.64
+gala1264	Galambu	Afro-Asiatic	Africa	79	73	45	61.64
+mail1248	Mailu	Mailuan	Papunesia	185	146	90	61.64
+taus1251	Tausug	Austronesian	Papunesia	179	146	90	61.64
+limo1248	Limos Kalinga	Austronesian	Papunesia	114	99	61	61.62
+pali1279	Palikúr	Arawakan	South America	111	99	61	61.62
+bura1292	Bura-Pabir	Afro-Asiatic	Africa	147	125	77	61.6
+romb1245	Romblomanon	Austronesian	Papunesia	155	125	77	61.6
+west2650	Western Cham	Austronesian	Eurasia	151	125	77	61.6
+nusu1239	Nusu	Sino-Tibetan	Eurasia	151	138	85	61.59
+pend1242	Pendau	Austronesian	Papunesia	185	151	93	61.59
+tekt1235	Tektiteko	Mayan	North America	170	138	85	61.59
+thad1238	Thado Chin	Sino-Tibetan	Eurasia	184	151	93	61.59
+dyir1250	Dyirbal	Pama-Nyungan	Australia	78	65	40	61.54
+hone1235	Hõne	Atlantic-Congo	Africa	177	143	88	61.54
+kich1262	K'iche'	Mayan	North America	180	143	88	61.54
+lach1248	Lachi	Tai-Kadai	Eurasia	167	143	88	61.54
+macu1260	Macuna	Tucanoan	South America	177	143	88	61.54
+uduk1239	Uduk	Koman	Africa	135	117	72	61.54
+yawa1261	Yawalapití	Arawakan	South America	58	52	32	61.54
+zaca1242	Zacatepec Chatino	Otomanguean	North America	170	143	88	61.54
+mika1239	Mikasuki	Muskogean	North America	147	122	75	61.48
+sout2730	Southern Bai	Sino-Tibetan	Eurasia	161	135	83	61.48
+tara1313	Tarao	Sino-Tibetan	Eurasia	166	135	83	61.48
+kren1239	Krenak	Nuclear-Macro-Je	South America	111	96	59	61.46
+sekp1241	Sekpele	Atlantic-Congo	Africa	94	83	51	61.45
+chon1284	Chong of Chanthaburi	Austroasiatic	Eurasia	193	153	94	61.44
+mila1245	Milang	Sino-Tibetan	Eurasia	193	153	94	61.44
+nucl1327	Limilngan	Limilngan-Wulna	Australia	167	140	86	61.43
+sabu1255	Hawu	Austronesian	Papunesia	172	140	86	61.43
+siri1273	Sirionó	Tupian	South America	169	140	86	61.43
+tigo1236	Tigon Mbembe	Atlantic-Congo	Africa	173	140	86	61.43
+apur1254	Apurinã	Arawakan	South America	155	127	78	61.42
+boli1256	Bolinao	Austronesian	Papunesia	60	57	35	61.4
+guer1241	Central Guerrero Nahuatl	Uto-Aztecan	North America	135	114	70	61.4
+ncan1245	Ncane-Mungong	Atlantic-Congo	Africa	131	114	70	61.4
+guru1271	Guruntum-Mbaaru	Afro-Asiatic	Africa	181	145	89	61.38
+guan1269	Kotiria	Tucanoan	South America	157	132	81	61.36
+nuer1246	Nuer	Nilotic	Africa	158	132	81	61.36
+nupe1254	Nupe-Nupe-Tako	Atlantic-Congo	Africa	159	132	81	61.36
+pich1237	Pichis Ashéninka	Arawakan	South America	148	119	73	61.34
+shas1239	Shasta	Shastan	North America	144	119	73	61.34
+coca1259	Cocama-Cocamilla	Tupian	South America	188	150	92	61.33
+here1253	Herero	Atlantic-Congo	Africa	187	150	92	61.33
+lash1243	Lashi	Sino-Tibetan	Eurasia	188	150	92	61.33
+zarm1239	Zarma	Songhay	Africa	189	150	92	61.33
+urua1242	Uruava	Austronesian	Papunesia	121	106	65	61.32
+bawm1236	Bawm Chin	Sino-Tibetan	Eurasia	160	137	84	61.31
+kwom1262	Kwoma	Sepik	Papunesia	174	137	84	61.31
+shee1238	She	Hmong-Mien	Eurasia	162	137	84	61.31
+tuki1240	Tuki	Atlantic-Congo	Africa	160	137	84	61.31
+kxoe1243	Kxoe	Khoe-Kwadi	Africa	194	155	95	61.29
+supy1237	Supyire Senoufo	Atlantic-Congo	Africa	195	155	95	61.29
+luse1252	Lusengo	Atlantic-Congo	Africa	131	111	68	61.26
+tata1258	Tataltepec Chatino	Otomanguean	North America	126	111	68	61.26
+haus1257	Hausa	Afro-Asiatic	Africa	91	80	49	61.25
+madn1237	Madngele	Eastern Daly	Australia	152	129	79	61.24
+nyat1246	Nyaturu	Atlantic-Congo	Africa	160	129	79	61.24
+cani1243	Canichana		South America	50	49	30	61.22
+shil1265	Shilluk	Nilotic	Africa	182	147	90	61.22
+yala1266	Yalahatan-Haruru-Awaiya	Austronesian	Papunesia	51	49	30	61.22
+anuf1239	Anufo	Atlantic-Congo	Africa	162	134	82	61.19
+mari1428	Marik	Austronesian	Papunesia	153	134	82	61.19
+iban1264	Iban	Austronesian	Papunesia	188	152	93	61.18
+wara1294	Anta-Komnzo-Wára-Wérè-Kémä	Yam	Papunesia	192	152	93	61.18
+yaka1272	Yaka (Central African Republic)	Atlantic-Congo	Africa	140	121	74	61.16
+como1259	Comox	Salishan	North America	177	139	85	61.15
+trum1247	Trumai		South America	172	139	85	61.15
+enap1235	Panare	Cariban	South America	146	126	77	61.11
+ibat1238	Ibatan	Austronesian	Papunesia	176	144	88	61.11
+jjuu1238	Jju	Atlantic-Congo	Africa	85	72	44	61.11
+lund1271	Lundayeh	Austronesian	Papunesia	141	126	77	61.11
+mais1250	Maisin	Austronesian	Papunesia	176	144	88	61.11
+ndob1238	Ndobo	Atlantic-Congo	Africa	85	72	44	61.11
+kett1243	Ket	Yeniseian	Eurasia	183	149	91	61.07
+kute1248	Kutep	Atlantic-Congo	Africa	163	131	80	61.07
+asut1235	Asu (Tanzania)	Atlantic-Congo	Africa	140	113	69	61.06
+mpad1242	Mpade	Afro-Asiatic	Africa	187	154	94	61.04
+sooo1256	Soo	Kuliak	Africa	82	77	47	61.04
+wamb1257	Wambule	Sino-Tibetan	Eurasia	189	154	94	61.04
+zaye1235	Lahta-Zayein Karen	Sino-Tibetan	Eurasia	193	154	94	61.04
+payn1244	Manat	Nuclear Trans New Guinea	Papunesia	162	136	83	61.03
+temi1246	Temiar	Austroasiatic	Eurasia	167	136	83	61.03
+zaca1241	Zacatlán-Ahuacatlán-Tepetzintla Nahuatl	Uto-Aztecan	North America	164	136	83	61.03
+cota1241	Cotabato Manobo	Austronesian	Papunesia	145	118	72	61.02
+east2690	Eastern Egyptian Bedawi Arabic	Afro-Asiatic	Eurasia	147	118	72	61.02
+azha1235	Azha	Sino-Tibetan	Eurasia	151	123	75	60.98
+shon1251	Shona	Atlantic-Congo	Africa	182	146	89	60.96
+bong1289	Bonggi	Austronesian	Papunesia	150	128	78	60.94
+sara1321	Sara Kaba Náà	Central Sudanic	Africa	155	128	78	60.94
+guan1266	Khroskyabs	Sino-Tibetan	Eurasia	191	151	92	60.93
+orok1266	Oroko	Atlantic-Congo	Africa	139	110	67	60.91
+umbu1258	Umbu-Ungu	Nuclear Trans New Guinea	Papunesia	165	133	81	60.9
+ache1246	Aché	Tupian	South America	78	69	42	60.87
+baba1266	Babanki	Atlantic-Congo	Africa	159	138	84	60.87
+waim1253	Waimiri-Atroari	Cariban	South America	127	115	70	60.87
+aghe1239	Aghem	Atlantic-Congo	Africa	180	143	87	60.84
+chic1270	Chickasaw	Muskogean	North America	150	120	73	60.83
+nort2951	Northwest Maidu	Maiduan	North America	142	120	73	60.83
+saba1267	Sabah Bisaya	Austronesian	Papunesia	137	120	73	60.83
+akoo1248	Akoose	Atlantic-Congo	Africa	185	148	90	60.81
+bugi1244	Buginese	Austronesian	Papunesia	183	148	90	60.81
+kova1243	Kovai	Nuclear Trans New Guinea	Papunesia	88	74	45	60.81
+moni1237	Mangue	Otomanguean	North America	84	74	45	60.81
+sons1242	Sonsorol	Austronesian	Papunesia	181	148	90	60.81
+yaak1241	Yaaku	Afro-Asiatic	Africa	177	148	90	60.81
+lega1249	Lega-Shabunda	Atlantic-Congo	Africa	153	125	76	60.8
+tera1251	Tera	Afro-Asiatic	Africa	152	125	76	60.8
+acha1249	Longchuan Achang	Sino-Tibetan	Eurasia	191	153	93	60.78
+bini1246	Bini	Atlantic-Congo	Africa	177	153	93	60.78
+itza1241	Itzá	Mayan	North America	188	153	93	60.78
+ngom1268	Ngombe (Democratic Republic of Congo)	Atlantic-Congo	Africa	121	102	62	60.78
+sout2896	Eastern Atadei	Austronesian	Papunesia	116	102	62	60.78
+loma1260	Loma (Liberia)	Mande	Africa	90	79	48	60.76
+plat1254	Plateau Malagasy	Austronesian	Africa	89	79	48	60.76
+umii1235	Umiida-Unggarangu	Worrorran	Australia	88	79	48	60.76
+acha1250	Achagua	Arawakan	South America	124	107	65	60.75
+mont1268	Montagnais	Algic	North America	134	107	65	60.75
+winj1235	Winjarumi	Worrorran	Australia	126	107	65	60.75
+mopa1243	Mopán Maya	Mayan	North America	166	135	82	60.74
+mpii1239	Mpi	Sino-Tibetan	Eurasia	174	140	85	60.71
+sout2782	South Fali	Atlantic-Congo	Africa	177	145	88	60.69
+lumb1249	Lumbu	Atlantic-Congo	Africa	146	117	71	60.68
+sali1253	Salinan		North America	141	117	71	60.68
+warr1258	Warrwa	Nyulnyulan	Australia	137	117	71	60.68
+hani1248	Hani	Sino-Tibetan	Eurasia	186	150	91	60.67
+soch1239	Sochiapam Chinantec	Otomanguean	North America	187	150	91	60.67
+uppe1427	Upper Kinabatangan	Austronesian	Papunesia	116	89	54	60.67
+hakk1236	Hakka Chinese	Sino-Tibetan	Eurasia	143	122	74	60.66
+abun1252	Abun		Papunesia	195	155	94	60.65
+sanu1240	Sanumá	Yanomamic	South America	150	127	77	60.63
+karb1241	Hills Karbi	Sino-Tibetan	Eurasia	157	132	80	60.61
+sout3236	Southern Gumuz	Gumuz	Africa	161	132	80	60.61
+waim1252	Waima'a	Austronesian	Papunesia	144	132	80	60.61
+mpot1240	Mpoto	Atlantic-Congo	Africa	173	137	83	60.58
+pipi1250	Pipil	Uto-Aztecan	North America	170	137	83	60.58
+nucl1240	Mumuye	Atlantic-Congo	Africa	170	142	86	60.56
+temp1235	Tempasuk Dusun	Austronesian	Papunesia	127	109	66	60.55
+magd1235	Magdalena Peñasco Mixtec	Otomanguean	North America	173	147	89	60.54
+abip1241	Abipon	Guaicuruan	South America	129	114	69	60.53
+baba1267	Baba Malay	Austronesian	Eurasia	191	152	92	60.53
+cent2314	Central Chong	Austroasiatic	Eurasia	187	152	92	60.53
+east2342	Eastern Kayah	Sino-Tibetan	Eurasia	189	152	92	60.53
+tawa1286	Tawallammat Tamajaq	Afro-Asiatic	Africa	127	114	69	60.53
+amis1246	Amis	Austronesian	Papunesia	151	119	72	60.5
+buhu1237	Buhutu	Austronesian	Papunesia	134	119	72	60.5
+beem1239	Beembe	Atlantic-Congo	Africa	144	124	75	60.48
+fore1270	Fore	Nuclear Trans New Guinea	Papunesia	97	86	52	60.47
+gara1269	Garrwa	Garrwan	Australia	94	86	52	60.47
+mboc1235	Mbo (Cameroon)	Atlantic-Congo	Africa	161	129	78	60.47
+kgal1244	Kgalagadi	Atlantic-Congo	Africa	169	134	81	60.45
+klam1254	Klamath-Modoc		North America	164	139	84	60.43
+akun1241	Akuntsu	Tupian	South America	174	144	87	60.42
+bemb1257	Bemba (Zambia)	Atlantic-Congo	Africa	183	144	87	60.42
+bora1263	Bora	Boran	South America	173	144	87	60.42
+djin1253	Djinang	Pama-Nyungan	Australia	59	48	29	60.42
+fare1241	Farefare	Atlantic-Congo	Africa	174	144	87	60.42
+tago1246	Tagoi	Rashad	Africa	107	96	58	60.42
+arap1274	Arapaho	Algic	North America	188	149	90	60.4
+nava1243	Navajo	Athabaskan-Eyak-Tlingit	North America	185	149	90	60.4
+sais1237	Saisiyat	Austronesian	Papunesia	188	149	90	60.4
+apma1240	Apma	Austronesian	Papunesia	194	154	93	60.39
+cosa1234	Cosao	Sino-Tibetan	Eurasia	194	154	93	60.39
+wuch1236	Wu Chinese	Sino-Tibetan	Eurasia	192	154	93	60.39
+basa1282	Basa (Nigeria)	Atlantic-Congo	Africa	115	106	64	60.38
+nort2775	Northwest Gbaya	Atlantic-Congo	Africa	135	116	70	60.34
+west2778	Western Durango Nahuatl	Uto-Aztecan	North America	131	116	70	60.34
+isth1240	Isthmus-Cosoleacaque Nahuatl	Uto-Aztecan	North America	151	121	73	60.33
+barg1252	Bargam	Nuclear Trans New Guinea	Papunesia	152	131	79	60.31
+chas1234	Chashan	Sino-Tibetan	Eurasia	169	131	79	60.31
+mwer1248	Mwera (Chimwera)	Atlantic-Congo	Africa	153	131	79	60.31
+atam1240	Ata Manobo	Austronesian	Papunesia	160	136	82	60.29
+belu1239	Belueli	Atlantic-Congo	Africa	73	68	41	60.29
+chiq1248	Lomeriano-Ignaciano Chiquitano	Chiquitano	South America	166	136	82	60.29
+elna1235	El Nayar Cora	Uto-Aztecan	North America	162	136	82	60.29
+kunj1245	Kunjen	Pama-Nyungan	Australia	163	136	82	60.29
+nort2957	Northern Puebla Nahuatl	Uto-Aztecan	North America	153	136	82	60.29
+murl1244	Murle	Surmic	Africa	175	141	85	60.28
+biha1246	Bih	Austronesian	Eurasia	182	146	88	60.27
+khas1269	Khasi	Austroasiatic	Eurasia	180	146	88	60.27
+nugu1242	Nugunu (Cameroon)	Atlantic-Congo	Africa	86	73	44	60.27
+sara1340	Saramaccan	Indo-European	South America	183	146	88	60.27
+xish1235	Xishanba Lalo	Sino-Tibetan	Eurasia	174	146	88	60.27
+mana1288	Manange	Sino-Tibetan	Eurasia	191	151	91	60.26
+monn1252	Mon	Austroasiatic	Eurasia	91	78	47	60.26
+waim1251	Waima	Austronesian	Papunesia	186	151	91	60.26
+hyam1245	Hyam	Atlantic-Congo	Africa	93	83	50	60.24
+bong1284	Bongili	Atlantic-Congo	Africa	102	88	53	60.23
+okoe1238	Oko-Eni-Osayen	Atlantic-Congo	Africa	102	93	56	60.22
+keri1250	Kerinci	Austronesian	Papunesia	127	108	65	60.19
+naro1251	Narom	Austronesian	Papunesia	132	118	71	60.17
+bond1247	Bondei	Atlantic-Congo	Africa	151	123	74	60.16
+kaba1281	Kaba	Central Sudanic	Africa	166	133	80	60.15
+kari1311	Karitiâna	Tupian	South America	160	133	80	60.15
+mayo1261	Mayogo	Atlantic-Congo	Africa	168	133	80	60.15
+ngar1283	Ngarnka	Mirndi	Australia	162	133	80	60.15
+guer1243	Guerrero Amuzgo	Otomanguean	North America	179	148	89	60.14
+haka1240	Haka Chin	Sino-Tibetan	Eurasia	170	138	83	60.14
+hula1239	Hula	Austronesian	Papunesia	164	143	86	60.14
+kari1254	Kariri		South America	177	143	86	60.14
+lolo1259	Lolopo	Sino-Tibetan	Eurasia	186	148	89	60.14
+masb1238	Masbatenyo	Austronesian	Papunesia	172	143	86	60.14
+mull1237	Mullukmulluk	Northern Daly	Australia	169	143	86	60.14
+thao1240	Thao	Austronesian	Papunesia	170	138	83	60.14
+tond1249	Tondi Songway Kiini	Songhay	Africa	172	138	83	60.14
+tswa1253	Tswana	Atlantic-Congo	Africa	178	143	86	60.14
+bafu1246	Bafut	Atlantic-Congo	Africa	190	153	92	60.13
+dzao1238	Dzao Min	Hmong-Mien	Eurasia	193	153	92	60.13
+mwag1236	Mwaghavul	Afro-Asiatic	Africa	192	153	92	60.13
+sing1264	Northern Jinghpaw	Sino-Tibetan	Eurasia	192	153	92	60.13
+wawa1246	Wawa	Atlantic-Congo	Africa	188	153	92	60.13
+youn1235	Younuo Bunu	Hmong-Mien	Eurasia	193	153	92	60.13
+arig1246	Arigidi	Atlantic-Congo	Africa	142	125	75	60
+aton1241	Atong (India)	Sino-Tibetan	Eurasia	194	155	93	60
+bala1311	Balangingi	Austronesian	Papunesia	153	125	75	60
+buwa1243	Buwal	Afro-Asiatic	Africa	191	155	93	60
+cebu1242	Cebuano	Austronesian	Papunesia	84	75	45	60
+chuu1238	Chuukese	Austronesian	Papunesia	132	115	69	60
+eton1253	Eton-Mengisa	Atlantic-Congo	Africa	115	105	63	60
+geru1240	Geruma	Afro-Asiatic	Africa	66	60	36	60
+giry1241	Giryama	Atlantic-Congo	Africa	83	70	42	60
+high1276	Highland Popoluca	Mixe-Zoque	North America	186	150	90	60
+kain1272	Kaingang	Nuclear-Macro-Je	South America	31	30	18	60
+kamb1297	Kamba (Kenya)	Atlantic-Congo	Africa	173	140	84	60
+kweg1241	Kwegu	Surmic	Africa	162	135	81	60
+labu1249	Labuk-Kinabatangan Kadazan	Austronesian	Papunesia	104	95	57	60
+lito1235	Litoka	Atlantic-Congo	Africa	97	85	51	60
+mang1401	Mangareva	Austronesian	Papunesia	173	145	87	60
+mmen1238	Mmen	Atlantic-Congo	Africa	10	10	6	60
+naxi1245	Naxi	Sino-Tibetan	Eurasia	132	110	66	60
+nyul1247	Nyulnyul	Nyulnyulan	Australia	159	135	81	60
+paez1247	Páez		South America	45	40	24	60
+pala1344	Palauan	Austronesian	Papunesia	184	150	90	60
+pany1241	Panytyima	Pama-Nyungan	Australia	171	135	81	60
+plai1258	Plains Cree	Algic	North America	174	135	81	60
+quey1238	Queyu	Sino-Tibetan	Eurasia	6	5	3	60
+samb1311	Samba Daka	Atlantic-Congo	Africa	158	135	81	60
+sela1259	Selaru	Austronesian	Papunesia	186	150	90	60
+tika1246	Tikar	Atlantic-Congo	Africa	192	155	93	60
+tira1254	Tira	Heibanic	Africa	77	70	42	60
+zamb1245	Zamba	Atlantic-Congo	Africa	152	125	75	60
+kham1282	Khams Tibetan	Sino-Tibetan	Eurasia	184	152	91	59.87
+tuwa1243	Tuwali Ifugao	Austronesian	Papunesia	192	152	91	59.87
+east2516	East Kewa	Nuclear Trans New Guinea	Papunesia	179	147	88	59.86
+mpur1239	Mpur		Papunesia	185	147	88	59.86
+saba1268	Sabanê	Nambiquaran	South America	169	142	85	59.86
+kalk1246	Kalkutung	Pama-Nyungan	Australia	158	132	79	59.85
+lika1243	Liko	Atlantic-Congo	Africa	165	132	79	59.85
+mund1330	Mundurukú	Tupian	South America	161	137	82	59.85
+sund1252	Sundanese	Austronesian	Papunesia	170	137	82	59.85
+vunj1238	Vunjo	Atlantic-Congo	Africa	165	132	79	59.85
+kuma1280	Kuman	Nuclear Trans New Guinea	Papunesia	153	127	76	59.84
+lala1264	Lala-Bisa	Atlantic-Congo	Africa	150	122	73	59.84
+loup1243	Loup A	Algic	North America	132	122	73	59.84
+poko1263	Pökoot	Nilotic	Africa	153	122	73	59.84
+pula1263	Pulaar	Atlantic-Congo	Africa	130	112	67	59.82
+ilaa1246	Ila	Atlantic-Congo	Africa	124	102	61	59.8
+suku1261	Sukuma	Atlantic-Congo	Africa	128	102	61	59.8
+soli1239	Soli	Atlantic-Congo	Africa	101	87	52	59.77
+aheu1239	Thavung	Austroasiatic	Eurasia	192	154	92	59.74
+arao1248	Araona	Pano-Tacanan	South America	193	154	92	59.74
+east2379	Eastern Arrernte	Pama-Nyungan	Australia	93	77	46	59.74
+mang1381	Mangarrayi	Mangarrayi-Maran	Australia	192	154	92	59.74
+sout2797	Southern Toussian	Atlantic-Congo	Africa	92	77	46	59.74
+wusa1235	Wusa Nasu	Sino-Tibetan	Eurasia	192	154	92	59.74
+mina1276	Mina (Cameroon)	Afro-Asiatic	Africa	185	149	89	59.73
+nyor1246	Nyoro	Atlantic-Congo	Africa	180	149	89	59.73
+west2430	Western Xiangxi Miao	Hmong-Mien	Eurasia	181	149	89	59.73
+west2644	Western Highland Chatino	Otomanguean	North America	188	149	89	59.73
+bala1315	Balantak	Austronesian	Papunesia	178	144	86	59.72
+khmu1256	Khmu	Austroasiatic	Eurasia	167	144	86	59.72
+kuyy1240	Kuy	Austroasiatic	Eurasia	174	144	86	59.72
+nung1282	Nung (Myanmar)	Sino-Tibetan	Eurasia	170	144	86	59.72
+yecu1235	Yecuatla Totonac	Totonacan	North America	172	144	86	59.72
+lele1276	Lele (Chad)	Afro-Asiatic	Africa	164	139	83	59.71
+makc1235	Mak (China)	Tai-Kadai	Eurasia	171	139	83	59.71
+tete1251	Tetelcingo Nahuatl	Uto-Aztecan	North America	173	139	83	59.71
+pana1307	Panará	Nuclear-Macro-Je	South America	156	134	80	59.7
+xava1240	Xavánte	Nuclear-Macro-Je	South America	163	134	80	59.7
+bara1370	Baram Kayan	Austronesian	Papunesia	143	129	77	59.69
+nuuu1241	N||ng-Danster !Ui	Tuu	Africa	160	129	77	59.69
+sant1451	Santa María Quiegolani Zapotec	Otomanguean	North America	160	129	77	59.69
+sier1248	Sierra Negra Nahuatl	Uto-Aztecan	North America	145	124	74	59.68
+iran1262	Iranun	Austronesian	Papunesia	138	119	71	59.66
+rung1259	Rungus	Austronesian	Papunesia	137	119	71	59.66
+konz1239	Konzo	Atlantic-Congo	Africa	133	114	68	59.65
+high1278	Highland Puebla Nahuatl	Uto-Aztecan	North America	132	109	65	59.63
+mala1534	Malaweg	Austronesian	Papunesia	122	104	62	59.62
+jiba1237	Jiba	Atlantic-Congo	Africa	120	99	59	59.6
+maru1249	Maru	Sino-Tibetan	Eurasia	191	151	90	59.6
+madi1260	Ma'di	Central Sudanic	Africa	185	146	87	59.59
+tief1244	Tiefo-Nyafogo-Numudara	Atlantic-Congo	Africa	186	146	87	59.59
+copa1237	Copala Triqui	Otomanguean	North America	171	141	84	59.57
+dobu1241	Dobu	Austronesian	Papunesia	174	141	84	59.57
+elip1238	Elip	Atlantic-Congo	Africa	111	94	56	59.57
+piap1246	Piapoco	Arawakan	South America	59	47	28	59.57
+waya1269	Wayana	Cariban	South America	178	141	84	59.57
+owaa1237	Owa	Austronesian	Papunesia	161	136	81	59.56
+kali1308	Kalispel-Pend d'Oreille	Salishan	North America	160	131	78	59.54
+psik1239	Psikye	Afro-Asiatic	Africa	154	126	75	59.52
+limo1249	Limonese Creole	Indo-European	North America	143	121	72	59.5
+nuuc1236	Nuu-chah-nulth	Wakashan	North America	151	121	72	59.5
+cent2091	Central Palawano	Austronesian	Papunesia	90	79	47	59.49
+bila1255	Bila	Atlantic-Congo	Africa	134	111	66	59.46
+bush1247	Bushoong	Atlantic-Congo	Africa	184	148	88	59.46
+cowl1242	Cowlitz	Salishan	North America	175	148	88	59.46
+domm1246	Dom	Nuclear Trans New Guinea	Papunesia	179	148	88	59.46
+gebe1237	Gebe	Austronesian	Papunesia	129	111	66	59.46
+land1256	Landoma	Atlantic-Congo	Africa	137	111	66	59.46
+gade1242	Gade	Atlantic-Congo	Africa	178	143	85	59.44
+mada1285	Madak	Austronesian	Papunesia	176	143	85	59.44
+isth1242	Isthmus-Mecayapan Nahuatl	Uto-Aztecan	North America	123	106	63	59.43
+lave1249	Brao	Austroasiatic	Eurasia	122	106	63	59.43
+akha1245	Akha	Sino-Tibetan	Eurasia	159	138	82	59.42
+ines1240	Ineseño	Chumashan	North America	173	138	82	59.42
+mang1403	Mangseng	Austronesian	Papunesia	165	138	82	59.42
+nort2774	Northern Ngbandi	Atlantic-Congo	Africa	159	133	79	59.4
+bamb1266	Bambili-Bambui	Atlantic-Congo	Africa	32	32	19	59.38
+aoua1234	A'ou	Tai-Kadai	Eurasia	187	155	92	59.35
+wamb1258	Wambayan	Mirndi	Australia	103	91	54	59.34
+kimm1245	Kim Mun	Hmong-Mien	Eurasia	188	150	89	59.33
+west2466	Western Karaboro	Atlantic-Congo	Africa	185	150	89	59.33
+baka1274	Baka (South Sudan)	Central Sudanic	Africa	137	113	67	59.29
+nort3047	North Giziga	Afro-Asiatic	Africa	176	140	83	59.29
+achi1256	Achi	Mayan	North America	164	135	80	59.26
+aram1253	Arammba	Yam	Papunesia	92	81	48	59.26
+otor1240	Otoro	Heibanic	Africa	88	81	48	59.26
+siwu1238	Siwu	Atlantic-Congo	Africa	87	81	48	59.26
+taga1272	Tagabawa	Austronesian	Papunesia	161	135	80	59.26
+tuca1252	Tucano	Tucanoan	South America	67	54	32	59.26
+umbu1257	Umbundu	Atlantic-Congo	Africa	153	130	77	59.23
+biao1254	Biao-Jiao Mien	Hmong-Mien	Eurasia	191	152	90	59.21
+gaam1241	Gaam	Eastern Jebel	Africa	83	76	45	59.21
+kagf1238	Ut-Main	Atlantic-Congo	Africa	86	76	45	59.21
+sich1238	Sichuan Yi	Sino-Tibetan	Eurasia	189	152	90	59.21
+west2396	Western Lawa	Austroasiatic	Eurasia	190	152	90	59.21
+koon1244	South-Central Koongo	Atlantic-Congo	Africa	153	125	74	59.2
+lele1267	Lelepa	Austronesian	Papunesia	149	125	74	59.2
+bari1286	Bariai	Austronesian	Papunesia	176	147	87	59.18
+miam1252	Miami	Algic	North America	120	98	58	59.18
+shix1238	Shixing	Sino-Tibetan	Eurasia	182	147	87	59.18
+kuik1246	Kuikúro-Kalapálo	Cariban	South America	176	142	84	59.15
+logo1259	Logo	Central Sudanic	Africa	172	142	84	59.15
+malg1251	Malgwa	Afro-Asiatic	Africa	171	142	84	59.15
+baga1273	Baga Koga	Atlantic-Congo	Africa	104	93	55	59.14
+bamb1262	Bambassi	Blue Nile Mao	Africa	99	93	55	59.14
+mbal1255	Central Wambo	Atlantic-Congo	Africa	100	93	55	59.14
+abee1242	Abé	Atlantic-Congo	Africa	142	115	68	59.13
+babi1235	Witsuwit'en-Babine	Athabaskan-Eyak-Tlingit	North America	169	137	81	59.12
+berb1259	Berbice Creole Dutch	Indo-European	South America	170	137	81	59.12
+hote1245	Hote	Austronesian	Papunesia	162	137	81	59.12
+kach1280	Southern Jinghpaw	Sino-Tibetan	Eurasia	172	137	81	59.12
+meta1238	Meta'	Atlantic-Congo	Africa	159	137	81	59.12
+pagi1243	Pagibete	Atlantic-Congo	Africa	170	137	81	59.12
+ashe1272	Ashéninka Perené	Arawakan	South America	193	154	91	59.09
+gamb1251	Gambera	Worrorran	Australia	129	110	65	59.09
+geba1237	Geba Karen	Sino-Tibetan	Eurasia	193	154	91	59.09
+kele1258	Kele (Papua New Guinea)	Austronesian	Papunesia	150	132	78	59.09
+nsen1242	Nsenga	Atlantic-Congo	Africa	160	132	78	59.09
+nyah1250	Nyahkur	Austroasiatic	Eurasia	192	154	91	59.09
+papu1250	Papuan Malay	Austronesian	Papunesia	191	154	91	59.09
+tuwu1238	Tuwuli	Atlantic-Congo	Africa	191	154	91	59.09
+wood1236	Woods Cree	Algic	North America	162	132	78	59.09
+bisu1244	Bisu	Sino-Tibetan	Eurasia	187	149	88	59.06
+male1297	Maléku Jaíka	Chibchan	North America	188	149	88	59.06
+maya1285	Mayangna	Misumalpan	North America	153	127	75	59.06
+bant1288	Bantoanon	Austronesian	Papunesia	124	105	62	59.05
+nyaw1247	Nyawaygi	Pama-Nyungan	Australia	93	83	49	59.04
+cent1989	Central Khmer	Austroasiatic	Eurasia	177	144	85	59.03
+swah1253	Swahili	Atlantic-Congo	Africa	178	144	85	59.03
+yele1255	Yele		Papunesia	175	144	85	59.03
+axiy1235	Axi Yi	Sino-Tibetan	Eurasia	166	139	82	58.99
+gapa1238	Gapapaiwa	Austronesian	Papunesia	157	139	82	58.99
+oldm1242	Old Mon	Austroasiatic	Eurasia	171	139	82	58.99
+makw1236	Makwe	Atlantic-Congo	Africa	86	78	46	58.97
+mwan1250	Mwan	Mande	Africa	135	117	69	58.97
+toma1245	Toma	Mande	Africa	135	117	69	58.97
+baki1244	Baki	Austronesian	Papunesia	152	134	79	58.96
+gaga1251	Gaagudju		Australia	169	134	79	58.96
+shaw1249	Shawnee	Algic	North America	168	134	79	58.96
+luch1239	Luchazi	Atlantic-Congo	Africa	136	112	66	58.93
+pagu1249	Pagu	North Halmahera	Papunesia	153	129	76	58.91
+tari1263	Tarifiyt-Beni-Iznasen-Eastern Middle Atlas Berber	Afro-Asiatic	Africa	151	129	76	58.91
+gari1256	Garifuna	Arawakan	North America	80	73	43	58.9
+quer1236	Querétaro Otomi	Otomanguean	North America	184	146	86	58.9
+sout2994	Southern Nambikuára	Nambiquaran	South America	186	146	86	58.9
+laiy1246	Laiyolo	Austronesian	Papunesia	123	107	63	58.88
+yaoo1241	Yao	Atlantic-Congo	Africa	137	107	63	58.88
+mari1440	Maricopa	Cochimi-Yuman	North America	175	141	83	58.87
+baim1244	Baima	Sino-Tibetan	Eurasia	193	153	90	58.82
+cent2004	Central Bai	Sino-Tibetan	Eurasia	162	136	80	58.82
+cori1240	Cori	Atlantic-Congo	Africa	139	119	70	58.82
+maga1263	Mag-Anchi Ayta	Austronesian	Papunesia	61	51	30	58.82
+paco1243	Pacoh	Austroasiatic	Eurasia	188	153	90	58.82
+dana1252	Danau	Austroasiatic	Eurasia	179	148	87	58.78
+moch1257	Mocho	Mayan	North America	163	131	77	58.78
+nyak1260	Nyakyusa-Ngonde	Atlantic-Congo	Africa	153	131	77	58.78
+guro1248	Guro	Mande	Africa	131	114	67	58.77
+mamb1296	Mambwe-Lungu	Atlantic-Congo	Africa	141	114	67	58.77
+duna1248	Duna		Papunesia	91	80	47	58.75
+nort2994	Northern Roglai	Austronesian	Eurasia	90	80	47	58.75
+ainu1240	Hokkaido Ainu	Ainu	Eurasia	176	143	84	58.74
+busa1253	Busa	Mande	Africa	171	143	84	58.74
+wage1238	Wageman		Australia	175	143	84	58.74
+aros1241	Arosi	Austronesian	Papunesia	141	126	74	58.73
+glav1244	Glavda	Afro-Asiatic	Africa	149	126	74	58.73
+mand1415	Mandarin Chinese	Sino-Tibetan	Eurasia	195	155	91	58.71
+tojo1241	Tojolabal	Mayan	North America	195	155	91	58.71
+agus1235	Agusan Manobo	Austronesian	Papunesia	103	92	54	58.7
+sout2869	Southwest Tanna	Austronesian	Papunesia	166	138	81	58.7
+temb1272	Motembo-Kunda	Atlantic-Congo	Africa	105	92	54	58.7
+sanb1241	San Baltazar Loxicha Zapotec	Otomanguean	North America	147	121	71	58.68
+biao1256	Biao Mon	Hmong-Mien	Eurasia	189	150	88	58.67
+bier1244	Bierebo	Austronesian	Papunesia	186	150	88	58.67
+gida1247	Gidar	Afro-Asiatic	Africa	80	75	44	58.67
+isla1278	Island Carib	Arawakan	North America	85	75	44	58.67
+kats1235	Katso	Sino-Tibetan	Eurasia	186	150	88	58.67
+nyan1307	Nyankole	Atlantic-Congo	Africa	185	150	88	58.67
+sout2729	Southern Pumi	Sino-Tibetan	Eurasia	186	150	88	58.67
+coat1243	Coatlán Zapotec	Otomanguean	North America	166	133	78	58.65
+kwaz1243	Kwaza		South America	159	133	78	58.65
+ahom1240	Ahom	Tai-Kadai	Eurasia	178	145	85	58.62
+goon1238	Gooniyandi	Bunaban	Australia	99	87	51	58.62
+kaur1271	Kaure-Narau	Kaure-Kosare	Papunesia	60	58	34	58.62
+adze1240	Adzera	Austronesian	Papunesia	158	128	75	58.59
+bwai1242	Bwaidoka	Austronesian	Papunesia	153	128	75	58.59
+reng1252	Rengao	Austroasiatic	Eurasia	172	140	82	58.57
+urak1238	Urak Lawoi'	Austronesian	Eurasia	167	140	82	58.57
+akei1237	Akei	Austronesian	Papunesia	122	111	65	58.56
+guat1253	Guató		South America	127	111	65	58.56
+koon1245	Koonzime	Atlantic-Congo	Africa	133	111	65	58.56
+kagu1239	Kagulu	Atlantic-Congo	Africa	186	152	89	58.55
+kili1267	Kilivila	Austronesian	Papunesia	187	152	89	58.55
+otta1242	Ottawa	Algic	North America	190	152	89	58.55
+cham1315	Chamacoco	Zamucoan	South America	143	123	72	58.54
+gang1267	Ganggalida	Tangkic	Australia	94	82	48	58.54
+worr1237	Worrorra	Worrorran	Australia	151	123	72	58.54
+pang1287	Pangwa	Atlantic-Congo	Africa	167	135	79	58.52
+tsis1238	Salka-Tsishingini	Atlantic-Congo	Africa	164	135	79	58.52
+bebe1248	Bebele	Atlantic-Congo	Africa	184	147	86	58.5
+chuw1238	Chuwabu	Atlantic-Congo	Africa	180	147	86	58.5
+dibo1245	Dibole	Atlantic-Congo	Africa	124	106	62	58.49
+west2624	Western Huasteca Nahuatl	Uto-Aztecan	North America	128	106	62	58.49
+kala1400	Central Kalapuya	Kalapuyan	North America	139	118	69	58.47
+lubu1243	Lubuagan Kalinga	Austronesian	Papunesia	141	118	69	58.47
+nige1253	Hausa States Fulfulde	Atlantic-Congo	Africa	136	118	69	58.47
+anua1242	Anuak	Nilotic	Africa	71	65	38	58.46
+gugu1255	Guugu Yimidhirr	Pama-Nyungan	Australia	72	65	38	58.46
+makh1266	Makhuwa-Saka	Atlantic-Congo	Africa	158	130	76	58.46
+sang1331	Sanga (Democratic Republic of Congo)	Atlantic-Congo	Africa	162	130	76	58.46
+gube1234	Gubeeher-Gufangor-Gubelor	Atlantic-Congo	Africa	180	142	83	58.45
+chip1261	Chipewyan	Athabaskan-Eyak-Tlingit	North America	193	154	90	58.44
+pahn1237	Pa-Hng	Hmong-Mien	Eurasia	194	154	90	58.44
+yoga1237	Yogad	Austronesian	Papunesia	192	154	90	58.44
+touo1238	Touo		Papunesia	109	101	59	58.42
+gobu1238	Gobu	Atlantic-Congo	Africa	141	113	66	58.41
+arop1243	Arop-Lokep	Austronesian	Papunesia	161	137	80	58.39
+khar1287	Kharia	Austroasiatic	Eurasia	172	137	80	58.39
+mokl1243	Moklen	Austronesian	Eurasia	181	149	87	58.39
+munc1235	Mün Chin	Sino-Tibetan	Eurasia	186	149	87	58.39
+tanz1241	Tanzanian Ngoni	Atlantic-Congo	Africa	188	149	87	58.39
+tezo1238	Tezoatlán Mixtec	Otomanguean	North America	162	137	80	58.39
+tokp1240	Tok Pisin	Indo-European	Papunesia	184	149	87	58.39
+yagu1244	Yagua	Peba-Yagua	South America	170	137	80	58.39
+afad1236	Afade	Afro-Asiatic	Africa	62	60	35	58.33
+amar1272	Amara	Austronesian	Papunesia	148	132	77	58.33
+cent2084	Central Cagayan Agta	Austronesian	Papunesia	174	144	84	58.33
+kala1384	Kalanga	Atlantic-Congo	Africa	164	132	77	58.33
+kaya1319	Kayardild	Tangkic	Australia	96	84	49	58.33
+kupa1239	Kupang Malay	Austronesian	Papunesia	168	144	84	58.33
+mong1338	Mongo	Atlantic-Congo	Africa	124	108	63	58.33
+mono1273	Mono-Alu	Austronesian	Papunesia	111	96	56	58.33
+motu1246	Motu	Austronesian	Papunesia	160	132	77	58.33
+ngan1295	Ngandi	Gunwinyguan	Australia	95	84	49	58.33
+tswa1255	Tswa	Atlantic-Congo	Africa	162	132	77	58.33
+east2485	Eastern Penan	Austronesian	Papunesia	147	127	74	58.27
+lusi1240	Lusi	Austronesian	Papunesia	144	127	74	58.27
+casi1235	Casiguran-Nagtipunan Agta	Austronesian	Papunesia	133	115	67	58.26
+komo1260	Komo (Democratic Republic of Congo)	Atlantic-Congo	Africa	135	115	67	58.26
+tora1259	Torau	Austronesian	Papunesia	119	103	60	58.25
+yeyi1239	Yeyi	Atlantic-Congo	Africa	102	91	53	58.24
+bani1255	Baniwa do Icana	Arawakan	South America	85	79	46	58.23
+hava1248	Havasupai-Walapai-Yavapai	Cochimi-Yuman	North America	165	134	78	58.21
+nkon1248	Nkonya	Atlantic-Congo	Africa	128	110	64	58.18
+sele1249	Selee	Atlantic-Congo	Africa	128	110	64	58.18
+sion1247	Siona-Tetete	Tucanoan	South America	62	55	32	58.18
+masa1322	Masana	Afro-Asiatic	Africa	188	153	89	58.17
+acol1236	Acoli	Nilotic	Africa	179	141	82	58.16
+awet1244	Awetí	Tupian	South America	161	129	75	58.14
+taya1257	Tayart Tamajeq	Afro-Asiatic	Africa	161	129	75	58.14
+ngeq1245	Kriang-Khlor	Austroasiatic	Eurasia	134	117	68	58.12
+rama1270	Rama	Chibchan	North America	145	117	68	58.12
+hala1252	Halang	Austroasiatic	Eurasia	82	74	43	58.11
+japh1234	Japhug	Sino-Tibetan	Eurasia	185	148	86	58.11
+ngar1284	Ngarinyin	Worrorran	Australia	181	148	86	58.11
+saba1263	Sabah Malay	Austronesian	Papunesia	182	148	86	58.11
+jama1261	Madi	Arawan	South America	170	136	79	58.09
+nang1262	Nanggu	Austronesian	Papunesia	162	136	79	58.09
+nyam1285	Nyam	Afro-Asiatic	Africa	160	136	79	58.09
+sout2895	South Nuaulu	Austronesian	Papunesia	158	136	79	58.09
+sume1241	Sumerian		Eurasia	167	136	79	58.09
+baba1264	Baba	Atlantic-Congo	Africa	147	124	72	58.06
+gada1258	Ga'dang	Austronesian	Papunesia	70	62	36	58.06
+kaya1315	Kayan Lahwi	Sino-Tibetan	Eurasia	194	155	90	58.06
+misi1243	Misima-Paneati	Austronesian	Papunesia	144	124	72	58.06
+tsix1234	Ts'ixa	Khoe-Kwadi	Africa	193	155	90	58.06
+awad1244	Awad Bing	Austronesian	Papunesia	162	143	83	58.04
+huuu1240	Hu	Austroasiatic	Eurasia	175	143	83	58.04
+uppe1275	Upper Necaxa Totonac	Totonacan	North America	176	143	83	58.04
+gumu1244	Northern Gumuz	Gumuz	Africa	160	131	76	58.02
+kare1338	Kare (Central African Republic)	Atlantic-Congo	Africa	158	131	76	58.02
+loka1252	Lokaa	Atlantic-Congo	Africa	162	131	76	58.02
+paas1238	Paasaal	Atlantic-Congo	Africa	186	150	87	58
+qaqe1238	Qaqet	Baining	Papunesia	55	50	29	58
+walm1241	Walmajarri	Pama-Nyungan	Australia	57	50	29	58
+budu1265	Buduma	Afro-Asiatic	Africa	137	119	69	57.98
+cent2100	Central Dusun	Austronesian	Papunesia	138	119	69	57.98
+sema1266	Semai	Austroasiatic	Eurasia	141	119	69	57.98
+arop1242	Arop-Sissano	Austronesian	Papunesia	164	138	80	57.97
+chek1238	Cheke Holo	Austronesian	Papunesia	167	138	80	57.97
+iliu1237	Ili'uun	Austronesian	Papunesia	168	138	80	57.97
+maba1277	Maba (Chad)	Maban	Africa	172	138	80	57.97
+ngba1285	Ngbaka Minagende	Atlantic-Congo	Africa	168	138	80	57.97
+qaua1234	Central Gelao-Qau	Tai-Kadai	Eurasia	99	88	51	57.95
+lamb1272	Lambya	Atlantic-Congo	Africa	132	107	62	57.94
+weda1241	Wedau	Austronesian	Papunesia	115	107	62	57.94
+wole1240	Woleaian	Austronesian	Papunesia	145	126	73	57.94
+khan1274	Kháng	Austroasiatic	Eurasia	168	145	84	57.93
+tson1249	Tsonga	Atlantic-Congo	Africa	185	145	84	57.93
+choc1276	Choctaw	Muskogean	North America	190	152	88	57.89
+kamm1249	Kam	Atlantic-Congo	Africa	191	152	88	57.89
+njan1240	Njanga	Atlantic-Congo	Africa	192	152	88	57.89
+gali1262	Galibi Carib	Cariban	South America	173	140	81	57.86
+avac1239	Avá-Canoeiro	Tupian	South America	153	121	70	57.85
+sher1258	Sherbro	Atlantic-Congo	Africa	118	102	59	57.84
+nama1264	Nama (Namibia)	Khoe-Kwadi	Africa	91	83	48	57.83
+beka1241	Riuk Bekati'	Austronesian	Papunesia	179	147	85	57.82
+situ1238	Situ	Sino-Tibetan	Eurasia	185	147	85	57.82
+cros1244	Cross River Mbembe	Atlantic-Congo	Africa	164	128	74	57.81
+jurm1239	Jur Modo	Central Sudanic	Africa	159	128	74	57.81
+kara1487	Karao	Austronesian	Papunesia	160	128	74	57.81
+esan1238	Esan	Atlantic-Congo	Africa	123	109	63	57.8
+matu1261	Matukar	Austronesian	Papunesia	194	154	89	57.79
+maun1240	Mawng	Iwaidjan Proper	Australia	194	154	89	57.79
+nort2684	Northern Khmer	Austroasiatic	Eurasia	191	154	89	57.79
+manm1238	Man Met	Austroasiatic	Eurasia	150	135	78	57.78
+sout2918	Southern Sama	Austronesian	Papunesia	159	135	78	57.78
+chey1247	Cheyenne	Algic	North America	139	116	67	57.76
+gaan1243	Ga'anda	Afro-Asiatic	Africa	140	116	67	57.76
+mids1243	Mid-Southern Banda	Atlantic-Congo	Africa	123	97	56	57.73
+suba1238	Suba	Atlantic-Congo	Africa	111	97	56	57.73
+lave1248	Laven	Austroasiatic	Eurasia	180	149	86	57.72
+mala1481	Manado Malay	Austronesian	Papunesia	178	149	86	57.72
+timu1262	Timugon Murut	Austronesian	Papunesia	153	130	75	57.69
+auuu1241	Au	Nuclear Torricelli	Papunesia	159	137	79	57.66
+chra1242	Chrau	Austroasiatic	Eurasia	166	137	79	57.66
+yaka1277	Yakan	Austronesian	Papunesia	178	144	83	57.64
+gese1240	Geser-Gorom	Austronesian	Papunesia	69	59	34	57.63
+puel1244	Puelche		South America	128	118	68	57.63
+cent1992	Central Mnong	Austroasiatic	Eurasia	190	151	87	57.62
+clas1250	Classical Nahuatl	Uto-Aztecan	North America	185	151	87	57.62
+koho1244	Koho	Austroasiatic	Eurasia	182	151	87	57.62
+nucl1417	Igbo	Atlantic-Congo	Africa	188	151	87	57.62
+pila1245	Pilagá	Guaicuruan	South America	183	151	87	57.62
+taji1246	Tajio	Austronesian	Papunesia	184	151	87	57.62
+urip1239	Uripiv-Wala-Rano-Atchin	Austronesian	Papunesia	188	151	87	57.62
+bomk1234	Bom-Kim	Atlantic-Congo	Africa	140	125	72	57.6
+mort1237	Mortlockese	Austronesian	Papunesia	141	125	72	57.6
+mouk1239	Mouk-Aria	Austronesian	Papunesia	139	125	72	57.6
+bitt1240	Bit	Austroasiatic	Eurasia	153	132	76	57.58
+cent2058	Central Maewo	Austronesian	Papunesia	110	99	57	57.58
+kola1285	Kola	Austronesian	Papunesia	156	132	76	57.58
+tupi1273	Tupinambá	Tupian	South America	163	132	76	57.58
+ubir1237	Ubir	Austronesian	Papunesia	149	132	76	57.58
+bata1289	Batak Toba	Austronesian	Papunesia	168	139	80	57.55
+nort2930	Northeast Kiwai	Kiwaian	Papunesia	173	146	84	57.53
+chak1271	Chakali	Atlantic-Congo	Africa	191	153	88	57.52
+dege1246	Degema	Atlantic-Congo	Africa	189	153	88	57.52
+tama1365	Tamasheq	Afro-Asiatic	Africa	186	153	88	57.52
+yaou1238	Yaouré	Mande	Africa	130	113	65	57.52
+tali1259	Talise	Austronesian	Papunesia	142	120	69	57.5
+long1395	Longgu	Austronesian	Papunesia	151	127	73	57.48
+ngam1268	Ngambay	Central Sudanic	Africa	156	127	73	57.48
+tamb1254	Tambunan Dusun	Austronesian	Papunesia	145	127	73	57.48
+luva1239	Luvale	Atlantic-Congo	Africa	169	141	81	57.45
+mokp1239	Mokpwe	Atlantic-Congo	Africa	180	141	81	57.45
+lush1252	Northern Lushootseed	Salishan	North America	182	148	85	57.43
+seri1257	Seri		North America	181	148	85	57.43
+sout2856	South Efate	Austronesian	Papunesia	188	148	85	57.43
+taha1241	Tahaggart Tamahaq	Afro-Asiatic	Africa	176	148	85	57.43
+wotu1240	Wotu	Austronesian	Papunesia	180	148	85	57.43
+seme1247	Semelai	Austroasiatic	Eurasia	195	155	89	57.42
+coah1252	Coahuilteco		North America	129	115	66	57.39
+pula1262	Pular	Atlantic-Congo	Africa	134	115	66	57.39
+biat1246	Biatah Bidayuh	Austronesian	Papunesia	137	122	70	57.38
+bilb1241	Bilibil	Austronesian	Papunesia	141	122	70	57.38
+bolo1262	Boloki	Atlantic-Congo	Africa	144	122	70	57.38
+hehe1240	Hehe	Atlantic-Congo	Africa	144	122	70	57.38
+lamo1244	Lamogai	Austronesian	Papunesia	135	122	70	57.38
+geda1237	Gedaged	Austronesian	Papunesia	151	129	74	57.36
+gola1255	Gola	Atlantic-Congo	Africa	150	129	74	57.36
+kwin1241	Kwini	Worrorran	Australia	160	129	74	57.36
+pamo1252	Pamona	Austronesian	Papunesia	148	129	74	57.36
+pamp1243	Pampanga	Austronesian	Papunesia	154	136	78	57.35
+warj1242	War-Jaintia	Austroasiatic	Eurasia	169	136	78	57.35
+lewo1242	Lewo	Austronesian	Papunesia	173	143	82	57.34
+juku1254	Jukun Takum	Atlantic-Congo	Africa	187	150	86	57.33
+mbol1247	Mbole	Atlantic-Congo	Africa	89	75	43	57.33
+mlab1235	Mlabri	Austroasiatic	Eurasia	182	150	86	57.33
+iama1237	Iamalele	Austronesian	Papunesia	107	96	55	57.29
+bare1276	Baré	Arawakan	South America	117	103	59	57.28
+oldm1243	Old Malay	Austronesian	Papunesia	119	103	59	57.28
+karn1252	Karnai	Austronesian	Papunesia	142	117	67	57.26
+mars1254	Marshallese	Austronesian	Papunesia	152	124	71	57.26
+mwan1247	Mwani	Atlantic-Congo	Africa	157	124	71	57.26
+nucl1458	Monumbo	Bogia	Papunesia	161	131	75	57.25
+digo1243	Digo	Atlantic-Congo	Africa	190	152	87	57.24
+hida1246	Hidatsa	Siouan	North America	177	145	83	57.24
+araw1276	Lokono	Arawakan	South America	136	119	68	57.14
+bamw1238	Bamwe	Atlantic-Congo	Africa	102	91	52	57.14
+dagi1241	Dagik	Narrow Talodi	Africa	167	140	80	57.14
+east2333	Eastern Mnong	Austroasiatic	Eurasia	36	35	20	57.14
+hdii1240	Hdi	Afro-Asiatic	Africa	98	91	52	57.14
+idom1241	Idoma	Atlantic-Congo	Africa	144	119	68	57.14
+lush1249	Mizo	Sino-Tibetan	Eurasia	182	147	84	57.14
+makh1264	Makhuwa	Atlantic-Congo	Africa	168	140	80	57.14
+mual1241	Mualang	Austronesian	Papunesia	189	154	88	57.14
+nort2845	North Marquesan	Austronesian	Papunesia	178	147	84	57.14
+saar1237	Saaroa	Austronesian	Papunesia	192	154	88	57.14
+sapu1248	Sapuan	Austroasiatic	Eurasia	152	140	80	57.14
+taki1248	Takia	Austronesian	Papunesia	93	84	48	57.14
+wapi1253	Wapishana	Arawakan	South America	86	77	44	57.14
+waur1244	Waurá	Arawakan	South America	86	77	44	57.14
+bulo1242	Bulo Stieng	Austroasiatic	Eurasia	185	149	85	57.05
+woli1241	Wolio	Austronesian	Papunesia	182	149	85	57.05
+samb1305	Samba Leko	Atlantic-Congo	Africa	172	142	81	57.04
+isna1241	Isnag	Austronesian	Papunesia	163	128	73	57.03
+indo1316	Indonesian	Austronesian	Papunesia	96	86	49	56.98
+caom1238	Cao Miao	Tai-Kadai	Eurasia	183	144	82	56.94
+idun1242	Iduna	Austronesian	Papunesia	179	144	82	56.94
+lugu1238	Luguru	Atlantic-Congo	Africa	177	144	82	56.94
+ngas1240	Ngas	Afro-Asiatic	Africa	176	144	82	56.94
+soga1242	Soga	Atlantic-Congo	Africa	181	144	82	56.94
+hixk1239	Hixkaryána	Cariban	South America	162	137	78	56.93
+orow1242	Orowe	Austronesian	Papunesia	160	137	78	56.93
+bank1256	Bankon	Atlantic-Congo	Africa	78	65	37	56.92
+mako1251	Makonde	Atlantic-Congo	Africa	164	130	74	56.92
+mans1260	Mansim	Hatam-Mansim	Papunesia	71	65	37	56.92
+ping1243	Pingelapese	Austronesian	Papunesia	152	130	74	56.92
+sier1250	Sierra de Juárez Zapotec	Otomanguean	North America	162	130	74	56.92
+papa1238	Papantla Totonac	Totonacan	North America	128	116	66	56.9
+suku1259	Suku	Atlantic-Congo	Africa	134	116	66	56.9
+sanm1295	San Miguel El Grande Mixtec	Otomanguean	North America	184	153	87	56.86
+toho1245	Tohono O'odham	Uto-Aztecan	North America	184	146	83	56.85
+natc1249	Natchez		North America	108	95	54	56.84
+alor1247	Alorese	Austronesian	Papunesia	168	139	79	56.83
+male1289	Maleu-Kilenge	Austronesian	Papunesia	154	132	75	56.82
+mask1242	Maskelynes	Austronesian	Papunesia	157	132	75	56.82
+pare1272	Parecís	Arawakan	South America	144	125	71	56.8
+east2563	Eastern Cham	Austronesian	Eurasia	92	81	46	56.79
+imon1245	Imonda	Border	Papunesia	91	81	46	56.79
+kina1250	Kinaray-a	Austronesian	Papunesia	143	118	67	56.78
+nege1240	Negeri Sembilan Malay	Austronesian	Eurasia	139	118	67	56.78
+avat1244	Avatime	Atlantic-Congo	Africa	130	111	63	56.76
+koti1238	Koti	Atlantic-Congo	Africa	182	148	84	56.76
+boly1239	Bolyu	Austroasiatic	Eurasia	166	141	80	56.74
+gilb1244	Gilbertese	Austronesian	Papunesia	171	141	80	56.74
+whit1269	Whitesands	Austronesian	Papunesia	167	141	80	56.74
+tusc1257	Tuscarora	Iroquoian	North America	158	127	72	56.69
+wala1266	Wala	Austronesian	Papunesia	150	127	72	56.69
+awji1241	Awjilah	Afro-Asiatic	Africa	145	120	68	56.67
+chim1301	Chimariko		North America	141	120	68	56.67
+fiji1243	Fijian	Austronesian	Papunesia	187	150	85	56.67
+guar1293	Baniva de Maroa	Arawakan	South America	101	90	51	56.67
+jamb1236	Jambi Malay	Austronesian	Papunesia	181	150	85	56.67
+lewo1244	Lewotobi	Austronesian	Papunesia	189	150	85	56.67
+lowe1412	Tanudan Kalinga	Austronesian	Papunesia	64	60	34	56.67
+ajab1235	Aja (Benin)	Atlantic-Congo	Africa	173	143	81	56.64
+biao1253	Shidong Biao	Tai-Kadai	Eurasia	175	143	81	56.64
+east2440	East Makian	Austronesian	Papunesia	95	83	47	56.63
+paiw1248	Paiwan	Austronesian	Papunesia	92	83	47	56.63
+kurr1243	Kurrama	Pama-Nyungan	Australia	161	129	73	56.59
+matb1237	Matbat	Austronesian	Papunesia	154	129	73	56.59
+bell1243	Bella Coola	Salishan	North America	191	152	86	56.58
+futu1245	Futuna-Aniwa	Austronesian	Papunesia	192	152	86	56.58
+baba1268	Babatana	Austronesian	Papunesia	138	122	69	56.56
+filo1235	Filomeno Mata Totonac	Totonacan	North America	144	122	69	56.56
+rung1258	Runga	Maban	Africa	178	145	82	56.55
+baik1238	Baikeno	Austronesian	Papunesia	103	92	52	56.52
+iumi1238	Iu Mien	Hmong-Mien	Eurasia	165	138	78	56.52
+kawa1283	Kawaiisu	Uto-Aztecan	North America	34	23	13	56.52
+maas1239	Maasina Fulfulde	Atlantic-Congo	Africa	133	115	65	56.52
+mang1378	Mang	Austroasiatic	Eurasia	158	138	78	56.52
+noon1242	Noon	Atlantic-Congo	Africa	188	154	87	56.49
+nort2747	Northern Qiandong Miao	Hmong-Mien	Eurasia	194	154	87	56.49
+tami1290	Tami	Austronesian	Papunesia	120	108	61	56.48
+vwan1235	Vwanji	Atlantic-Congo	Africa	129	108	61	56.48
+kolp1236	Kol (Papua New Guinea)		Papunesia	94	85	48	56.47
+naur1243	Nauru	Austronesian	Papunesia	173	147	83	56.46
+okuu1243	Oku	Atlantic-Congo	Africa	110	101	57	56.44
+tugu1245	Tugun	Austronesian	Papunesia	168	140	79	56.43
+cupe1243	Cupeño	Uto-Aztecan	North America	48	39	22	56.41
+puin1248	Puinave		South America	44	39	22	56.41
+reja1241	Rejang Kayan	Austronesian	Papunesia	140	117	66	56.41
+west2397	Western Bru	Austroasiatic	Eurasia	157	133	75	56.39
+west2600	West Makian	North Halmahera	Papunesia	151	133	75	56.39
+west2560	West Coast Bajau	Austronesian	Papunesia	179	149	84	56.38
+macu1259	Macushi	Cariban	South America	66	55	31	56.36
+wuna1249	Wunambal	Worrorran	Australia	127	110	62	56.36
+emae1237	Emae	Austronesian	Papunesia	156	126	71	56.35
+viem1243	Viemo	Atlantic-Congo	Africa	151	126	71	56.35
+kuan1248	Kuanua	Austronesian	Papunesia	174	142	80	56.34
+moro1285	Moro	Heibanic	Africa	77	71	40	56.34
+anta1255	Antankarana Malagasy	Austronesian	Africa	102	80	45	56.25
+beli1257	Beli (South Sudan)	Central Sudanic	Africa	133	112	63	56.25
+saaa1241	Sa	Austronesian	Papunesia	162	128	72	56.25
+east2556	Eastern Highland Otomi	Otomanguean	North America	164	137	77	56.2
+kuan1247	Kuanyama	Atlantic-Congo	Africa	173	137	77	56.2
+lele1270	Lele (Papua New Guinea)	Austronesian	Papunesia	167	137	77	56.2
+rere1240	Rerep	Austronesian	Papunesia	147	121	68	56.2
+louu1245	Lou	Austronesian	Papunesia	176	146	82	56.16
+tane1237	Tanema	Austronesian	Papunesia	154	130	73	56.15
+elem1253	Eleme	Atlantic-Congo	Africa	140	114	64	56.14
+colu1241	Columbia-Wenatchi	Salishan	North America	178	139	78	56.12
+kolu1245	Koluwawa	Austronesian	Papunesia	163	139	78	56.12
+mari1426	Sunwadia	Austronesian	Papunesia	167	139	78	56.12
+mbay1241	Mbay	Central Sudanic	Africa	173	139	78	56.12
+goem1240	Goemai	Afro-Asiatic	Africa	92	82	46	56.1
+gung1248	Gungabula	Pama-Nyungan	Australia	44	41	23	56.1
+ambo1250	Ambonese Malay	Austronesian	Papunesia	185	148	83	56.08
+luan1263	Luang	Austronesian	Papunesia	173	148	83	56.08
+phai1238	Prai	Austroasiatic	Eurasia	186	148	83	56.08
+tsat1238	Tsat	Austronesian	Eurasia	183	148	83	56.08
+mans1262	Mansaka	Austronesian	Papunesia	127	107	60	56.07
+blan1242	Blang	Austroasiatic	Eurasia	159	132	74	56.06
+warr1255	Warrgamay	Pama-Nyungan	Australia	80	66	37	56.06
+west2548	West Damar	Austronesian	Papunesia	163	132	74	56.06
+guma1254	Gumawana	Austronesian	Papunesia	176	141	79	56.03
+kara1500	Karajá	Nuclear-Macro-Je	South America	176	141	79	56.03
+kute1249	Kutenai		North America	132	116	65	56.03
+mang1405	Manggarai	Austronesian	Papunesia	168	141	79	56.03
+qanj1241	Q'anjob'al	Mayan	North America	176	141	79	56.03
+shwe1236	Shwe Palaung	Austroasiatic	Eurasia	167	141	79	56.03
+tang1347	Movono	Austronesian	Papunesia	159	141	79	56.03
+urav1235	Ura (Vanuatu)	Austronesian	Papunesia	169	141	79	56.03
+viet1252	Vietnamese	Austroasiatic	Eurasia	140	116	65	56.03
+haaa1252	Ha	Atlantic-Congo	Africa	187	150	84	56
+mend1268	Mende (Papua New Guinea)	Sepik	Papunesia	87	75	42	56
+tote1238	Totela	Atlantic-Congo	Africa	161	125	70	56
+yavi1244	Yavitero-Pareni	Arawakan	South America	117	100	56	56
+sout2976	Southeastern Tepehuan	Uto-Aztecan	North America	167	134	75	55.97
+buna1276	Bunama	Austronesian	Papunesia	125	109	61	55.96
+daak1235	Da'a Kaili	Austronesian	Papunesia	123	109	61	55.96
+leti1246	Leti (Indonesia)	Austronesian	Papunesia	172	143	80	55.94
+sioo1240	Sio	Austronesian	Papunesia	175	143	80	55.94
+ajie1238	Ajië	Austronesian	Papunesia	149	127	71	55.91
+binu1244	Talaandig-Binukid	Austronesian	Papunesia	108	93	52	55.91
+damp1237	Dampelas	Austronesian	Papunesia	159	127	71	55.91
+pawn1254	Pawnee	Caddoan	North America	156	127	71	55.91
+piji1239	Pijin	Indo-European	Papunesia	154	127	71	55.91
+tean1237	Teanu	Austronesian	Papunesia	147	127	71	55.91
+gusi1247	Gusii	Atlantic-Congo	Africa	173	136	76	55.88
+hili1240	Hiligaynon	Austronesian	Papunesia	77	68	38	55.88
+maba1270	Mabaale	Atlantic-Congo	Africa	118	102	57	55.88
+masa1300	Masai	Nilotic	Africa	73	68	38	55.88
+east2330	Eastern Lawa	Austroasiatic	Eurasia	194	154	86	55.84
+halk1245	Halkomelem	Salishan	North America	193	154	86	55.84
+ilon1239	Ilongot	Austronesian	Papunesia	145	120	67	55.83
+warl1254	Warlpiri	Pama-Nyungan	Australia	98	86	48	55.81
+rotu1241	Rotuman	Austronesian	Papunesia	163	138	77	55.8
+tuni1252	Tunica		North America	162	138	77	55.8
+ruch1235	Ruching Palaung	Austroasiatic	Eurasia	184	147	82	55.78
+ruma1248	Rumai Palaung	Austroasiatic	Eurasia	182	147	82	55.78
+yucu1253	Yucuna	Arawakan	South America	64	52	29	55.77
+pang1291	Pangutaran Sama	Austronesian	Papunesia	134	113	63	55.75
+morm1235	Mor (Mor Islands)	Austronesian	Papunesia	148	122	68	55.74
+vinm1237	Neve'ei	Austronesian	Papunesia	143	122	68	55.74
+yand1253	Yandruwandha	Pama-Nyungan	Australia	72	61	34	55.74
+kaga1256	Kagayanen	Austronesian	Papunesia	167	140	78	55.71
+carn1240	Car Nicobarese	Austroasiatic	Eurasia	184	149	83	55.7
+ughe1237	Ughele	Austronesian	Papunesia	182	149	83	55.7
+tafi1243	Tafi	Atlantic-Congo	Africa	93	88	49	55.68
+bomb1262	Bomboma	Atlantic-Congo	Africa	119	106	59	55.66
+furu1242	Furu	Central Sudanic	Africa	127	106	59	55.66
+ibib1240	Ibibio	Atlantic-Congo	Africa	140	124	69	55.65
+isth1241	Isthmus-Pajapan Nahuatl	Uto-Aztecan	North America	133	115	64	55.65
+mina1268	Minangkabau	Austronesian	Papunesia	164	133	74	55.64
+sema1265	Semaq Beri	Austroasiatic	Eurasia	181	151	84	55.63
+akan1250	Akan	Atlantic-Congo	Africa	57	54	30	55.56
+anin1240	Anindilyakwa	Gunwinyguan	Australia	102	90	50	55.56
+jeha1242	Jehai	Austroasiatic	Eurasia	162	135	75	55.56
+magu1243	Maguindanao	Austronesian	Papunesia	129	108	60	55.56
+nort2828	North Moluccan Malay	Austronesian	Papunesia	164	144	80	55.56
+sina1266	Sinaugoro	Austronesian	Papunesia	192	153	85	55.56
+sout2989	Southern Lengua	Lengua-Mascoy	South America	193	153	85	55.56
+waja1257	Wajarri	Pama-Nyungan	Australia	65	54	30	55.56
+wayu1243	Wayuu	Arawakan	South America	117	99	55	55.56
+abar1238	Mungbam	Atlantic-Congo	Africa	180	146	81	55.48
+ayiw1239	Äiwoo	Austronesian	Papunesia	172	146	81	55.48
+bola1250	Bola	Austronesian	Papunesia	193	155	86	55.48
+copt1239	Coptic	Afro-Asiatic	Africa	178	146	81	55.48
+mato1252	Mato	Austronesian	Papunesia	169	146	81	55.48
+nali1244	Nalik	Austronesian	Papunesia	174	146	81	55.48
+naue1237	Nauete	Austronesian	Papunesia	183	146	81	55.48
+torr1261	Torres Strait-Lockhart River Creole	Indo-European	Australia	190	155	86	55.48
+zani1235	Zaniza Zapotec	Otomanguean	North America	162	137	76	55.47
+bugh1239	Bughotu	Austronesian	Papunesia	131	119	66	55.46
+lamb1273	Lamboya	Austronesian	Papunesia	139	119	66	55.46
+warl1256	Warluwara	Pama-Nyungan	Australia	95	83	46	55.42
+rade1240	Rade	Austronesian	Eurasia	167	139	77	55.4
+nyan1301	Nyangumarta	Pama-Nyungan	Australia	68	56	31	55.36
+saka1291	West Malagasy Sakalava	Austronesian	Africa	137	112	62	55.36
+tani1257	Tanimuca-Retuarã	Tucanoan	South America	69	56	31	55.36
+anei1239	Aneityum	Austronesian	Papunesia	180	150	83	55.33
+daka1243	Dakaka	Austronesian	Papunesia	187	150	83	55.33
+mand1440	Mandara	Austronesian	Papunesia	177	150	83	55.33
+para1301	South Wa	Austroasiatic	Eurasia	185	150	83	55.33
+sand1278	San Dionisio del Mar Huave	Huavean	North America	184	150	83	55.33
+amii1238	Ami	Western Daly	Australia	174	141	78	55.32
+mapo1242	Mapos Buang	Austronesian	Papunesia	173	141	78	55.32
+moco1246	Mocoví	Guaicuruan	South America	169	132	73	55.3
+wand1267	Wandamen	Austronesian	Papunesia	157	132	73	55.3
+nort2795	Zimbabwean Ndebele	Atlantic-Congo	Africa	96	85	47	55.29
+araw1273	Araweté	Tupian	South America	148	123	68	55.28
+east2332	Eastern Bru	Austroasiatic	Eurasia	134	114	63	55.26
+pate1247	Patep	Austronesian	Papunesia	142	114	63	55.26
+resi1247	Resígaro	Arawakan	South America	83	76	42	55.26
+lara1260	Larantuka Malay	Austronesian	Papunesia	169	143	79	55.24
+tepe1278	Tepecano	Uto-Aztecan	North America	121	105	58	55.24
+mari1424	Marithiel	Western Daly	Australia	151	125	69	55.2
+rapa1245	Mangaia-Old Rapa	Austronesian	Papunesia	193	154	85	55.19
+yuca1254	Yucatec Maya	Mayan	North America	189	154	85	55.19
+lozi1239	Lozi	Atlantic-Congo	Africa	137	116	64	55.17
+moro1287	Moronene	Austronesian	Papunesia	106	87	48	55.17
+mbug1242	Mbugwe	Atlantic-Congo	Africa	117	107	59	55.14
+coch1272	Cochimi	Cochimi-Yuman	North America	89	78	43	55.13
+avok1242	Avokaya	Central Sudanic	Africa	122	98	54	55.1
+huic1243	Huichol	Uto-Aztecan	North America	179	147	81	55.1
+mana1295	Manam	Austronesian	Papunesia	175	147	81	55.1
+naas1242	Naasioi	South Bougainville	Papunesia	53	49	27	55.1
+bure1242	Bure	Afro-Asiatic	Africa	124	109	60	55.05
+mezq1235	Mezquital Otomi	Otomanguean	North America	185	149	82	55.03
+waiw1244	Waiwai	Cariban	South America	178	149	82	55.03
+haro1237	Haroi	Austronesian	Eurasia	95	80	44	55
+tbol1240	Tboli	Austronesian	Papunesia	174	140	77	55
+tobe1252	Tobelo	North Halmahera	Papunesia	173	140	77	55
+sapo1253	Saposa	Austronesian	Papunesia	145	131	72	54.96
+suku1272	Sukur	Afro-Asiatic	Africa	102	91	50	54.95
+golo1234	Golo	Atlantic-Congo	Africa	82	71	39	54.93
+mamb1306	Mambae	Austronesian	Papunesia	169	142	78	54.93
+bara1380	Barasana-Eduria	Tucanoan	South America	65	51	28	54.9
+crow1244	Crow	Siouan	North America	192	153	84	54.9
+dhao1237	Dhao	Austronesian	Papunesia	189	153	84	54.9
+nati1244	Nati	Austronesian	Papunesia	127	102	56	54.9
+oroh1237	Oroha	Austronesian	Papunesia	118	102	56	54.9
+yuro1248	Yurok	Algic	North America	153	133	73	54.89
+bela1260	Lemeting	Austronesian	Papunesia	92	82	45	54.88
+waro1242	Waropen	Austronesian	Papunesia	137	113	62	54.87
+area1240	'Are'are	Austronesian	Papunesia	195	155	85	54.84
+omah1247	Omaha-Ponca	Siouan	North America	81	62	34	54.84
+sout2959	South Slavey	Athabaskan-Eyak-Tlingit	North America	194	155	85	54.84
+bara1369	Bara Malagasy	Austronesian	Africa	126	104	57	54.81
+chil1280	Chilcotin-Nicola	Athabaskan-Eyak-Tlingit	North America	183	146	80	54.79
+ulit1238	Ulithian	Austronesian	Papunesia	177	146	80	54.79
+darl1243	Paakantyi	Pama-Nyungan	Australia	45	42	23	54.76
+kove1237	Kove	Austronesian	Papunesia	180	148	81	54.73
+pnar1238	Pnar	Austroasiatic	Eurasia	183	148	81	54.73
+pohn1238	Pohnpeian	Austronesian	Papunesia	182	148	81	54.73
+mele1250	Mele-Fila	Austronesian	Papunesia	115	106	58	54.72
+buka1257	Bukar-Sadung Bidayuh	Austronesian	Papunesia	132	117	64	54.7
+waru1264	Warrongo	Pama-Nyungan	Australia	72	64	35	54.69
+karo1304	Karok		North America	164	139	76	54.68
+yano1261	Yanomamö	Yanomamic	South America	172	139	76	54.68
+khan1278	Khana	Atlantic-Congo	Africa	187	150	82	54.67
+meng1267	Mengen	Austronesian	Papunesia	98	86	47	54.65
+malo1243	Tamambo	Austronesian	Papunesia	189	152	83	54.61
+nort2885	Northern Subanen	Austronesian	Papunesia	189	152	83	54.61
+tetu1246	Tetun Dili	Austronesian	Papunesia	183	152	83	54.61
+gayo1244	Gayo	Austronesian	Papunesia	193	154	84	54.55
+kair1263	Kairiru	Austronesian	Papunesia	73	66	36	54.55
+labo1244	Ninde	Austronesian	Papunesia	122	110	60	54.55
+laoo1244	Lao	Tai-Kadai	Eurasia	99	88	48	54.55
+paun1241	Paunaka	Arawakan	South America	99	88	48	54.55
+siku1242	Sikule	Austronesian	Papunesia	140	121	66	54.55
+caac1237	Caac	Austronesian	Papunesia	151	134	73	54.48
+ndog1248	Ndogo	Atlantic-Congo	Africa	177	145	79	54.48
+oloo1241	Olo	Nuclear Torricelli	Papunesia	178	145	79	54.48
+west2635	Akateko	Mayan	North America	178	145	79	54.48
+yuch1247	Yuchi		North America	175	145	79	54.48
+egaa1242	Ega	Atlantic-Congo	Africa	125	101	55	54.46
+wyan1247	Huron-Wyandot	Iroquoian	North America	111	101	55	54.46
+kuot1243	Kuot		Papunesia	174	147	80	54.42
+bekw1241	Bekwarra	Atlantic-Congo	Africa	157	136	74	54.41
+pulu1242	Puluwatese	Austronesian	Papunesia	166	136	74	54.41
+vano1237	Lovono	Austronesian	Papunesia	146	125	68	54.4
+ying1247	Yinggarda	Pama-Nyungan	Australia	65	57	31	54.39
+tutu1241	Tutuba	Austronesian	Papunesia	184	149	81	54.36
+cham1318	Chamicuro	Arawakan	South America	54	46	25	54.35
+puka1242	Pukapuka	Austronesian	Papunesia	154	127	69	54.33
+kima1244	Kimaragang	Austronesian	Papunesia	90	81	44	54.32
+cayu1262	Cayubaba		South America	131	116	63	54.31
+gunw1252	Bininj Kun-Wok	Gunwinyguan	Australia	191	151	82	54.3
+toba1268	Toba-Maskoy	Lengua-Mascoy	South America	190	151	82	54.3
+urim1252	Urim	Nuclear Torricelli	Papunesia	185	151	82	54.3
+ando1256	Andoque		South America	38	35	19	54.29
+hler1235	Hlersu	Sino-Tibetan	Eurasia	74	70	38	54.29
+bala1316	Balade	Austronesian	Papunesia	152	129	70	54.26
+aghu1254	Aghu Tharnggalu	Pama-Nyungan	Australia	69	59	32	54.24
+gale1259	Galela	North Halmahera	Papunesia	143	118	64	54.24
+sika1261	Sikaiana	Austronesian	Papunesia	173	142	77	54.23
+lard1243	Lardil	Tangkic	Australia	94	83	45	54.22
+nort2942	North Slavey	Athabaskan-Eyak-Tlingit	North America	194	155	84	54.19
+vure1239	Vurës	Austronesian	Papunesia	194	155	84	54.19
+bign1238	Big Nambas	Austronesian	Papunesia	181	144	78	54.17
+east2443	East Ambae	Austronesian	Papunesia	182	146	79	54.11
+seke1241	Seke (Vanuatu)	Austronesian	Papunesia	175	146	79	54.11
+jahh1242	Jah Hut	Austroasiatic	Eurasia	146	122	66	54.1
+tung1290	Tungag	Austronesian	Papunesia	178	148	80	54.05
+oldk1249	Old Khmer	Austroasiatic	Eurasia	147	124	67	54.03
+ghan1242	Ghanongga	Austronesian	Papunesia	166	137	74	54.01
+jaru1254	Jaru	Pama-Nyungan	Australia	61	50	27	54
+sela1260	Selayar	Austronesian	Papunesia	135	113	61	53.98
+caro1242	Carolinian	Austronesian	Papunesia	154	126	68	53.97
+siks1238	Siksika	Algic	North America	162	139	75	53.96
+sude1239	Sudest	Austronesian	Papunesia	159	139	75	53.96
+achi1257	Acehnese	Austronesian	Papunesia	192	152	82	53.95
+keoo1238	Kéo	Austronesian	Papunesia	187	152	82	53.95
+tiri1258	Tiri-Mea	Austronesian	Papunesia	188	152	82	53.95
+natu1246	Natügu	Austronesian	Papunesia	96	89	48	53.93
+taga1270	Tagalog	Austronesian	Papunesia	101	89	48	53.93
+arak1252	Araki	Austronesian	Papunesia	194	154	83	53.9
+popt1235	Popti'	Mayan	North America	188	154	83	53.9
+samo1305	Samoan	Austronesian	Papunesia	193	154	83	53.9
+seim1238	Seimat	Austronesian	Papunesia	192	154	83	53.9
+bata1293	Batak Karo	Austronesian	Papunesia	103	91	49	53.85
+bilu1245	Bilua		Papunesia	102	91	49	53.85
+malu1245	Malua Bay	Austronesian	Papunesia	173	143	77	53.85
+muyu1244	Muyuw	Austronesian	Papunesia	140	117	63	53.85
+paul1238	Paulohi	Austronesian	Papunesia	170	143	77	53.85
+uuuu1243	U	Austroasiatic	Eurasia	139	117	63	53.85
+cici1237	Cicipu	Atlantic-Congo	Africa	172	145	78	53.79
+okan1243	Okanagan	Salishan	North America	181	145	78	53.79
+tuge1241	Tugen	Nilotic	Africa	126	106	57	53.77
+boro1282	Bororo	Bororoan	South America	184	147	79	53.74
+nama1268	Namakura	Austronesian	Papunesia	120	108	58	53.7
+yort1237	Yorta Yorta	Pama-Nyungan	Australia	57	54	29	53.7
+gela1263	Gela	Austronesian	Papunesia	181	149	80	53.69
+lama1277	Lamaholot	Austronesian	Papunesia	182	149	80	53.69
+mota1237	Mota	Austronesian	Papunesia	107	95	51	53.68
+nisg1240	Nisga'a	Tsimshian	North America	162	136	73	53.68
+renn1242	Rennell-Bellona	Austronesian	Papunesia	166	136	73	53.68
+kwar1239	Kwara'ae	Austronesian	Papunesia	186	151	81	53.64
+mudu1242	Muduapa	Austronesian	Papunesia	186	151	81	53.64
+stan1306	Standard Malay	Austronesian	Eurasia	190	151	81	53.64
+tern1247	Ternate	North Halmahera	Papunesia	190	151	81	53.64
+east2694	Eastern Subanen	Austronesian	Papunesia	109	97	52	53.61
+cham1312	Chamorro	Austronesian	Papunesia	188	153	82	53.59
+fonn1241	Fon	Atlantic-Congo	Africa	189	153	82	53.59
+maor1246	Maori	Austronesian	Papunesia	191	153	82	53.59
+bouy1240	Bouyei	Tai-Kadai	Eurasia	95	84	45	53.57
+cams1241	Camsá		South America	124	112	60	53.57
+uppe1439	Upper Chehalis	Salishan	North America	164	140	75	53.57
+iray1237	Iraya	Austronesian	Papunesia	113	99	53	53.54
+west2632	Western Keres	Keresan	North America	161	127	68	53.54
+coco1260	Cocos Islands Malay	Austronesian	Papunesia	88	71	38	53.52
+djee1236	Djeebbana	Maningrida	Australia	182	142	76	53.52
+matu1259	Matumbi	Atlantic-Congo	Africa	134	114	61	53.51
+moii1235	Moi (Indonesia)	West Bird's Head	Papunesia	125	114	61	53.51
+maqu1238	Ye'kwana	Cariban	South America	56	43	23	53.49
+mara1385	Marra	Mangarrayi-Maran	Australia	94	86	46	53.49
+leng1259	Lengo	Austronesian	Papunesia	172	144	77	53.47
+mini1251	Minigir	Austronesian	Papunesia	178	144	77	53.47
+moke1242	Moken	Austronesian	Eurasia	171	144	77	53.47
+waig1244	Waigeo	Austronesian	Papunesia	176	144	77	53.47
+hait1244	Haitian	Indo-European	North America	180	146	78	53.42
+puyu1239	Puyuma	Austronesian	Papunesia	99	88	47	53.41
+hano1246	Hano	Austronesian	Papunesia	183	148	79	53.38
+hawa1245	Hawaiian	Austronesian	Papunesia	181	148	79	53.38
+maee1241	Tirax	Austronesian	Papunesia	188	148	79	53.38
+nhen1239	Nhengatu	Tupian	South America	181	148	79	53.38
+siee1239	Sie	Austronesian	Papunesia	166	133	71	53.38
+surs1246	Sursurunga	Austronesian	Papunesia	159	133	71	53.38
+bisl1239	Bislama	Indo-European	Papunesia	185	150	80	53.33
+gros1243	Gros Ventre	Algic	North America	161	135	72	53.33
+litz1237	Naman	Austronesian	Papunesia	185	150	80	53.33
+mafe1237	Mafea	Austronesian	Papunesia	134	120	64	53.33
+mali1284	Mali	Baining	Papunesia	102	90	48	53.33
+para1311	Paraguayan Guaraní	Tupian	South America	54	45	24	53.33
+thai1261	Thai	Tai-Kadai	Eurasia	101	90	48	53.33
+yatz1235	Yatzachi Zapotec	Otomanguean	North America	185	150	80	53.33
+cent1990	Central Nicobarese	Austroasiatic	Eurasia	169	137	73	53.28
+bahn1262	Bahnar	Austroasiatic	Eurasia	117	107	57	53.27
+hadz1240	Hadza		Africa	190	154	82	53.25
+kwai1243	Kwaio	Austronesian	Papunesia	191	154	82	53.25
+taku1257	Takuu	Austronesian	Papunesia	168	139	74	53.24
+yinc1238	Yinchia	Austroasiatic	Eurasia	65	62	33	53.23
+sout2859	Southeast Ambrym	Austronesian	Papunesia	124	109	58	53.21
+chin1286	Clatsop-Shoalwater Chinook	Chinookan	North America	164	141	75	53.19
+olut1240	Oluta Popoluca	Mixe-Zoque	North America	180	141	75	53.19
+naka1262	Nakanai	Austronesian	Papunesia	173	143	76	53.15
+tiga1245	Tigak	Austronesian	Papunesia	171	143	76	53.15
+labe1239	Label	Austronesian	Papunesia	70	64	34	53.12
+hoav1238	Hoava	Austronesian	Papunesia	176	145	77	53.1
+asha1243	Asháninka	Arawakan	South America	91	81	43	53.09
+nucl1460	Madurese	Austronesian	Papunesia	91	81	43	53.09
+yine1238	Yine	Arawakan	South America	91	81	43	53.09
+bayb1234	Baybayanon	Austronesian	Papunesia	149	130	69	53.08
+jara1266	Jarai	Austronesian	Eurasia	156	130	69	53.08
+kapi1249	Kapingamarangi	Austronesian	Papunesia	72	66	35	53.03
+lauu1247	Lau	Austronesian	Papunesia	141	117	62	52.99
+leme1238	Lemerig	Austronesian	Papunesia	164	134	71	52.99
+koko1269	Kokota	Austronesian	Papunesia	190	153	81	52.94
+kosr1238	Kosraean	Austronesian	Papunesia	188	153	81	52.94
+mbul1263	Mbula	Austronesian	Papunesia	183	153	81	52.94
+wall1257	East Uvean	Austronesian	Papunesia	189	153	81	52.94
+papa1265	Papapana	Austronesian	Papunesia	188	155	82	52.9
+sene1264	Seneca	Iroquoian	North America	174	140	74	52.86
+zaba1237	Zabana	Austronesian	Papunesia	163	140	74	52.86
+gand1255	Ganda	Atlantic-Congo	Africa	148	123	65	52.85
+quap1242	Quapaw	Siouan	North America	154	123	65	52.85
+arab1267	Arabana	Pama-Nyungan	Australia	62	53	28	52.83
+port1285	Port Sandwich	Austronesian	Papunesia	174	142	75	52.82
+zoog1238	Zoogocho Zapotec	Otomanguean	North America	176	142	75	52.82
+yong1276	Yongbei Zhuang	Tai-Kadai	Eurasia	101	89	47	52.81
+seda1262	Sedang	Austroasiatic	Eurasia	178	144	76	52.78
+mali1285	Malinaltepec Me'phaa	Otomanguean	North America	160	127	67	52.76
+midd1327	Middle Watut	Austronesian	Papunesia	140	127	67	52.76
+kusa1251	Kusaghe-Njela	Austronesian	Papunesia	177	146	77	52.74
+lote1237	Lote	Austronesian	Papunesia	178	146	77	52.74
+tuka1248	Tukang Besi North	Austronesian	Papunesia	175	146	77	52.74
+dier1241	Dieri	Pama-Nyungan	Australia	66	55	29	52.73
+bamb1270	Bambam	Austronesian	Papunesia	134	112	59	52.68
+assi1247	Assiniboine	Siouan	North America	185	150	79	52.67
+buga1250	Bugawac	Austronesian	Papunesia	191	152	80	52.63
+maka1311	Makasar	Austronesian	Papunesia	86	76	40	52.63
+noku1237	Nokuku	Austronesian	Papunesia	156	133	70	52.63
+tagb1258	Tagbanwa	Austronesian	Papunesia	42	38	20	52.63
+unua1237	Unua	Austronesian	Papunesia	192	152	80	52.63
+wuvu1239	Wuvulu-Aua	Austronesian	Papunesia	151	133	70	52.63
+taba1263	Tabaru	North Halmahera	Papunesia	176	137	72	52.55
+ware1253	Warembori	Austronesian	Papunesia	170	137	72	52.55
+nucl1347	Wolof	Atlantic-Congo	Africa	134	118	62	52.54
+bard1255	Bardi	Nyulnyulan	Australia	94	82	43	52.44
+sasa1249	Sasak	Austronesian	Papunesia	150	124	65	52.42
+sisi1250	Sisiqa	Austronesian	Papunesia	71	63	33	52.38
+teop1238	Teop	Austronesian	Papunesia	149	126	66	52.38
+tido1248	Tidore	North Halmahera	Papunesia	96	84	44	52.38
+east2447	East Futuna	Austronesian	Papunesia	187	149	78	52.35
+noma1263	Nomatsiguenga	Arawakan	South America	96	86	45	52.33
+tawa1275	Tawala	Austronesian	Papunesia	96	86	45	52.33
+anuu1241	Anu-Hkongso	Sino-Tibetan	Eurasia	190	151	79	52.32
+djam1255	Jaminjung-Ngaliwurru	Mirndi	Australia	184	151	79	52.32
+woii1237	Woi	Austronesian	Papunesia	191	151	79	52.32
+chim1312	Chimwiini	Atlantic-Congo	Africa	81	65	34	52.31
+hlai1239	Hlai	Tai-Kadai	Eurasia	99	88	46	52.27
+buru1303	Buru (Indonesia)	Austronesian	Papunesia	102	90	47	52.22
+ahin1234	Ahin-Kayapa Kalanguya	Austronesian	Papunesia	104	92	48	52.17
+bodo1272	Bodo (Central African Republic)	Atlantic-Congo	Africa	26	23	12	52.17
+rovi1238	Roviana	Austronesian	Papunesia	161	138	72	52.17
+kolc1235	Kol (Cameroon)	Atlantic-Congo	Africa	170	140	73	52.14
+paam1238	Paama	Austronesian	Papunesia	117	96	50	52.08
+irar1238	Irarutu	Austronesian	Papunesia	184	146	76	52.05
+tita1241	Titan	Austronesian	Papunesia	173	146	76	52.05
+yane1238	Yanesha'	Arawakan	South America	114	98	51	52.04
+lihi1237	Lihir	Austronesian	Papunesia	143	123	64	52.03
+saaa1240	Sa'a	Austronesian	Papunesia	145	123	64	52.03
+kunb1251	Kunbarlang	Gunwinyguan	Australia	190	152	79	51.97
+siar1238	Siar-Lak	Austronesian	Papunesia	87	77	40	51.95
+xara1244	Xârâcùù	Austronesian	Papunesia	189	154	80	51.95
+penr1237	Māngarongaro	Austronesian	Papunesia	117	104	54	51.92
+saam1283	Saamia	Atlantic-Congo	Africa	134	106	55	51.89
+ling1265	Neverver	Austronesian	Papunesia	157	133	69	51.88
+anem1249	Anem		Papunesia	91	81	42	51.85
+mara1399	Maragus	Austronesian	Papunesia	174	137	71	51.82
+ilok1237	Iloko	Austronesian	Papunesia	94	83	43	51.81
+sang1330	Sangu (Tanzania)	Atlantic-Congo	Africa	88	83	43	51.81
+yabe1254	Yabem	Austronesian	Papunesia	95	83	43	51.81
+ajyi1238	Ajyíninka Apurucayali	Arawakan	South America	69	56	29	51.79
+buna1278	Bunak	Timor-Alor-Pantar	Papunesia	96	85	44	51.76
+tuva1244	Tuvalu	Austronesian	Papunesia	179	143	74	51.75
+tang1348	Tangga	Austronesian	Papunesia	140	116	60	51.72
+iwal1237	Iwal	Austronesian	Papunesia	134	118	61	51.69
+adan1251	Adang	Timor-Alor-Pantar	Papunesia	184	151	78	51.66
+niva1238	Nivaclé	Matacoan	South America	188	151	78	51.66
+dehu1237	Dehu	Austronesian	Papunesia	150	124	64	51.61
+kemb1249	Mateq	Austronesian	Papunesia	195	155	80	51.61
+lafo1243	Lafofa		Africa	68	62	32	51.61
+lena1238	Lenakel	Austronesian	Papunesia	195	155	80	51.61
+trin1274	Trinitario-Javeriano-Loretano	Arawakan	South America	146	124	64	51.61
+lowe1427	Lower Chehalis	Salishan	North America	148	128	66	51.56
+lara1258	Laragia		Australia	108	97	50	51.55
+coeu1236	Coeur d'Alene	Salishan	North America	157	130	67	51.54
+nort2839	North Ambrym	Austronesian	Papunesia	174	136	70	51.47
+tong1308	Maniq	Austroasiatic	Eurasia	163	136	70	51.47
+teng1272	Tengger	Austronesian	Papunesia	121	105	54	51.43
+blab1237	Blablanga	Austronesian	Papunesia	169	142	73	51.41
+kamb1299	Kambera	Austronesian	Papunesia	175	142	73	51.41
+neng1238	Nengone	Austronesian	Papunesia	169	144	74	51.39
+mani1235	Sougb	East Bird's Head	Papunesia	122	109	56	51.38
+loni1238	Loniu	Austronesian	Papunesia	185	150	77	51.33
+onon1246	Onondaga	Iroquoian	North America	190	150	77	51.33
+nese1235	Nese	Austronesian	Papunesia	191	152	78	51.32
+safw1238	Safwa	Atlantic-Congo	Africa	48	39	20	51.28
+kaul1240	Kaulong	Austronesian	Papunesia	90	80	41	51.25
+mesc1238	Mescalero-Chiricahua Apache	Athabaskan-Eyak-Tlingit	North America	92	84	43	51.19
+abui1241	Abui	Timor-Alor-Pantar	Papunesia	100	88	45	51.14
+rapa1244	Rapanui	Austronesian	Papunesia	163	133	68	51.13
+curr1243	Curripaco	Arawakan	South America	101	90	46	51.11
+tsou1248	Tsou	Austronesian	Papunesia	99	90	46	51.11
+bull1247	Bullom So	Atlantic-Congo	Africa	165	141	72	51.06
+pele1245	Pele-Ata		Papunesia	51	47	24	51.06
+hali1244	Halia	Austronesian	Papunesia	172	143	73	51.05
+apin1244	Apinayé	Nuclear-Macro-Je	South America	181	147	75	51.02
+maib1239	Maybrat-Karon		Papunesia	174	147	75	51.02
+vera1241	Vera'a	Austronesian	Papunesia	191	151	77	50.99
+balu1257	Paluai	Austronesian	Papunesia	193	153	78	50.98
+saka1289	Wanohe	Austronesian	Papunesia	187	153	78	50.98
+motl1237	Mwotlap	Austronesian	Papunesia	195	155	79	50.97
+jehh1245	Jeh	Austroasiatic	Eurasia	139	112	57	50.89
+lame1260	Lamenu	Austronesian	Papunesia	126	114	58	50.88
+niue1239	Niuean	Austronesian	Papunesia	137	114	58	50.88
+neha1247	Nehan	Austronesian	Papunesia	139	118	60	50.85
+temo1245	Temoaya Otomi	Otomanguean	North America	146	126	64	50.79
+ghar1239	Ghari	Austronesian	Papunesia	151	134	68	50.75
+tari1256	Tariana	Arawakan	South America	161	134	68	50.75
+iton1250	Itonama		South America	170	136	69	50.74
+baur1253	Baure	Arawakan	South America	168	142	72	50.7
+moki1238	Mokilese	Austronesian	Papunesia	171	142	72	50.7
+phon1246	Phong-Kniang	Austroasiatic	Eurasia	74	71	36	50.7
+daww1239	Dâw	Naduhup	South America	89	73	37	50.68
+katb1237	Avava	Austronesian	Papunesia	183	148	75	50.68
+nyal1254	Belep	Austronesian	Papunesia	180	146	74	50.68
+bura1267	Burarra	Maningrida	Australia	87	79	40	50.63
+chig1238	Chiga	Atlantic-Congo	Africa	95	85	43	50.59
+nort2836	North Efate	Austronesian	Papunesia	93	85	43	50.59
+manu1258	Manusela	Austronesian	Papunesia	101	89	45	50.56
+aito1238	Aiton	Tai-Kadai	Eurasia	102	91	46	50.55
+high1243	Highland Totonac	Totonacan	North America	120	99	50	50.51
+bidy1244	Kanyaki-Kagbaaga-Kajoko Bidyogo	Atlantic-Congo	Africa	138	121	61	50.41
+sata1237	Satawalese	Austronesian	Papunesia	140	123	62	50.41
+yuec1235	Yue Chinese	Sino-Tibetan	Eurasia	180	143	72	50.35
+cemu1238	Cemuhî	Austronesian	Papunesia	180	149	75	50.34
+dumb1241	Dumbea	Austronesian	Papunesia	173	145	73	50.34
+lill1248	Lillooet	Salishan	North America	190	151	76	50.33
+bana1288	Banao Itneg	Austronesian	Papunesia	24	22	11	50
+bann1247	Bannoni	Austronesian	Papunesia	72	66	33	50
+east1236	Eastern Katu	Austroasiatic	Eurasia	106	90	45	50
+nort2847	North Tanna	Austronesian	Papunesia	128	116	58	50
+nucl1594	Mairasi	Mairasic	Papunesia	84	74	37	50
+seng1281	Sengseng	Austronesian	Papunesia	100	86	43	50
+toke1240	Tokelau	Austronesian	Papunesia	178	146	73	50
+tong1325	Tonga (Tonga Islands)	Austronesian	Papunesia	172	142	71	50
+west2538	West Tarangan	Austronesian	Papunesia	54	46	23	50
+niua1240	Niuafo'ou	Austronesian	Papunesia	182	151	75	49.67
+mere1242	Merei	Austronesian	Papunesia	183	149	74	49.66
+pile1238	Vaeakau-Taumako	Austronesian	Papunesia	184	149	74	49.66
+timn1235	Timne	Atlantic-Congo	Africa	166	139	69	49.64
+tiko1237	Tikopia	Austronesian	Papunesia	159	133	66	49.62
+dobe1238	Dobel	Austronesian	Papunesia	145	123	61	49.59
+tolo1255	Tolomako	Austronesian	Papunesia	120	111	55	49.55
+kawi1241	Kawi	Austronesian	Papunesia	128	109	54	49.54
+sobe1238	Sobei	Austronesian	Papunesia	130	109	54	49.54
+mach1267	Machiguenga	Arawakan	South America	96	85	42	49.41
+maon1241	Maonan	Tai-Kadai	Eurasia	94	83	41	49.4
+unea1237	Uneapa	Austronesian	Papunesia	87	79	39	49.37
+tahi1242	Tahitian	Austronesian	Papunesia	188	154	76	49.35
+toab1237	To'abaita	Austronesian	Papunesia	193	154	76	49.35
+bwat1240	Bwatoo	Austronesian	Papunesia	188	152	75	49.34
+maro1244	Marovo	Austronesian	Papunesia	84	75	37	49.33
+sout2857	Nahavaq	Austronesian	Papunesia	180	146	72	49.32
+raro1241	Southern Cook Island Maori	Austronesian	Papunesia	173	138	68	49.28
+dhar1247	Dhargari	Pama-Nyungan	Australia	77	65	32	49.23
+muso1238	Musom	Austronesian	Papunesia	150	128	63	49.22
+para1316	Paraujano	Arawakan	South America	53	49	24	48.98
+kwam1252	Kwamera	Austronesian	Papunesia	176	145	71	48.97
+aulu1238	Aulua	Austronesian	Papunesia	160	141	69	48.94
+mori1269	Mori Atas	Austronesian	Papunesia	105	92	45	48.91
+tiwi1244	Tiwi		Australia	102	90	44	48.89
+tuml1238	Tumleo	Austronesian	Papunesia	103	88	43	48.86
+murr1258	Murriny Patha	Southern Daly	Australia	97	86	42	48.84
+muss1246	Mussau-Emira	Austronesian	Papunesia	90	80	39	48.75
+java1254	Javanese	Austronesian	Papunesia	84	76	37	48.68
+west2564	West Berawan	Austronesian	Papunesia	83	74	36	48.65
+kara1486	Kara (Papua New Guinea)	Austronesian	Papunesia	177	144	70	48.61
+maan1238	Ma'anyan	Austronesian	Papunesia	163	138	67	48.55
+umaa1242	Uma	Austronesian	Papunesia	123	103	50	48.54
+phak1238	Phake	Tai-Kadai	Eurasia	101	91	44	48.35
+hung1275	Hung	Austroasiatic	Eurasia	142	120	58	48.33
+taul1251	Taulil	Taulil-Butam	Papunesia	187	149	72	48.32
+yima1243	Yimas	Lower Sepik-Ramu	Papunesia	100	89	43	48.31
+lang1324	Lango (Uganda)	Nilotic	Africa	90	83	40	48.19
+buki1249	Bukiyip	Nuclear Torricelli	Papunesia	90	81	39	48.15
+sulk1246	Sulka		Papunesia	92	81	39	48.15
+baro1253	Barok	Austronesian	Papunesia	165	133	64	48.12
+mera1242	Meramera	Austronesian	Papunesia	54	48	23	47.92
+yape1248	Yapese	Austronesian	Papunesia	170	140	67	47.86
+bali1278	Balinese	Austronesian	Papunesia	167	132	63	47.73
+dusn1237	Dusner	Austronesian	Papunesia	186	151	72	47.68
+band1340	Bandial	Atlantic-Congo	Africa	87	78	37	47.44
+tetu1245	Tetum	Austronesian	Papunesia	87	78	37	47.44
+yano1262	Yanomám	Yanomamic	South America	65	57	27	47.37
+kera1248	Keerak	Atlantic-Congo	Africa	128	110	52	47.27
+anut1237	Anuta	Austronesian	Papunesia	153	127	60	47.24
+nina1238	Ninam	Yanomamic	South America	61	53	25	47.17
+nots1237	Notsi	Austronesian	Papunesia	147	123	58	47.15
+axam1237	Axamb	Austronesian	Papunesia	195	155	73	47.1
+nant1250	Nanti	Arawakan	South America	80	68	32	47.06
+movi1243	Movima		South America	167	134	63	47.01
+idaa1241	Ida'an	Austronesian	Papunesia	93	81	38	46.91
+west2516	West Uvean	Austronesian	Papunesia	189	152	71	46.71
+nuku1260	Nukuoro	Austronesian	Papunesia	120	105	49	46.67
+onto1237	Luangiua	Austronesian	Papunesia	156	133	62	46.62
+alya1239	Alyawarr	Pama-Nyungan	Australia	68	58	27	46.55
+cari1276	Caribbean Javanese	Austronesian	South America	97	86	40	46.51
+simb1256	Simbo	Austronesian	Papunesia	95	84	39	46.43
+patp1243	Patpatar	Austronesian	Papunesia	187	151	70	46.36
+kelo1247	Klon	Timor-Alor-Pantar	Papunesia	91	80	37	46.25
+ngul1236	Nguluwan	Austronesian	Papunesia	56	52	24	46.15
+kuma1276	Nêlêmwa-Nixumwak	Austronesian	Papunesia	189	153	70	45.75
+obom1235	Obo Manobo	Austronesian	Papunesia	54	46	21	45.65
+iaai1238	Iaai	Austronesian	Papunesia	178	147	67	45.58
+homa1239	Homa	Atlantic-Congo	Africa	14	11	5	45.45
+arib1241	Aribwatsa	Austronesian	Papunesia	121	108	49	45.37
+sout2741	Southern Dong	Tai-Kadai	Eurasia	96	86	39	45.35
+moha1258	Mohawk	Iroquoian	North America	127	109	49	44.95
+hata1243	Hatam	Hatam-Mansim	Papunesia	96	84	37	44.05
+nyah1249	Nyaheun	Austroasiatic	Eurasia	57	50	22	44
+suru1262	Suruí	Tupian	South America	18	16	7	43.75
+mori1268	Mori Bawah	Austronesian	Papunesia	88	78	34	43.59
+biak1248	Biak	Austronesian	Papunesia	100	88	38	43.18
+buta1242	Butam	Taulil-Butam	Papunesia	76	72	31	43.06
+maku1277	Maku'a	Austronesian	Papunesia	29	28	12	42.86
+bunu1267	Bunun	Austronesian	Papunesia	74	66	28	42.42
+nade1244	Nadëb	Naduhup	South America	64	52	22	42.31
+puoc1238	Ksingmul	Austroasiatic	Eurasia	94	78	33	42.31
+maca1259	Macaguán	Guahiboan	South America	49	43	18	41.86
+meya1236	Meyah	East Bird's Head	Papunesia	96	84	35	41.67
+igna1246	Ignaciano	Arawakan	South America	91	82	34	41.46
+kore1283	Koreguaje	Tucanoan	South America	72	58	24	41.38
+muna1247	Muna	Austronesian	Papunesia	99	87	36	41.38
+ramo1244	Ramoaaina	Austronesian	Papunesia	52	49	20	40.82
+wira1262	Wiradhuri	Pama-Nyungan	Australia	14	13	5	38.46
+teun1241	Te'un	Austronesian	Papunesia	53	45	17	37.78
+teiw1235	Teiwa	Timor-Alor-Pantar	Papunesia	32	28	10	35.71
+ngur1261	Wilson River (Grey Range)	Pama-Nyungan	Australia	29	25	8	32
+apol1242	Apolista	Arawakan	South America	14	13	4	30.77
+sara1331	Saraveca	Arawakan	South America	19	18	5	27.78
+tain1254	Taino	Arawakan	North America	4	4	1	25
+cuaa1241	Cua	Austroasiatic	Eurasia	8	8	1	12.5
