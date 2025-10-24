@@ -9,19 +9,51 @@ library("rnaturalearthhires")
 library("sf")
 library("jsonlite")
 
-grambank.parameters <- read.csv("https://raw.githubusercontent.com/grambank/grambank/master/cldf/parameters.csv", header=TRUE, stringsAsFactors=FALSE, encoding="UTF-8") %>%
+grambank.parameters <- read.csv(
+  "https://raw.githubusercontent.com/grambank/grambank/master/cldf/parameters.csv",
+  header = TRUE,
+  stringsAsFactors = FALSE,
+  encoding = "UTF-8"
+) %>%
   select(ID, Name, Description) %>%
-  rename(Parameter_ID = ID, Parameter_Name = Name, Parameter_Description = Description)
+  rename(
+    Parameter_ID = ID,
+    Parameter_Name = Name,
+    Parameter_Description = Description
+  )
 
-grambank.codes <- read.csv("https://raw.githubusercontent.com/grambank/grambank/master/cldf/codes.csv", header=TRUE, stringsAsFactors=FALSE, encoding="UTF-8") %>%
+grambank.codes <- read.csv(
+  "https://raw.githubusercontent.com/grambank/grambank/master/cldf/codes.csv",
+  header = TRUE,
+  stringsAsFactors = FALSE,
+  encoding = "UTF-8"
+) %>%
   select(-ID) %>%
   rename(Parameter_Value = Name, Parameter_Value_Long = Description)
 
-grambank.languages <- read.csv("https://raw.githubusercontent.com/grambank/grambank/master/cldf/languages.csv", header=TRUE, stringsAsFactors=FALSE, encoding="UTF-8") %>%
+grambank.languages <- read.csv(
+  "https://raw.githubusercontent.com/grambank/grambank/master/cldf/languages.csv",
+  header = TRUE,
+  stringsAsFactors = FALSE,
+  encoding = "UTF-8"
+) %>%
   select(ID, Name, Macroarea, Latitude, Longitude, Family_name, level) %>%
-  rename(Language_ID = ID, Language_Name = Name, Language_Macroarea = Macroarea, Language_Latitude = Latitude, Language_Longitude = Longitude, Language_Family_Name = Family_name, Language_Level = level)
+  rename(
+    Language_ID = ID,
+    Language_Name = Name,
+    Language_Macroarea = Macroarea,
+    Language_Latitude = Latitude,
+    Language_Longitude = Longitude,
+    Language_Family_Name = Family_name,
+    Language_Level = level
+  )
 
-grambank.values <- read.csv("https://raw.githubusercontent.com/grambank/grambank/master/cldf/values.csv", header=TRUE, stringsAsFactors=FALSE, encoding="UTF-8") %>%
+grambank.values <- read.csv(
+  "https://raw.githubusercontent.com/grambank/grambank/master/cldf/values.csv",
+  header = TRUE,
+  stringsAsFactors = FALSE,
+  encoding = "UTF-8"
+) %>%
   select(Language_ID, Parameter_ID, Value, Comment) %>%
   rename(Parameter_Value = Value, Parameter_Comment = Comment)
 
@@ -31,34 +63,80 @@ grambank.values <- read.csv("https://raw.githubusercontent.com/grambank/grambank
 
 grambank_coordinates <- grambank.languages %>%
   select(Language_ID, Language_Latitude, Language_Longitude) %>%
-  rename(ID = Language_ID, Latitude = Language_Latitude, Longitude = Language_Longitude)
+  rename(
+    ID = Language_ID,
+    Latitude = Language_Latitude,
+    Longitude = Language_Longitude
+  )
 
-grambank_languages <- right_join(grambank.languages, grambank.values, by = "Language_ID")
+grambank_languages <- right_join(
+  grambank.languages,
+  grambank.values,
+  by = "Language_ID"
+)
 
-grambank_parameters <- right_join(grambank.parameters, grambank.codes, by = "Parameter_ID") %>%
+grambank_parameters <- right_join(
+  grambank.parameters,
+  grambank.codes,
+  by = "Parameter_ID"
+) %>%
   mutate(Parameter_Value = as.character(Parameter_Value))
 
 grambank_parameters_slim <- grambank_parameters %>%
   select(-Parameter_Value, -Parameter_Value_Long)
 
-grambank <- left_join(grambank_languages, grambank_parameters_slim %>% distinct(Parameter_ID, .keep_all = TRUE), by = "Parameter_ID")
+grambank <- left_join(
+  grambank_languages,
+  grambank_parameters_slim %>% distinct(Parameter_ID, .keep_all = TRUE),
+  by = "Parameter_ID"
+)
 
-grambank <- full_join(grambank, grambank_parameters, by = c("Parameter_ID", "Parameter_Value"))
+grambank <- full_join(
+  grambank,
+  grambank_parameters,
+  by = c("Parameter_ID", "Parameter_Value")
+)
 
-rm(grambank.languages, grambank.values, grambank.parameters, grambank.codes, grambank_languages, grambank_parameters, grambank_parameters_slim)
+rm(
+  grambank.languages,
+  grambank.values,
+  grambank.parameters,
+  grambank.codes,
+  grambank_languages,
+  grambank_parameters,
+  grambank_parameters_slim
+)
 
 grambank %<>%
-  mutate(Parameter_Value_Long = case_when(
-    Parameter_Value_Long == "both." ~ "both",
-    TRUE ~ Parameter_Value_Long))
+  mutate(
+    Parameter_Value_Long = case_when(
+      Parameter_Value_Long == "both." ~ "both",
+      TRUE ~ Parameter_Value_Long
+    )
+  )
 
 grambank_wide <- grambank %>%
-  select(Language_ID, Language_Name, Language_Macroarea, Language_Family_Name, Language_Level, Parameter_ID, Parameter_Value_Long) %>%
+  select(
+    Language_ID,
+    Language_Name,
+    Language_Macroarea,
+    Language_Family_Name,
+    Language_Level,
+    Parameter_ID,
+    Parameter_Value_Long
+  ) %>%
   pivot_wider(names_from = Parameter_ID, values_from = Parameter_Value_Long) %>%
   rowwise() %>%
   mutate(Parameters_Coded = sum(!is.na(c_across(GB020:GB522)))) %>%
   ungroup() %>%
-  relocate(Language_ID, Language_Name, Language_Macroarea, Language_Family_Name, Language_Level, Parameters_Coded)
+  relocate(
+    Language_ID,
+    Language_Name,
+    Language_Macroarea,
+    Language_Family_Name,
+    Language_Level,
+    Parameters_Coded
+  )
 
 rm(grambank)
 
@@ -66,7 +144,10 @@ grambank_wide %>%
   group_by(Language_Macroarea) %>%
   write_dataset(path = "grambank_wide", format = "parquet")
 
-un_m49_json <- fromJSON("https://raw.githubusercontent.com/lukert33/united-nations-geoscheme-subregions-json/refs/heads/master/un-geoscheme-subregions-countries.json", flatten = TRUE)
+un_m49_json <- fromJSON(
+  "https://raw.githubusercontent.com/lukert33/united-nations-geoscheme-subregions-json/refs/heads/master/un-geoscheme-subregions-countries.json",
+  flatten = TRUE
+)
 
 un_m49_df <- bind_rows(
   lapply(names(un_m49_json), function(continent) {
@@ -90,25 +171,27 @@ un_m49_df <- bind_rows(
   })
 ) %>%
   filter(country != "NULL") %>%
-  mutate(country = case_when(
-    country == "Bolivia (Plurinational State of)" ~ "Bolivia",
-    country == "Brunei Darussalam" ~ "Brunei",
-    country == "Cote d'Ivoire" ~ "Côte d'Ivoire",
-    country == "Czech Republic" ~ "Czechia",
-    country == "Democratic Republic of the Congo" ~ "DR Congo",
-    country == "Iran (Islamic Republic of)" ~ "Iran",
-    country == "Lao People's Democratic Republic" ~ "Laos",
-    country == "Micronesia (Federated States of)" ~ "Micronesia",
-    country == "The former Yugoslav Republic of Macedonia" ~ "North Macedonia",
-    country == "Russian Federation" ~ "Russia",
-    country == "Democratic People's Republic of Korea" ~ "South Korea",
-    country == "Syrian Arab Republic" ~ "Syria",
-    country == "United Republic of Tanzania" ~ "Tanzania",
-    country == "United Kingdom of Great Britain and Northern Ireland" ~ "United Kingdom",
-    country == "Venezuela (Bolivarian Republic of)" ~ "Venezuela",
-    country == "Viet Nam" ~ "Vietnam",
-    TRUE ~ country
-  )) %>%
+  mutate(
+    country = case_when(
+      country == "Bolivia (Plurinational State of)" ~ "Bolivia",
+      country == "Brunei Darussalam" ~ "Brunei",
+      country == "Cote d'Ivoire" ~ "Côte d'Ivoire",
+      country == "Czech Republic" ~ "Czechia",
+      country == "Democratic Republic of the Congo" ~ "DR Congo",
+      country == "Iran (Islamic Republic of)" ~ "Iran",
+      country == "Lao People's Democratic Republic" ~ "Laos",
+      country == "Micronesia (Federated States of)" ~ "Micronesia",
+      country == "The former Yugoslav Republic of Macedonia" ~ "North Macedonia",
+      country == "Russian Federation" ~ "Russia",
+      country == "Democratic People's Republic of Korea" ~ "South Korea",
+      country == "Syrian Arab Republic" ~ "Syria",
+      country == "United Republic of Tanzania" ~ "Tanzania",
+      country == "United Kingdom of Great Britain and Northern Ireland" ~ "United Kingdom",
+      country == "Venezuela (Bolivarian Republic of)" ~ "Venezuela",
+      country == "Viet Nam" ~ "Vietnam",
+      TRUE ~ country
+    )
+  ) %>%
   unique()
 
 rm(un_m49_json)
@@ -143,7 +226,8 @@ grambank_map <- grambank_sf %>%
       country == "Solomon Is." ~ "Solomon Islands",
       country == "Wallis and Futuna Is." ~ "Wallis and Futuna Islands",
       TRUE ~ country
-    )) %>%
+    )
+  ) %>%
   unique()
 
 rm(countries, nearest_idx)
@@ -178,14 +262,23 @@ grambank_map %<>%
       ID == "coco1260" ~ "OC",
       TRUE ~ continent
     )
-  )   %>%
+  ) %>%
   select(ID, geometry, country, subregion, continent) %>%
-  rename(Geometry = geometry, Country = country,  Subregion = subregion, Continent = continent)
+  rename(
+    Geometry = geometry,
+    Country = country,
+    Subregion = subregion,
+    Continent = continent
+  )
 
 grambank_map %<>%
   st_drop_geometry()
 
-grambank_coordinates <- full_join(grambank_coordinates, grambank_map, by = "ID") %>%
+grambank_coordinates <- full_join(
+  grambank_coordinates,
+  grambank_map,
+  by = "ID"
+) %>%
   filter(!is.na(Continent)) %>%
   select(-Country) %>%
   unique()
