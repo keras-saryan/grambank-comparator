@@ -4,8 +4,6 @@ library("magrittr")
 library("tidyverse")
 library("arrow")
 library("DT")
-library("htmlwidgets")
-library("webshot2")
 library("leaflet")
 
 grambank_coordinates <- open_dataset("grambank_coordinates") %>%
@@ -275,7 +273,9 @@ ui <- page_fillable(
           
           Consult Grambank itself for more on individual [features](https://grambank.clld.org/parameters) and [languages](https://grambank.clld.org/languages).
           
-          The code and data for this app are available on [GitHub](https://github.com/keras-saryan/grambank-comparator).
+          The code and data for this app are available on [GitHub](https://github.com/keras-saryan/grambank-comparator). The same repo also hosts a collection of files comparing every language in Grambank against every other language and one of the means, medians and standard deviations of these intra-Grambank similarities for each language in the `./grambank_autocomparison/` folder.
+          
+          The original Grambank data used here are also available on [GitHub](https://github.com/grambank/grambank).
           
           — [Keras Saryan](https://keras-saryan.github.io/)
           

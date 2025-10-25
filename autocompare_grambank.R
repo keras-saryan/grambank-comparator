@@ -18,9 +18,11 @@ grambank_wide <- open_dataset("grambank_wide") %>%
   ) %>%
   arrange(Language_ID)
 
-similarity_mean_all <- data.frame(
+similarity_stats_all <- data.frame(
   Language_ID = c(),
   Mean_Similarity = c(),
+  Median_Similarity = c(),
+  Similarity_SD = c(),
   Language_Name = c(),
   Language_Macroarea = c(),
   Language_Family_Name = c(),
@@ -78,21 +80,23 @@ for (i in seq_len(nrow(grambank_matrix))) {
     fileEncoding = "UTF-8"
   )
 
-  similarity_mean_tmp <- data.frame(
+  similarity_stats_tmp <- data.frame(
     Language_ID = input_lang_id,
-    Mean_Similarity = mean(similarity$Percentage_Similarity, na.rm = TRUE)
+    Mean_Similarity = mean(similarity$Percentage_Similarity, na.rm = TRUE),
+    Median_Similarity = median(similarity$Percentage_Similarity, na.rm = TRUE),
+    Similarity_SD = sd(similarity$Percentage_Similarity, na.rm = TRUE)
   )
 
-  similarity_mean <- full_join(
-    similarity_mean_tmp,
+  similarity_stats <- full_join(
+    similarity_stats_tmp,
     grambank_meta,
     by = "Language_ID"
   ) %>%
     drop_na()
 
-  similarity_mean_all <- rbind(similarity_mean_all, similarity_mean)
+  similarity_stats_all <- rbind(similarity_stats_all, similarity_stats)
 
-  similarity_mean_all %<>%
+  similarity_stats_all %<>%
     relocate(
       Language_ID,
       Language_Name,
@@ -112,8 +116,8 @@ for (i in seq_len(nrow(grambank_matrix))) {
 }
 
 write.table(
-  similarity_mean_all,
-  file = "grambank_autocomparison/grambank_mean_similarities.tsv",
+  similarity_stats_all,
+  file = "grambank_autocomparison/grambank_overall_similarity_stats.tsv",
   quote = FALSE,
   sep = "\t",
   row.names = FALSE,
