@@ -32,6 +32,8 @@ grambank_wide <- open_dataset("grambank_wide") %>%
     Parameters_Coded
   )
 
+grambank_langs <- sort(as.vector(grambank_wide$Language_Name))
+
 grambank_parameters <- as.character(colnames(
   grambank_wide %>% select(GB020:GB522)
 ))
@@ -66,9 +68,7 @@ theme_set(
     )
 )
 
-similarity_colours <- c("#ffaaaa", "#ff0000", "#0000ff", "#000088", "#000022")
-similarity_colours_8 <- colorRampPalette(similarity_colours)(8)
-similarity_colours_10 <- colorRampPalette(similarity_colours)(10)
+similarity_colours <- c("#ffcccc", "#ff0000", "#0000ff", "#000088", "#000011")
 similarity_colours_100 <- colorRampPalette(similarity_colours)(100)
 
 ui <- page_fillable(
@@ -236,6 +236,36 @@ ui <- page_fillable(
     ),
 
     nav_panel(
+      card_header("1-On-1"),
+
+      card_body(
+        conditionalPanel(
+          condition = "output.output_visible == true",
+          textInput("input_lang_name", "Input Language Name:", value = "")
+        ),
+
+        conditionalPanel(
+          condition = "output.output_visible == true",
+          selectInput(
+            inputId = "lang_choice",
+            label = "Compare With A Single Grambank Language:",
+            choices = grambank_langs,
+            selected = "English"
+          )
+        ),
+
+        uiOutput("langlang_stats"),
+
+        uiOutput("langlang_comparison_table"),
+
+        conditionalPanel(
+          condition = "output.output_visible == true",
+          downloadButton("download_langlang_tsv", "Download As TSV")
+        )
+      )
+    ),
+
+    nav_panel(
       card_header("About"),
 
       card_body(
@@ -244,9 +274,9 @@ ui <- page_fillable(
           
           The upload field in the sidebar expects a tab-separated file (e.g. `.tsv`, `.csv`, `.txt`) based on [Jessie Peterson](https://www.quothalinguist.com/)'s \"[Grambank Features List for Language Documentation](https://docs.google.com/spreadsheets/d/18Wdhtx7w5SHbe3GmkhFgTE7fjBiEX7SaL4O2-dFibB0/edit?gid=0#gid=0)\" Google Sheet ([see also her explanatory *Fiat Lingua* article](https://fiatlingua.org/2023/06/)). The easiest way to get this is to export your version of the spreadsheet as a TSV. It doesn't matter if the column names have been changed but the content of the original columns should remain in those same columns (and on the same, single sheet). It is also important that the \"Y/N\" column use the same set of values as the original spreadsheet; the app will treat any other values (or any absent values) as equivalent to `NA`.
           
-          The app simply compares the (non-NA-equivalent) feature values in the user-supplied file with the corresponding values for each language in Grambank's sample to see what proportion of these match on a per-language basis; all features are thus weighted equally when considering \"similarity\". The data used include only individual *languages* in Grambank and not those entries labelled as *dialects* or *families*.
+          The app simply compares the (non-NA-equivalent) feature values in the user-supplied file with the corresponding values for each language in Grambank's sample to see what proportion of these match on a per-language basis; all features are thus, rightly or wrongly, weighted equally when considering \"similarity\". The data used include only individual *languages* in Grambank and not those entries labelled as *dialects* or *families*.
           
-          Clicking \"Compare\" will produce outputs in the \"Table\", \"Plot\" and \"Map\" tabs.
+          Clicking \"Compare\" will produce outputs in the \"Table\", \"Plot\", \"Map\" and \"1-On-1\" tabs.
           
           A numeric input box in the sidebar can be used to change the minimum number of comparisons between the user-supplied language and the Grambank sample languages required to be displayed in the table, plots and map.
           
@@ -269,7 +299,9 @@ ui <- page_fillable(
           
           The \"Map\" tab shows a world map with circles for each language in Grambank colour coded according to their similarity to the user-supplied language data. Clicking the circle will show the language's name and the percentage similarity.
           
-          In the histograms and map, the <span style='color:#f00000; font-weight:bold;'>redder</span> a bar/circle, the more similar a language; the <span style='color:#0000f0; font-weight:bold;'>bluer</span> a bar/circle, the more different the language; however, extreme similarities/differences approach white/black respectively since these will usually be extreme outliers unless you are radically paring the data down.
+          In the histograms and map, the <span style='color:#f00000; font-weight:bold;'>redder</span> a bar/circle, the more similar a language; the <span style='color:#0000f0; font-weight:bold;'>bluer</span> a bar/circle, the more different the language; however, extreme similarities/differences approach white/black respectively since these will usually be extreme outliers unless you are radically paring the data down. The <span style='color:#00aa00; font-weight:bold;'>green</span> vertical dotted line shows the mean in distribution in similarities in that facet.
+          
+          The \"1-On-1\" tab shows a table that directly compares parameter values of the input language with those of a single language from the Grambank data set. This is set to English by default but can be changed in the input dropdown, in which you can type to find a language. The name of the input language displayed in the table is derived from the name of the file uploaded by default but this can be changed using the input textbox above the table. Note that this tab is not effected by any of the settings in the sidebar. You can also download a copy of this table as a TSV.
           
           Consult Grambank itself for more on individual [features](https://grambank.clld.org/parameters) and [languages](https://grambank.clld.org/languages).
           
@@ -323,7 +355,7 @@ server <- function(input, output, session) {
         ) %>%
         pull(Parameter_ID)
 
-      grambank_wide %<>%
+      grambank_wide %>%
         mutate(across(all_of(excluded_parameters), ~NA))
     }
   })
@@ -484,7 +516,7 @@ server <- function(input, output, session) {
 
   output$comparison_table <- renderUI({
     if (is.null(input$file) || input$run == 0) {
-      markdown("Upload a Grambank feature file to see a table here!")
+      markdown("Upload and compare a Grambank feature file to see a table here!")
     } else {
       DTOutput("results")
     }
@@ -663,7 +695,7 @@ server <- function(input, output, session) {
 
   output$comparison_plot <- renderUI({
     if (is.null(input$file) || input$run == 0) {
-      markdown("Upload a Grambank feature file to see a plot here!")
+      markdown("Upload and compare a Grambank feature file to see a plot here!")
     } else {
       tagList(
         plotOutput("comparison_hist", height = "800px")
@@ -673,27 +705,24 @@ server <- function(input, output, session) {
 
   output$no_map <- renderUI({
     if (is.null(input$file) || input$run == 0) {
-      markdown("Upload a Grambank feature file to see a map here!")
+      markdown("Upload and compare a Grambank feature file to see a map here!")
     }
   })
 
   output$comparison_map <- renderLeaflet({
     mapping <- spatial_results() %>%
       drop_na(`Similarity (%)`) %>%
-      filter(`Similarity (%)` >= 0 & `Similarity (%)` <= 100) %>%
-      mutate(
-        Colour = case_when(
-          `Similarity (%)` >= 87.5 & `Similarity (%)` <= 100 ~ similarity_colours_8[1],
-          `Similarity (%)` >= 75.0 & `Similarity (%)` < 87.5 ~ similarity_colours_8[2],
-          `Similarity (%)` >= 62.5 & `Similarity (%)` < 75.0 ~ similarity_colours_8[3],
-          `Similarity (%)` >= 50.0 & `Similarity (%)` < 62.5 ~ similarity_colours_8[4],
-          `Similarity (%)` >= 37.5 & `Similarity (%)` < 50.0 ~ similarity_colours_8[5],
-          `Similarity (%)` >= 25.0 & `Similarity (%)` < 37.5 ~ similarity_colours_8[6],
-          `Similarity (%)` >= 12.5 & `Similarity (%)` < 25.0 ~ similarity_colours_8[7],
-          `Similarity (%)` >= 0.00 & `Similarity (%)` < 12.5 ~ similarity_colours_8[8],
-          TRUE ~ mid_green
-        )
-      )
+      filter(`Similarity (%)` >= 0 & `Similarity (%)` <= 100)
+
+    pal <- colorBin(
+      palette = similarity_colours_100,
+      domain = mapping$`Similarity (%)`,
+      bins = seq(0, 100, length.out = length(similarity_colours_100)),
+      reverse = TRUE
+    )
+
+    mapping <- mapping %>%
+      mutate(Colour = pal(`Similarity (%)`))
 
     leaflet(mapping) %>%
       addTiles() %>%
@@ -701,13 +730,202 @@ server <- function(input, output, session) {
       addCircleMarkers(
         lng = ~Longitude,
         lat = ~Latitude,
-        radius = 7.5,
-        color = ~Colour,
+        radius = 7,
+        color = "#000000",
+        weight = 0.4,
         fillColor = ~Colour,
-        fillOpacity = 0.75,
-        stroke = FALSE,
+        fillOpacity = 0.8,
+        stroke = TRUE,
         popup = ~ paste0("<b>", Language, "</b><br>", `Similarity (%)`, "%")
       )
+  })
+
+  input_lang_name <- observeEvent(input$file, {
+    req(input$file)
+
+    uploaded_name <- tools::file_path_sans_ext(input$file$name) %>%
+      gsub("-", " ", .) %>%
+      tolower() %>%
+      tools::toTitleCase()
+
+    updateTextInput(
+      session,
+      "input_lang_name",
+      value = uploaded_name
+    )
+  })
+
+  langlang_results <- reactive({
+    req(input$file)
+    req(input$lang_choice)
+
+    input_lang <- read.csv(
+      input$file$datapath,
+      header = TRUE,
+      sep = "\t",
+      quote = "",
+      stringsAsFactors = FALSE,
+      encoding = "UTF-8"
+    ) %>%
+      select(-6) %>%
+      rename(
+        ID = 1,
+        Description = 2,
+        Category = 3,
+        Subcategory = 4,
+        `Input Language` = 5
+      ) %>%
+      mutate(
+        `Input Language` = str_trim(`Input Language`),
+        `Input Language` = case_when(
+          `Input Language` == "Yes" ~ "present",
+          `Input Language` == "No" ~ "absent",
+          `Input Language` == "Both" ~ "both",
+          `Input Language` == "Not sure" ~ "not sure",
+          TRUE ~ `Input Language`
+        )
+      ) %>%
+      unique()
+
+    grambank_lang <- grambank_wide %>%
+      filter(Language_Name == input$lang_choice) %>%
+      select(
+        -Language_ID,
+        -Language_Name,
+        -Language_Macroarea,
+        -Language_Family_Name,
+        -Parameters_Coded
+      ) %>%
+      pivot_longer(
+        cols = starts_with("GB"),
+        names_to = "ID",
+        values_to = input$lang_choice
+      )
+
+    input_lang[is.na(input_lang)] <- "NA"
+    grambank_lang[is.na(grambank_lang)] <- "NA"
+
+    if (is.null(input$input_lang_name) || input$input_lang_name == "") {
+      updateTextInput(session, "input_lang_name", value = "Input Language")
+    }
+
+    right_join(input_lang, grambank_lang, by = "ID") %>%
+      mutate(
+        `Match?` = case_when(
+          `Input Language` == .data[[input[["lang_choice"]]]] ~ "Yes",
+          `Input Language` != .data[[input[["lang_choice"]]]] ~ "No",
+          TRUE ~ "NA"
+        )
+      ) %>%
+      rename(!!input$input_lang_name := `Input Language`)
+  })
+
+  langlang_similarity <- reactive({
+    req(input$file)
+    req(input$lang_choice)
+
+    input_lang_values <- as.character(unlist(select(
+      input_lang(),
+      GB020:GB522
+    )))
+
+    input_lang_parameters_coded <- sum(!is.na(input_lang_values))
+
+    grambank_lang <- grambank_wide %>%
+      filter(Language_Name == input$lang_choice)
+
+    grambank_matrix <- as.matrix(select(grambank_lang, GB020:GB522))
+
+    input_lang_matrix <- matrix(
+      input_lang_values,
+      nrow = nrow(grambank_matrix),
+      ncol = length(input_lang_values),
+      byrow = TRUE
+    )
+
+    matches <- grambank_matrix == input_lang_matrix
+
+    total_compared <- rowSums(
+      !is.na(grambank_matrix) & !is.na(input_lang_matrix)
+    )
+    match_count <- rowSums(matches, na.rm = TRUE)
+    parameters_coded <- rowSums(!is.na(grambank_matrix))
+    percentage_similarity <- 100 * match_count / total_compared
+
+    input_lang_colname <- paste0(input$input_lang_name, " Parameters Coded")
+    grambank_lang_colname <- paste0(input$lang_choice, " Parameters Coded")
+
+    grambank_lang %>%
+      mutate(
+        `INPUT LANG Parameters Coded` = input_lang_parameters_coded,
+        `GRAMBANK LANG Parameters Coded` = parameters_coded,
+        `Match Count` = match_count,
+        `Total Compared` = total_compared,
+        `Similarity (%)` = round(percentage_similarity, 2)
+      ) %>%
+      select(
+        `INPUT LANG Parameters Coded`,
+        `GRAMBANK LANG Parameters Coded`,
+        `Total Compared`,
+        `Match Count`,
+        `Similarity (%)`
+      ) %>%
+      rename(
+        !!input_lang_colname := `INPUT LANG Parameters Coded`,
+        !!grambank_lang_colname := `GRAMBANK LANG Parameters Coded`,
+      )
+  })
+
+  output$langlang_results <- renderDataTable({
+    datatable(
+      langlang_similarity(),
+      options = list(
+        columnDefs = list(list(className = "dt-center", targets = "_all")),
+        pageLength = 1,
+        lengthChange = FALSE,
+        dom = "t"
+      ),
+      rownames = FALSE
+    )
+  })
+
+  output$langlang_stats <- renderUI({
+    if (is.null(input$file) || input$run == 0) {} else {
+      DTOutput("langlang_results")
+    }
+  })
+
+  output$langlang_datatable <- renderDataTable({
+    datatable(
+      langlang_results(),
+      options = list(pageLength = 20),
+      rownames = FALSE,
+      filter = "top"
+    )
+  })
+
+  output$download_langlang_tsv <- downloadHandler(
+    filename = function() {
+      paste0("input_lang_grambank_lang_comparison_table.tsv")
+    },
+    content = function(file) {
+      req(langlang_results())
+      write.table(
+        langlang_results(),
+        file,
+        sep = "\t",
+        row.names = FALSE,
+        quote = FALSE
+      )
+    }
+  )
+
+  output$langlang_comparison_table <- renderUI({
+    if (is.null(input$file) || input$run == 0) {
+      markdown("Upload and compare a Grambank feature file to see a table here!")
+    } else {
+      DTOutput("langlang_datatable")
+    }
   })
 }
 
