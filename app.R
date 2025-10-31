@@ -241,17 +241,17 @@ ui <- page_fillable(
       card_body(
         conditionalPanel(
           condition = "output.output_visible == true",
-          textInput("input_lang_name", "Input Language Name:", value = "")
-        ),
 
-        conditionalPanel(
-          condition = "output.output_visible == true",
+          textInput("input_lang_name", "Input Language Name:", value = ""),
+
           selectInput(
             inputId = "lang_choice",
-            label = "Compare With A Single Grambank Language:",
+            label = "Compare With A Grambank Language:",
             choices = grambank_langs,
             selected = "English"
-          )
+          ),
+
+          actionButton("random_1on1", "Random Grambank Language", style = "width: 300px")
         ),
 
         uiOutput("langlang_stats"),
@@ -301,7 +301,7 @@ ui <- page_fillable(
           
           In the histograms and map, the <span style='color:#f00000; font-weight:bold;'>redder</span> a bar/circle, the more similar a language; the <span style='color:#0000f0; font-weight:bold;'>bluer</span> a bar/circle, the more different the language; however, extreme similarities/differences approach white/black respectively since these will usually be extreme outliers unless you are radically paring the data down. The <span style='color:#00aa00; font-weight:bold;'>green</span> vertical dotted line shows the mean in distribution in similarities in that facet.
           
-          The \"1-On-1\" tab shows a table that directly compares parameter values of the input language with those of a single language from the Grambank data set. This is set to English by default but can be changed in the input dropdown, in which you can type to find a language. The name of the input language displayed in the table is derived from the name of the file uploaded by default but this can be changed using the input textbox above the table. Note that this tab is not effected by any of the settings in the sidebar. You can also download a copy of this table as a TSV.
+          The \"1-On-1\" tab shows a table that directly compares parameter values of the input language with those of a single language from the Grambank data set. This is set to English by default but can be changed in the input dropdown, in which you can type to find a language of your chosing, or by clicking the button below to be served a random language. The name of the input language displayed in the table is derived from the name of the file uploaded by default but this can be changed using the input textbox at the top of the tab. Note that this tab is not effected by any of the settings in the sidebar. You can also download a copy of this table as a TSV.
           
           Consult Grambank itself for more on individual [features](https://grambank.clld.org/parameters) and [languages](https://grambank.clld.org/languages).
           
@@ -752,6 +752,15 @@ server <- function(input, output, session) {
       "input_lang_name",
       value = uploaded_name
     )
+  })
+
+  lang_choice <- observeEvent(input$random_1on1, {
+    if (input$random_1on1 == 0) {
+      input$lang_choice
+    } else {
+      random_choice <- sample(grambank_langs, 1)
+      updateSelectInput(session, "lang_choice", selected = random_choice)
+    }
   })
 
   langlang_results <- reactive({
