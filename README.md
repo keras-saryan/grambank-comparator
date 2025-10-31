@@ -2,7 +2,7 @@
 
 [Grambank Comparator](https://keras-saryan.shinyapps.io/grambank-comparator/) is a [𝒮𝒽𝒾𝓃𝓎](https://www.shinyapps.io/) app for comparing a novel language with those found in the [Grambank](https://grambank.clld.org/) database and producing a rough similarity measure. For more information, see the app's "About" tab.
 
-This repo also hosts a collection of files (`grambank_similarities_\*.tsv`) comparing every language in Grambank against every other language and one of the means, medians and standard deviations of these intra-Grambank similarities for each language (`grambank_overall_similarity_stats.tsv`) in `./grambank_autocomparison/`.
+This repo also hosts a collection of files (`grambank_similarities_*.tsv`) comparing every language in Grambank against every other language and one of the means, medians and standard deviations of these intra-Grambank similarities for each language (`grambank_overall_similarity_stats.tsv`) in `./grambank_autocomparison/`.
 
 <br>
 

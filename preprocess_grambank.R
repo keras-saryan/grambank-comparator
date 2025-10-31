@@ -97,6 +97,14 @@ grambank <- full_join(
   by = c("Parameter_ID", "Parameter_Value")
 )
 
+# grambank_parameter_categories <- read_tsv("grambank_categories_simple.tsv")
+#
+# grambank_parameter_categories %<>%
+#   left_join(grambank.parameters, by = "Parameter_ID") %>%
+#   select(Parameter_ID, Parameter_Name, Parameter_Category, Parameter_Subcategory)
+#
+# write.table(grambank_parameter_categories, "grambank_parameter_categories.tsv", quote = FALSE, sep = "\t", row.names = FALSE, col.names = TRUE, fileEncoding = "UTF-8")
+
 rm(
   grambank.languages,
   grambank.values,
@@ -104,7 +112,8 @@ rm(
   grambank.codes,
   grambank_languages,
   grambank_parameters,
-  grambank_parameters_slim
+  grambank_parameters_slim,
+  grambank_parameter_categories
 )
 
 grambank %<>%

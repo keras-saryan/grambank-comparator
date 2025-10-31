@@ -371,13 +371,12 @@ server <- function(input, output, session) {
       stringsAsFactors = FALSE,
       encoding = "UTF-8"
     ) %>%
-      select(-2) %>%
+      select(-2, -6) %>%
       rename(
         Parameter_ID = 1,
         Parameter_Category = 2,
         Parameter_Subcategory = 3,
         Parameter_Value_Long = 4,
-        Parameter_Comment = 5
       ) %>%
       mutate(
         Parameter_Value_Long = str_trim(Parameter_Value_Long),
@@ -767,13 +766,12 @@ server <- function(input, output, session) {
       stringsAsFactors = FALSE,
       encoding = "UTF-8"
     ) %>%
-      select(-6) %>%
+      select(-2, -6) %>%
       rename(
         ID = 1,
-        Description = 2,
-        Category = 3,
-        Subcategory = 4,
-        `Input Language` = 5
+        Category = 2,
+        Subcategory = 3,
+        `Input Language` = 4
       ) %>%
       mutate(
         `Input Language` = str_trim(`Input Language`),
@@ -786,6 +784,14 @@ server <- function(input, output, session) {
         )
       ) %>%
       unique()
+
+    grambank_parameter_names <- grambank_parameter_categories %>%
+      select(Parameter_ID, Parameter_Name) %>%
+      rename(ID = Parameter_ID, Name = Parameter_Name)
+
+    input_lang %<>%
+      left_join(grambank_parameter_names, by = "ID") %>%
+      relocate(ID, Name)
 
     grambank_lang <- grambank_wide %>%
       filter(Language_Name == input$lang_choice) %>%
@@ -802,9 +808,6 @@ server <- function(input, output, session) {
         values_to = input$lang_choice
       )
 
-    input_lang[is.na(input_lang)] <- "NA"
-    grambank_lang[is.na(grambank_lang)] <- "NA"
-
     if (is.null(input$input_lang_name) || input$input_lang_name == "") {
       updateTextInput(session, "input_lang_name", value = "Input Language")
     }
@@ -815,7 +818,9 @@ server <- function(input, output, session) {
           `Input Language` == .data[[input[["lang_choice"]]]] ~ "Yes",
           `Input Language` != .data[[input[["lang_choice"]]]] ~ "No",
           TRUE ~ "NA"
-        )
+        ),
+        `Input Language` = coalesce(`Input Language`, "NA"),
+        !!input$lang_choice := coalesce(!!sym(input$lang_choice), "NA")
       ) %>%
       rename(!!input$input_lang_name := `Input Language`)
   })
@@ -872,7 +877,7 @@ server <- function(input, output, session) {
       ) %>%
       rename(
         !!input_lang_colname := `INPUT LANG Parameters Coded`,
-        !!grambank_lang_colname := `GRAMBANK LANG Parameters Coded`,
+        !!grambank_lang_colname := `GRAMBANK LANG Parameters Coded`
       )
   })
 
