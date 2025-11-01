@@ -5,6 +5,7 @@ library("tidyverse")
 library("arrow")
 library("DT")
 library("leaflet")
+library("leaflet.extras")
 
 grambank_coordinates <- open_dataset("grambank_coordinates") %>%
   dplyr::collect() %>%
@@ -736,7 +737,9 @@ server <- function(input, output, session) {
         fillOpacity = 0.8,
         stroke = TRUE,
         popup = ~ paste0("<b>", Language, "</b><br>", `Similarity (%)`, "%")
-      )
+      ) %>%
+      addFullscreenControl() %>%
+      addResetMapButton()
   })
 
   input_lang_name <- observeEvent(input$file, {
