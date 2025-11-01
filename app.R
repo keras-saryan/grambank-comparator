@@ -385,7 +385,8 @@ server <- function(input, output, session) {
           Parameter_Value_Long == "Yes" ~ "present",
           Parameter_Value_Long == "No" ~ "absent",
           Parameter_Value_Long == "Both" ~ "both",
-          Parameter_Value_Long == "Not sure" ~ NA_character_,
+          Parameter_Value_Long %in%
+            c("", "na", "n/a", "n.a.", "NA", "N/A", "N.A.", "not sure", "Not sure") ~ NA_character_,
           TRUE ~ Parameter_Value_Long
         )
       ) %>%
@@ -792,6 +793,8 @@ server <- function(input, output, session) {
           `Input Language` == "No" ~ "absent",
           `Input Language` == "Both" ~ "both",
           `Input Language` == "Not sure" ~ "not sure",
+          `Input Language` %in%
+            c("", "na", "n/a", "n.a.", "NA", "N/A", "N.A.", "not sure", "Not sure") ~ "NA",
           TRUE ~ `Input Language`
         )
       ) %>%
@@ -827,6 +830,8 @@ server <- function(input, output, session) {
     right_join(input_lang, grambank_lang, by = "ID") %>%
       mutate(
         `Match?` = case_when(
+          `Input Language` %in%
+            c("", "na", "n/a", "n.a.", "NA", "N/A", "N.A.", "not sure", "Not sure") ~ "NA",
           `Input Language` == .data[[input[["lang_choice"]]]] ~ "Yes",
           `Input Language` != .data[[input[["lang_choice"]]]] ~ "No",
           TRUE ~ "NA"
