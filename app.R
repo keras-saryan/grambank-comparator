@@ -1,11 +1,17 @@
+# ---- Load packages ----
+
 library("shiny")
 library("bslib")
-library("magrittr")
-library("tidyverse")
+library("dplyr")
+library("tidyr")
+library("ggplot2")
+library("stringr")
 library("arrow")
 library("DT")
 library("leaflet")
 library("leaflet.extras")
+
+# ---- Preprocess data ----
 
 grambank_coordinates <- open_dataset("grambank_coordinates") %>%
   dplyr::collect() %>%
@@ -39,7 +45,12 @@ grambank_parameters <- as.character(colnames(
   grambank_wide %>% select(GB020:GB522)
 ))
 
-grambank_parameter_categories <- read_tsv("grambank_parameter_categories.tsv")
+grambank_parameter_categories <- read.delim(
+  "grambank_parameter_categories.tsv",
+  header = TRUE,
+  sep = "\t",
+  stringsAsFactors = FALSE
+)
 
 grambank_categories <- sort(unique(
   grambank_parameter_categories$Parameter_Category
@@ -48,6 +59,8 @@ grambank_categories <- sort(unique(
 grambank_subcategories <- sort(unique(
   grambank_parameter_categories$Parameter_Subcategory
 ))
+
+# ---- Aesthetics ----
 
 fontCustom <- "Noto Sans"
 
@@ -72,6 +85,8 @@ theme_set(
 similarity_colours <- c("#ffcccc", "#ff0000", "#0000ff", "#000088", "#000011")
 similarity_colours_100 <- colorRampPalette(similarity_colours)(100)
 
+# ---- UI ----
+
 ui <- page_fillable(
   tags$style(HTML(
     "
@@ -89,6 +104,16 @@ ui <- page_fillable(
       }
       a:active {
         text-decoration: none;
+      }
+      .nav-tabs {
+        justify-content: flex-end !important;
+      }
+      .random-1on1-button {
+        height: calc(1.5em + 0.75rem + 2px);
+        margin-bottom: 16px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
       }
     "
   )),
@@ -123,10 +148,11 @@ ui <- page_fillable(
       fileInput(
         "file",
         "",
+        buttonLabel = HTML('<i class="fa-solid fa-file-arrow-up"></i> Load File'),
         accept = c(".tsv", ".csv", "text/tab-separated-values")
       ),
 
-      actionButton("run", "Compare"),
+      actionButton("run", "Compare", icon = icon("code-compare")),
 
       numericInput(
         inputId = "compared_min",
@@ -145,7 +171,7 @@ ui <- page_fillable(
         selected = grambank_categories
       ),
 
-      actionButton("reset_categories", "Reset Categories"),
+      actionButton("reset_categories", "Reset Categories", icon = icon("filter-circle-xmark")),
 
       selectInput(
         inputId = "subcategories_to_compare",
@@ -155,7 +181,7 @@ ui <- page_fillable(
         selected = grambank_subcategories
       ),
 
-      actionButton("reset_subcategories", "Reset Subcategories"),
+      actionButton("reset_subcategories", "Reset Subcategories", icon = icon("filter-circle-xmark")),
 
       selectInput(
         inputId = "parameter_to_compare",
@@ -243,16 +269,30 @@ ui <- page_fillable(
         conditionalPanel(
           condition = "output.output_visible == true",
 
-          textInput("input_lang_name", "Input Language Name:", value = ""),
+          div(
+            style = "display: flex; align-items: flex-end; gap: 15px;",
 
-          selectInput(
-            inputId = "lang_choice",
-            label = "Compare With A Grambank Language:",
-            choices = grambank_langs,
-            selected = "English"
-          ),
+            textInput(
+              "input_lang_name",
+              "Input Language Name:",
+              value = ""
+            ),
 
-          actionButton("random_1on1", "Random Grambank Language", style = "width: 300px")
+            selectInput(
+              inputId = "lang_choice",
+              label = "Compare With A Grambank Language:",
+              choices = grambank_langs,
+              selected = "English"
+            ),
+
+            actionButton(
+              "random_1on1",
+              "Random Grambank Language",
+              icon = icon("dice"),
+              class = "random-1on1-button",
+              style = "width: 325px"
+            )
+          )
         ),
 
         uiOutput("langlang_stats"),
@@ -261,7 +301,10 @@ ui <- page_fillable(
 
         conditionalPanel(
           condition = "output.output_visible == true",
-          downloadButton("download_langlang_tsv", "Download As TSV")
+          downloadButton(
+            "download_langlang_tsv",
+            "Download As TSV"
+          )
         )
       )
     ),
@@ -319,6 +362,8 @@ ui <- page_fillable(
   )
 )
 
+# ---- Server ----
+
 server <- function(input, output, session) {
   observeEvent(input$reset_categories, {
     updateSelectInput(
@@ -346,7 +391,7 @@ server <- function(input, output, session) {
         filter(Parameter_ID != input$parameter_to_compare) %>%
         pull(Parameter_ID)
 
-      grambank_wide %<>%
+      grambank_wide <- grambank_wide %>%
         mutate(across(all_of(excluded_parameters), ~NA))
     } else if (input$parameter_to_compare == "Compare All") {
       excluded_parameters <- grambank_parameter_categories %>%
@@ -506,11 +551,21 @@ server <- function(input, output, session) {
   outputOptions(output, "output_visible", suspendWhenHidden = FALSE)
 
   output$results <- renderDataTable({
+    table_data <- final_results() %>%
+      mutate(
+        ID = sprintf(
+          '<a href="https://glottolog.org/resource/languoid/id/%s" target="_blank">%s</a>',
+          ID,
+          ID
+        )
+      )
+
     datatable(
-      final_results(),
+      table_data,
       options = list(pageLength = 20),
       rownames = FALSE,
-      filter = "top"
+      filter = "top",
+      escape = FALSE
     ) %>%
       formatStyle("ID", target = "cell", fontFamily = "monospace")
   })
@@ -804,7 +859,7 @@ server <- function(input, output, session) {
       select(Parameter_ID, Parameter_Name) %>%
       rename(ID = Parameter_ID, Name = Parameter_Name)
 
-    input_lang %<>%
+    input_lang <- input_lang %>%
       left_join(grambank_parameter_names, by = "ID") %>%
       relocate(ID, Name)
 
@@ -918,12 +973,23 @@ server <- function(input, output, session) {
   })
 
   output$langlang_datatable <- renderDataTable({
+    langlang_table_data <- langlang_results() %>%
+      mutate(
+        ID = sprintf(
+          '<a href="https://grambank.clld.org/parameters/%s" target="_blank">%s</a>',
+          ID,
+          ID
+        )
+      )
+
     datatable(
-      langlang_results(),
+      langlang_table_data,
       options = list(pageLength = 20),
       rownames = FALSE,
-      filter = "top"
-    )
+      filter = "top",
+      escape = FALSE
+    ) %>%
+      formatStyle("ID", target = "cell", fontFamily = "monospace")
   })
 
   output$download_langlang_tsv <- downloadHandler(
@@ -950,5 +1016,7 @@ server <- function(input, output, session) {
     }
   })
 }
+
+# ---- shinyApp ----
 
 shinyApp(ui = ui, server = server)

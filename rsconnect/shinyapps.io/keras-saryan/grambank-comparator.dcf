@@ -1,13 +1,13 @@
 name: grambank-comparator
-title:
+title: grambank-comparator
 username: keras-saryan
 account: keras-saryan
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 15800431
-bundleId: 11118152
+bundleId: 12618822
 url: https://keras-saryan.shinyapps.io/grambank-comparator/
 version: 1
 asMultiple: FALSE
 asStatic: FALSE
-ignoredFiles: .gitattributes|air.toml|autocompare_grambank.R|LICENCE|preprocess_grambank.R|README.md|examples|grambank_autocomparison|sandbox
+ignoredFiles: .gitattributes|air.toml|app-debug.R|app-leaflet-test.R|app-test.R|app-update.R|autocompare_grambank.R|LICENCE|preprocess_grambank.R|README.md|examples|grambank_autocomparison|sandbox
